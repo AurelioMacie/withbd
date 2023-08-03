@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class SolicitationController extends Controller
+class SolcitationController extends Controller
 {
     //
 }

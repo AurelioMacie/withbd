@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateSolicitationsTable extends Migration
+class CreateStudantUsersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,10 @@ class CreateSolicitationsTable extends Migration
      */
     public function up()
     {
-        Schema::create('solicitations', function (Blueprint $table) {
+        Schema::create('studant_users', function (Blueprint $table) {
             $table->id();
-            $table->string('descricao')->nullable();
-            $table->foreignId('motorista_id')->references('id')->on('drivers')->onDelete('cascade')->nullable();
+            $table->string('parentesco')->nullable();
+            $table->foreignId('user_id')->references('id')->on('users')->onDelete('cascade')->nullable();
             $table->timestamps();
         });
     }
@@ -28,6 +28,6 @@ class CreateSolicitationsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('solicitations');
+        Schema::dropIfExists('studant_users');
     }
 }
