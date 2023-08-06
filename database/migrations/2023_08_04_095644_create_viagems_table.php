@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateMoresTable extends Migration
+class CreateViagemsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,11 @@ class CreateMoresTable extends Migration
      */
     public function up()
     {
-        Schema::create('mores', function (Blueprint $table) {
+        Schema::create('viagems', function (Blueprint $table) {
             $table->id();
-            $table->string('referencia')->nullable();
-            $table->float('valor')->nullable();
-            $table->foreignId('motorista_id')->references('id')->on('drivers')->onDelete('cascade')->nullable();
+            $table->string('data')->nullable();
+            $table->string('tipo')->nullable();
+            $table->foreignId('veiculo_id')->references('id')->on('veiculos')->onDelete('cascade')->nullable();
             $table->timestamps();
         });
     }
@@ -29,6 +29,6 @@ class CreateMoresTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('mores');
+        Schema::dropIfExists('viagems');
     }
 }

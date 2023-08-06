@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class DriveDriverController extends Controller
+class MultaController extends Controller
 {
     //
 }

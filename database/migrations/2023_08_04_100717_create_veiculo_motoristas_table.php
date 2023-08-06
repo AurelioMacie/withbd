@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateDriveDriversTable extends Migration
+class CreateVeiculoMotoristasTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,11 @@ class CreateDriveDriversTable extends Migration
      */
     public function up()
     {
-        Schema::create('drive_drivers', function (Blueprint $table) {
+        Schema::create('veiculo_motoristas', function (Blueprint $table) {
             $table->id();
             $table->boolean('estado')->nullable();
-            $table->foreignId('veiculo_id')->references('id')->on('drives')->onDelete('cascade')->nullable();
-            $table->foreignId('motorista_id')->references('id')->on('drivers')->onDelete('cascade')->nullable();
+            $table->foreignId('veiculo_id')->references('id')->on('veiculos')->onDelete('cascade')->nullable();
+            $table->foreignId('motorista_id')->references('id')->on('motoristas')->onDelete('cascade')->nullable();
             $table->timestamps();
         });
     }
@@ -29,6 +29,6 @@ class CreateDriveDriversTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('drive_drivers');
+        Schema::dropIfExists('veiculo_motoristas');
     }
 }

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateStudantUsersTable extends Migration
+class CreateMotoristasTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,13 @@ class CreateStudantUsersTable extends Migration
      */
     public function up()
     {
-        Schema::create('studant_users', function (Blueprint $table) {
+        Schema::create('motoristas', function (Blueprint $table) {
             $table->id();
-            $table->string('parentesco')->nullable();
+            $table->string('nome');
+            $table->string('contacto')->nullable();
+            $table->string('documento')->nullable();
+            $table->string('morada')->nullable();
+            $table->date('nascimento')->nullable();
             $table->foreignId('user_id')->references('id')->on('users')->onDelete('cascade')->nullable();
             $table->timestamps();
         });
@@ -28,6 +32,6 @@ class CreateStudantUsersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('studant_users');
+        Schema::dropIfExists('motoristas');
     }
 }

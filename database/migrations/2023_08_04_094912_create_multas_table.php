@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateTripsTable extends Migration
+class CreateMultasTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,11 @@ class CreateTripsTable extends Migration
      */
     public function up()
     {
-        Schema::create('trips', function (Blueprint $table) {
+        Schema::create('multas', function (Blueprint $table) {
             $table->id();
-            $table->string('data')->nullable();
-            $table->string('tipo')->nullable();
-            $table->foreignId('veiculo_id')->references('id')->on('drives')->onDelete('cascade')->nullable();
+            $table->string('referencia')->nullable();
+            $table->float('valor')->nullable();
+            $table->foreignId('motorista_id')->references('id')->on('motoristas')->onDelete('cascade')->nullable();
             $table->timestamps();
         });
     }
@@ -29,6 +29,6 @@ class CreateTripsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('trips');
+        Schema::dropIfExists('multas');
     }
 }
