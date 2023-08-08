@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\EstudanteController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,4 +27,5 @@ require __DIR__.'/auth.php';
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
+    Route::get('/estudante/pendentes', [EstudanteController::class, 'pendentes'])->middleware(["auth"])->name('estudante.pendente');
 });
