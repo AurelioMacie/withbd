@@ -25,12 +25,12 @@ class EstudantesTableSeeder extends Seeder
                 'nome' => 'Maira',
                 'partida' => 'Zimpeto',
                 'destino' => 'Baixa',
-                'descricaoSolicitacao' => 'Nenhuma',
-                'estado' => NULL,
-                'rota_id' => NULL,
-                'veiculo_id' => NULL,
+                'descricaoSolicitacao' => 'Apenas precisa chegar ao destino em seguranca',
+                'estado' => 'aceite',
+                'rota_id' => 1,
+                'veiculo_id' => 2,
                 'created_at' => '2023-08-06 18:54:05',
-                'updated_at' => '2023-08-06 18:54:05',
+                'updated_at' => '2023-08-08 14:34:17',
             ),
         ));
         
