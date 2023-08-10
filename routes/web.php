@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EstudanteController;
+use App\Http\Controllers\VeiculoController;
+use App\Http\Controllers\ViagemController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,7 +27,10 @@ Route::get('/dashboard', function () {
 require __DIR__.'/auth.php';
 
 
-Route::group(['prefix' => 'admin'], function () {
+Route::group(['prefix' => 'gestao'], function () {
     Voyager::routes();
+    Route::get('/viagem/{id}/estudantes/adicionar', [ViagemController::class, 'adicionar'])->middleware(["auth"])->name('viagem.adicionar');
+    Route::get('/viagem/{id}/estudantes/presenca', [ViagemController::class, 'presenca'])->middleware(["auth"])->name('viagem.presenca');
+    Route::get('/veiculo/viagens/{id}', [VeiculoController::class, 'veiculoViagem'])->middleware(["auth"])->name('veiculo.viagem');
     Route::get('/estudante/pendentes', [EstudanteController::class, 'pendentes'])->middleware(["auth"])->name('estudante.pendente');
 });

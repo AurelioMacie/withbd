@@ -165,7 +165,7 @@ return [
         'add_menu_item' => true,
 
         // which menu add item to
-        'default_menu' => 'admin',
+        'default_menu' => 'gestao',
 
         // When a BREAD is added, create the related Permission.
         'add_permission' => true,
