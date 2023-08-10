@@ -19,6 +19,7 @@ class CreateEstudanteViagemsTable extends Migration
             $table->date('horaDescida')->nullable();
             $table->foreignId('estudante_id')->references('id')->on('estudantes')->onDelete('cascade')->nullable();
             $table->foreignId('viagem_id')->references('id')->on('viagems')->onDelete('cascade')->nullable();
+	        $table->bigInteger('transferencia_viagem_id')->nullable();
             $table->timestamps();
         });
     }
