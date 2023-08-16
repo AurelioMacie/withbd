@@ -421,53 +421,13 @@ class PermissionsTableSeeder extends Seeder
             ),
             50 => 
             array (
-                'id' => 51,
-                'key' => 'browse_estudante_viagems',
-                'table_name' => 'estudante_viagems',
-                'created_at' => '2023-08-04 10:13:10',
-                'updated_at' => '2023-08-04 10:13:10',
-            ),
-            51 => 
-            array (
-                'id' => 52,
-                'key' => 'read_estudante_viagems',
-                'table_name' => 'estudante_viagems',
-                'created_at' => '2023-08-04 10:13:10',
-                'updated_at' => '2023-08-04 10:13:10',
-            ),
-            52 => 
-            array (
-                'id' => 53,
-                'key' => 'edit_estudante_viagems',
-                'table_name' => 'estudante_viagems',
-                'created_at' => '2023-08-04 10:13:10',
-                'updated_at' => '2023-08-04 10:13:10',
-            ),
-            53 => 
-            array (
-                'id' => 54,
-                'key' => 'add_estudante_viagems',
-                'table_name' => 'estudante_viagems',
-                'created_at' => '2023-08-04 10:13:10',
-                'updated_at' => '2023-08-04 10:13:10',
-            ),
-            54 => 
-            array (
-                'id' => 55,
-                'key' => 'delete_estudante_viagems',
-                'table_name' => 'estudante_viagems',
-                'created_at' => '2023-08-04 10:13:10',
-                'updated_at' => '2023-08-04 10:13:10',
-            ),
-            55 => 
-            array (
                 'id' => 56,
                 'key' => 'browse_estudantes',
                 'table_name' => 'estudantes',
                 'created_at' => '2023-08-04 10:13:51',
                 'updated_at' => '2023-08-04 10:13:51',
             ),
-            56 => 
+            51 => 
             array (
                 'id' => 57,
                 'key' => 'read_estudantes',
@@ -475,7 +435,7 @@ class PermissionsTableSeeder extends Seeder
                 'created_at' => '2023-08-04 10:13:51',
                 'updated_at' => '2023-08-04 10:13:51',
             ),
-            57 => 
+            52 => 
             array (
                 'id' => 58,
                 'key' => 'edit_estudantes',
@@ -483,7 +443,7 @@ class PermissionsTableSeeder extends Seeder
                 'created_at' => '2023-08-04 10:13:51',
                 'updated_at' => '2023-08-04 10:13:51',
             ),
-            58 => 
+            53 => 
             array (
                 'id' => 59,
                 'key' => 'add_estudantes',
@@ -491,7 +451,7 @@ class PermissionsTableSeeder extends Seeder
                 'created_at' => '2023-08-04 10:13:51',
                 'updated_at' => '2023-08-04 10:13:51',
             ),
-            59 => 
+            54 => 
             array (
                 'id' => 60,
                 'key' => 'delete_estudantes',
@@ -499,7 +459,7 @@ class PermissionsTableSeeder extends Seeder
                 'created_at' => '2023-08-04 10:13:51',
                 'updated_at' => '2023-08-04 10:13:51',
             ),
-            60 => 
+            55 => 
             array (
                 'id' => 61,
                 'key' => 'browse_motoristas',
@@ -507,7 +467,7 @@ class PermissionsTableSeeder extends Seeder
                 'created_at' => '2023-08-04 10:14:57',
                 'updated_at' => '2023-08-04 10:14:57',
             ),
-            61 => 
+            56 => 
             array (
                 'id' => 62,
                 'key' => 'read_motoristas',
@@ -515,7 +475,7 @@ class PermissionsTableSeeder extends Seeder
                 'created_at' => '2023-08-04 10:14:57',
                 'updated_at' => '2023-08-04 10:14:57',
             ),
-            62 => 
+            57 => 
             array (
                 'id' => 63,
                 'key' => 'edit_motoristas',
@@ -523,7 +483,7 @@ class PermissionsTableSeeder extends Seeder
                 'created_at' => '2023-08-04 10:14:57',
                 'updated_at' => '2023-08-04 10:14:57',
             ),
-            63 => 
+            58 => 
             array (
                 'id' => 64,
                 'key' => 'add_motoristas',
@@ -531,7 +491,7 @@ class PermissionsTableSeeder extends Seeder
                 'created_at' => '2023-08-04 10:14:57',
                 'updated_at' => '2023-08-04 10:14:57',
             ),
-            64 => 
+            59 => 
             array (
                 'id' => 65,
                 'key' => 'delete_motoristas',
@@ -539,7 +499,7 @@ class PermissionsTableSeeder extends Seeder
                 'created_at' => '2023-08-04 10:14:57',
                 'updated_at' => '2023-08-04 10:14:57',
             ),
-            65 => 
+            60 => 
             array (
                 'id' => 66,
                 'key' => 'browse_solicitacaos',
@@ -547,7 +507,7 @@ class PermissionsTableSeeder extends Seeder
                 'created_at' => '2023-08-04 10:15:55',
                 'updated_at' => '2023-08-04 10:15:55',
             ),
-            66 => 
+            61 => 
             array (
                 'id' => 67,
                 'key' => 'read_solicitacaos',
@@ -555,7 +515,7 @@ class PermissionsTableSeeder extends Seeder
                 'created_at' => '2023-08-04 10:15:55',
                 'updated_at' => '2023-08-04 10:15:55',
             ),
-            67 => 
+            62 => 
             array (
                 'id' => 68,
                 'key' => 'edit_solicitacaos',
@@ -563,7 +523,7 @@ class PermissionsTableSeeder extends Seeder
                 'created_at' => '2023-08-04 10:15:55',
                 'updated_at' => '2023-08-04 10:15:55',
             ),
-            68 => 
+            63 => 
             array (
                 'id' => 69,
                 'key' => 'add_solicitacaos',
@@ -571,7 +531,7 @@ class PermissionsTableSeeder extends Seeder
                 'created_at' => '2023-08-04 10:15:55',
                 'updated_at' => '2023-08-04 10:15:55',
             ),
-            69 => 
+            64 => 
             array (
                 'id' => 70,
                 'key' => 'delete_solicitacaos',
@@ -579,7 +539,7 @@ class PermissionsTableSeeder extends Seeder
                 'created_at' => '2023-08-04 10:15:55',
                 'updated_at' => '2023-08-04 10:15:55',
             ),
-            70 => 
+            65 => 
             array (
                 'id' => 71,
                 'key' => 'browse_veiculo_motoristas',
@@ -587,7 +547,7 @@ class PermissionsTableSeeder extends Seeder
                 'created_at' => '2023-08-04 10:17:55',
                 'updated_at' => '2023-08-04 10:17:55',
             ),
-            71 => 
+            66 => 
             array (
                 'id' => 72,
                 'key' => 'read_veiculo_motoristas',
@@ -595,7 +555,7 @@ class PermissionsTableSeeder extends Seeder
                 'created_at' => '2023-08-04 10:17:55',
                 'updated_at' => '2023-08-04 10:17:55',
             ),
-            72 => 
+            67 => 
             array (
                 'id' => 73,
                 'key' => 'edit_veiculo_motoristas',
@@ -603,7 +563,7 @@ class PermissionsTableSeeder extends Seeder
                 'created_at' => '2023-08-04 10:17:55',
                 'updated_at' => '2023-08-04 10:17:55',
             ),
-            73 => 
+            68 => 
             array (
                 'id' => 74,
                 'key' => 'add_veiculo_motoristas',
@@ -611,7 +571,7 @@ class PermissionsTableSeeder extends Seeder
                 'created_at' => '2023-08-04 10:17:55',
                 'updated_at' => '2023-08-04 10:17:55',
             ),
-            74 => 
+            69 => 
             array (
                 'id' => 75,
                 'key' => 'delete_veiculo_motoristas',
@@ -619,7 +579,7 @@ class PermissionsTableSeeder extends Seeder
                 'created_at' => '2023-08-04 10:17:55',
                 'updated_at' => '2023-08-04 10:17:55',
             ),
-            75 => 
+            70 => 
             array (
                 'id' => 76,
                 'key' => 'browse_veiculos',
@@ -627,7 +587,7 @@ class PermissionsTableSeeder extends Seeder
                 'created_at' => '2023-08-04 10:20:18',
                 'updated_at' => '2023-08-04 10:20:18',
             ),
-            76 => 
+            71 => 
             array (
                 'id' => 77,
                 'key' => 'read_veiculos',
@@ -635,7 +595,7 @@ class PermissionsTableSeeder extends Seeder
                 'created_at' => '2023-08-04 10:20:18',
                 'updated_at' => '2023-08-04 10:20:18',
             ),
-            77 => 
+            72 => 
             array (
                 'id' => 78,
                 'key' => 'edit_veiculos',
@@ -643,7 +603,7 @@ class PermissionsTableSeeder extends Seeder
                 'created_at' => '2023-08-04 10:20:18',
                 'updated_at' => '2023-08-04 10:20:18',
             ),
-            78 => 
+            73 => 
             array (
                 'id' => 79,
                 'key' => 'add_veiculos',
@@ -651,7 +611,7 @@ class PermissionsTableSeeder extends Seeder
                 'created_at' => '2023-08-04 10:20:18',
                 'updated_at' => '2023-08-04 10:20:18',
             ),
-            79 => 
+            74 => 
             array (
                 'id' => 80,
                 'key' => 'delete_veiculos',
@@ -659,7 +619,7 @@ class PermissionsTableSeeder extends Seeder
                 'created_at' => '2023-08-04 10:20:18',
                 'updated_at' => '2023-08-04 10:20:18',
             ),
-            80 => 
+            75 => 
             array (
                 'id' => 81,
                 'key' => 'browse_viagems',
@@ -667,7 +627,7 @@ class PermissionsTableSeeder extends Seeder
                 'created_at' => '2023-08-04 10:22:37',
                 'updated_at' => '2023-08-04 10:22:37',
             ),
-            81 => 
+            76 => 
             array (
                 'id' => 82,
                 'key' => 'read_viagems',
@@ -675,7 +635,7 @@ class PermissionsTableSeeder extends Seeder
                 'created_at' => '2023-08-04 10:22:37',
                 'updated_at' => '2023-08-04 10:22:37',
             ),
-            82 => 
+            77 => 
             array (
                 'id' => 83,
                 'key' => 'edit_viagems',
@@ -683,7 +643,7 @@ class PermissionsTableSeeder extends Seeder
                 'created_at' => '2023-08-04 10:22:37',
                 'updated_at' => '2023-08-04 10:22:37',
             ),
-            83 => 
+            78 => 
             array (
                 'id' => 84,
                 'key' => 'add_viagems',
@@ -691,7 +651,7 @@ class PermissionsTableSeeder extends Seeder
                 'created_at' => '2023-08-04 10:22:37',
                 'updated_at' => '2023-08-04 10:22:37',
             ),
-            84 => 
+            79 => 
             array (
                 'id' => 85,
                 'key' => 'delete_viagems',
@@ -699,7 +659,7 @@ class PermissionsTableSeeder extends Seeder
                 'created_at' => '2023-08-04 10:22:37',
                 'updated_at' => '2023-08-04 10:22:37',
             ),
-            85 => 
+            80 => 
             array (
                 'id' => 86,
                 'key' => 'browse_multas',
@@ -707,7 +667,7 @@ class PermissionsTableSeeder extends Seeder
                 'created_at' => '2023-08-04 10:35:18',
                 'updated_at' => '2023-08-04 10:35:18',
             ),
-            86 => 
+            81 => 
             array (
                 'id' => 87,
                 'key' => 'read_multas',
@@ -715,7 +675,7 @@ class PermissionsTableSeeder extends Seeder
                 'created_at' => '2023-08-04 10:35:18',
                 'updated_at' => '2023-08-04 10:35:18',
             ),
-            87 => 
+            82 => 
             array (
                 'id' => 88,
                 'key' => 'edit_multas',
@@ -723,7 +683,7 @@ class PermissionsTableSeeder extends Seeder
                 'created_at' => '2023-08-04 10:35:18',
                 'updated_at' => '2023-08-04 10:35:18',
             ),
-            88 => 
+            83 => 
             array (
                 'id' => 89,
                 'key' => 'add_multas',
@@ -731,13 +691,53 @@ class PermissionsTableSeeder extends Seeder
                 'created_at' => '2023-08-04 10:35:18',
                 'updated_at' => '2023-08-04 10:35:18',
             ),
-            89 => 
+            84 => 
             array (
                 'id' => 90,
                 'key' => 'delete_multas',
                 'table_name' => 'multas',
                 'created_at' => '2023-08-04 10:35:18',
                 'updated_at' => '2023-08-04 10:35:18',
+            ),
+            85 => 
+            array (
+                'id' => 91,
+                'key' => 'browse_estudante_viagem',
+                'table_name' => 'estudante_viagem',
+                'created_at' => '2023-08-10 14:31:10',
+                'updated_at' => '2023-08-10 14:31:10',
+            ),
+            86 => 
+            array (
+                'id' => 92,
+                'key' => 'read_estudante_viagem',
+                'table_name' => 'estudante_viagem',
+                'created_at' => '2023-08-10 14:31:10',
+                'updated_at' => '2023-08-10 14:31:10',
+            ),
+            87 => 
+            array (
+                'id' => 93,
+                'key' => 'edit_estudante_viagem',
+                'table_name' => 'estudante_viagem',
+                'created_at' => '2023-08-10 14:31:10',
+                'updated_at' => '2023-08-10 14:31:10',
+            ),
+            88 => 
+            array (
+                'id' => 94,
+                'key' => 'add_estudante_viagem',
+                'table_name' => 'estudante_viagem',
+                'created_at' => '2023-08-10 14:31:10',
+                'updated_at' => '2023-08-10 14:31:10',
+            ),
+            89 => 
+            array (
+                'id' => 95,
+                'key' => 'delete_estudante_viagem',
+                'table_name' => 'estudante_viagem',
+                'created_at' => '2023-08-10 14:31:10',
+                'updated_at' => '2023-08-10 14:31:10',
             ),
         ));
         

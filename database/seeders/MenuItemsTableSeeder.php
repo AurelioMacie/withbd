@@ -213,22 +213,6 @@ class MenuItemsTableSeeder extends Seeder
             ),
             12 => 
             array (
-                'id' => 16,
-                'menu_id' => 1,
-                'title' => 'Estudante Viagem',
-                'url' => '',
-                'target' => '_self',
-                'icon_class' => NULL,
-                'color' => '#000000',
-                'parent_id' => 26,
-                'order' => 4,
-                'created_at' => '2023-08-04 10:13:10',
-                'updated_at' => '2023-08-06 17:54:34',
-                'route' => 'voyager.estudante-viagems.index',
-                'parameters' => 'null',
-            ),
-            13 => 
-            array (
                 'id' => 17,
                 'menu_id' => 1,
                 'title' => 'Estudantes',
@@ -243,7 +227,7 @@ class MenuItemsTableSeeder extends Seeder
                 'route' => 'voyager.estudantes.index',
                 'parameters' => NULL,
             ),
-            14 => 
+            13 => 
             array (
                 'id' => 18,
                 'menu_id' => 1,
@@ -259,7 +243,7 @@ class MenuItemsTableSeeder extends Seeder
                 'route' => 'voyager.motoristas.index',
                 'parameters' => NULL,
             ),
-            15 => 
+            14 => 
             array (
                 'id' => 19,
                 'menu_id' => 1,
@@ -275,7 +259,7 @@ class MenuItemsTableSeeder extends Seeder
                 'route' => 'voyager.solicitacaos.index',
                 'parameters' => 'null',
             ),
-            16 => 
+            15 => 
             array (
                 'id' => 20,
                 'menu_id' => 1,
@@ -291,7 +275,7 @@ class MenuItemsTableSeeder extends Seeder
                 'route' => 'voyager.veiculo-motoristas.index',
                 'parameters' => NULL,
             ),
-            17 => 
+            16 => 
             array (
                 'id' => 21,
                 'menu_id' => 1,
@@ -307,7 +291,7 @@ class MenuItemsTableSeeder extends Seeder
                 'route' => 'voyager.veiculos.index',
                 'parameters' => 'null',
             ),
-            18 => 
+            17 => 
             array (
                 'id' => 22,
                 'menu_id' => 1,
@@ -323,7 +307,7 @@ class MenuItemsTableSeeder extends Seeder
                 'route' => 'voyager.viagems.index',
                 'parameters' => 'null',
             ),
-            19 => 
+            18 => 
             array (
                 'id' => 23,
                 'menu_id' => 1,
@@ -339,7 +323,7 @@ class MenuItemsTableSeeder extends Seeder
                 'route' => 'voyager.multas.index',
                 'parameters' => NULL,
             ),
-            20 => 
+            19 => 
             array (
                 'id' => 24,
                 'menu_id' => 1,
@@ -355,7 +339,7 @@ class MenuItemsTableSeeder extends Seeder
                 'route' => NULL,
                 'parameters' => '',
             ),
-            21 => 
+            20 => 
             array (
                 'id' => 25,
                 'menu_id' => 1,
@@ -371,7 +355,7 @@ class MenuItemsTableSeeder extends Seeder
                 'route' => NULL,
                 'parameters' => '',
             ),
-            22 => 
+            21 => 
             array (
                 'id' => 26,
                 'menu_id' => 1,
@@ -384,6 +368,22 @@ class MenuItemsTableSeeder extends Seeder
                 'order' => 6,
                 'created_at' => '2023-08-06 17:50:12',
                 'updated_at' => '2023-08-06 18:15:12',
+                'route' => NULL,
+                'parameters' => '',
+            ),
+            22 => 
+            array (
+                'id' => 27,
+                'menu_id' => 1,
+                'title' => 'Estudante Viagem',
+                'url' => 'gestao/estudante-viagem',
+                'target' => '_self',
+                'icon_class' => NULL,
+                'color' => '#000000',
+                'parent_id' => NULL,
+                'order' => 9,
+                'created_at' => '2023-08-10 14:47:18',
+                'updated_at' => '2023-08-10 14:47:41',
                 'route' => NULL,
                 'parameters' => '',
             ),

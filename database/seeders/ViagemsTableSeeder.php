@@ -26,16 +26,16 @@ class ViagemsTableSeeder extends Seeder
                 'tipo' => 'Ida',
                 'veiculo_id' => 2,
                 'created_at' => '2023-08-06 19:30:08',
-                'updated_at' => '2023-08-06 19:30:08',
+                'updated_at' => '2023-08-10 12:59:29',
             ),
             1 => 
             array (
                 'id' => 2,
-                'data' => '2023-08-06 00:00:00',
+                'data' => '2023-08-10 00:00:00',
                 'tipo' => 'Volta',
                 'veiculo_id' => 2,
                 'created_at' => '2023-08-06 19:31:30',
-                'updated_at' => '2023-08-06 19:31:30',
+                'updated_at' => '2023-08-10 12:56:50',
             ),
         ));
         

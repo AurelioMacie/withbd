@@ -165,24 +165,6 @@ class DataTypesTableSeeder extends Seeder
             ),
             8 => 
             array (
-                'id' => 9,
-                'name' => 'estudante_viagems',
-                'slug' => 'estudante-viagems',
-                'display_name_singular' => 'Estudante Viagem',
-                'display_name_plural' => 'Estudante Viagems',
-                'icon' => NULL,
-                'model_name' => 'App\\Models\\EstudanteViagem',
-                'policy_name' => NULL,
-                'controller' => NULL,
-                'description' => NULL,
-                'generate_permissions' => 1,
-                'server_side' => 0,
-                'details' => '{"order_column":null,"order_display_column":null,"order_direction":"asc","default_search_key":null,"scope":null}',
-                'created_at' => '2023-08-04 10:13:10',
-                'updated_at' => '2023-08-06 19:33:41',
-            ),
-            9 => 
-            array (
                 'id' => 10,
                 'name' => 'estudantes',
                 'slug' => 'estudantes',
@@ -197,9 +179,9 @@ class DataTypesTableSeeder extends Seeder
                 'server_side' => 0,
                 'details' => '{"order_column":null,"order_display_column":null,"order_direction":"asc","default_search_key":null,"scope":null}',
                 'created_at' => '2023-08-04 10:13:50',
-                'updated_at' => '2023-08-08 09:51:10',
+                'updated_at' => '2023-08-10 14:25:01',
             ),
-            10 => 
+            9 => 
             array (
                 'id' => 11,
                 'name' => 'motoristas',
@@ -217,7 +199,7 @@ class DataTypesTableSeeder extends Seeder
                 'created_at' => '2023-08-04 10:14:56',
                 'updated_at' => '2023-08-04 10:40:55',
             ),
-            11 => 
+            10 => 
             array (
                 'id' => 12,
                 'name' => 'solicitacaos',
@@ -235,7 +217,7 @@ class DataTypesTableSeeder extends Seeder
                 'created_at' => '2023-08-04 10:15:55',
                 'updated_at' => '2023-08-04 10:37:09',
             ),
-            12 => 
+            11 => 
             array (
                 'id' => 13,
                 'name' => 'veiculo_motoristas',
@@ -253,7 +235,7 @@ class DataTypesTableSeeder extends Seeder
                 'created_at' => '2023-08-04 10:17:55',
                 'updated_at' => '2023-08-04 10:39:05',
             ),
-            13 => 
+            12 => 
             array (
                 'id' => 14,
                 'name' => 'veiculos',
@@ -271,7 +253,7 @@ class DataTypesTableSeeder extends Seeder
                 'created_at' => '2023-08-04 10:20:18',
                 'updated_at' => '2023-08-06 18:43:08',
             ),
-            14 => 
+            13 => 
             array (
                 'id' => 15,
                 'name' => 'viagems',
@@ -287,9 +269,9 @@ class DataTypesTableSeeder extends Seeder
                 'server_side' => 0,
                 'details' => '{"order_column":null,"order_display_column":null,"order_direction":"asc","default_search_key":null,"scope":null}',
                 'created_at' => '2023-08-04 10:22:37',
-                'updated_at' => '2023-08-08 10:24:50',
+                'updated_at' => '2023-08-10 14:25:35',
             ),
-            15 => 
+            14 => 
             array (
                 'id' => 16,
                 'name' => 'multas',
@@ -306,6 +288,24 @@ class DataTypesTableSeeder extends Seeder
                 'details' => '{"order_column":null,"order_display_column":null,"order_direction":"asc","default_search_key":null,"scope":null}',
                 'created_at' => '2023-08-04 10:35:17',
                 'updated_at' => '2023-08-06 19:22:13',
+            ),
+            15 => 
+            array (
+                'id' => 17,
+                'name' => 'estudante_viagem',
+                'slug' => 'estudante-viagem',
+                'display_name_singular' => 'Estudante Viagem',
+                'display_name_plural' => 'Estudante Viagem',
+                'icon' => NULL,
+                'model_name' => 'App\\Models\\EstudanteViagem',
+                'policy_name' => NULL,
+                'controller' => NULL,
+                'description' => NULL,
+                'generate_permissions' => 1,
+                'server_side' => 0,
+                'details' => '{"order_column":null,"order_display_column":null,"order_direction":"asc","default_search_key":null,"scope":null}',
+                'created_at' => '2023-08-10 14:31:09',
+                'updated_at' => '2023-08-10 15:08:41',
             ),
         ));
         

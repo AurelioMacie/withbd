@@ -28,6 +28,42 @@ class VeiculoMotoristasTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => '2023-08-06 19:26:46',
             ),
+            1 => 
+            array (
+                'id' => 4,
+                'estado' => NULL,
+                'veiculo_id' => 4,
+                'motorista_id' => 3,
+                'created_at' => NULL,
+                'updated_at' => NULL,
+            ),
+            2 => 
+            array (
+                'id' => 5,
+                'estado' => NULL,
+                'veiculo_id' => 3,
+                'motorista_id' => 2,
+                'created_at' => NULL,
+                'updated_at' => NULL,
+            ),
+            3 => 
+            array (
+                'id' => 7,
+                'estado' => NULL,
+                'veiculo_id' => 5,
+                'motorista_id' => 4,
+                'created_at' => NULL,
+                'updated_at' => NULL,
+            ),
+            4 => 
+            array (
+                'id' => 8,
+                'estado' => NULL,
+                'veiculo_id' => 8,
+                'motorista_id' => 5,
+                'created_at' => NULL,
+                'updated_at' => NULL,
+            ),
         ));
         
         

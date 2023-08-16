@@ -28,6 +28,7 @@ class EstudanteViagemsTableSeeder extends Seeder
                 'viagem_id' => 1,
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'transferencia_viagem_id' => NULL,
             ),
             1 => 
             array (
@@ -38,6 +39,7 @@ class EstudanteViagemsTableSeeder extends Seeder
                 'viagem_id' => 2,
                 'created_at' => NULL,
                 'updated_at' => NULL,
+                'transferencia_viagem_id' => NULL,
             ),
         ));
         
