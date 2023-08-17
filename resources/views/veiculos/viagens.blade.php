@@ -1,6 +1,6 @@
 @extends('voyager::master')
 
-@section('page_title', 'Marcas aprovadas')
+@section('page_title', 'Viagens')
 
 
 @section('page_header')
@@ -34,8 +34,6 @@
                                 <!-- <td>{{ $viagem->tipo }}</td> -->
                                 <td class="d-flex">
                                     <a href="/gestao/viagem/{{$viagem->id}}/estudantes/adicionar" class="btn btn-primary">adiciona</a>
-                                </td>
-                                <td class="d-flex">
                                     <a href="/gestao/viagem/{{$viagem->id}}/estudantes/presenca" class="btn btn-primary">presenças</a>
                                 </td>
                             </tr>

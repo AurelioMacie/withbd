@@ -6,12 +6,11 @@
 @section('page_header')
     <div class="container-fluid">
         <h1 class="page-title">
-            <i class="voyager-thumb-tack"></i> Adicionar
+            <i class="voyager-thumb-tack"></i> Adicionando estudante à viagem
         </h1>
+        <a href="#" class="btn btn-success">adicionar</a>
     </div>
 @stop
-
-
 
 @section('content')
     <div class="page-content browse container-fluid">
@@ -29,7 +28,6 @@
                         </tr>
                         @foreach ($estudantes as $estudante)
                             <tr>
-                                
                                 <td>{{ $estudante->nome }}</td>
                                 <td>{{ $estudante->partida }}</td>
                                 <td>{{ $estudante->destino }}</td>
@@ -42,33 +40,21 @@
             </div>
         </div>
     </div>
+@endsection
 
-    @push('scripts')
-
+@push('scripts')
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const selectAllCheckbox = document.getElementById('select-all');
-        const checkboxes = document.querySelectorAll('input[name="selected_items[]"]');
-
-        selectAllCheckbox.addEventListener('change', function () {
-            checkboxes.forEach(checkbox => {
-                checkbox.checked = selectAllCheckbox.checked;
+        $(document).ready(function () {
+            $('#select-all').change(function () {
+                $('.checkbox').prop('checked', this.checked);
             });
-        });
 
-        checkboxes.forEach(checkbox => {
-            checkbox.addEventListener('change', function () {
+            $('.checkbox').change(function () {
                 if (!this.checked) {
-                    selectAllCheckbox.checked = false;
-                } else {
-                    const allChecked = Array.from(checkboxes).every(checkbox => checkbox.checked);
-                    selectAllCheckbox.checked = allChecked;
+                    $('#select-all').prop('checked', false);
                 }
             });
         });
-    });
     </script>
-
 @endpush
-
-@endsection

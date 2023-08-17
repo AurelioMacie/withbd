@@ -1,6 +1,6 @@
 @extends('voyager::master')
 
-@section('page_title', 'Marcas aprovadas')
+@section('page_title', 'Presenças')
 
 
 @section('page_header')

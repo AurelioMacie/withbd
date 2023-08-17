@@ -17,6 +17,6 @@ class ViagemController extends Controller
     public function presenca($id){
         $viagem = Viagem::where('id', $id)->with('estudantes')->first();
         return $viagem;
-        return view('viagem.presenca');
+        // return view('viagem.presenca');
     }
 }

@@ -15,7 +15,7 @@ class CreateViagemsTable extends Migration
     {
         Schema::create('viagems', function (Blueprint $table) {
             $table->id();
-            $table->string('data')->nullable();
+            $table->timestamp('data')->nullable();
             $table->string('tipo')->nullable();
             $table->foreignId('veiculo_id')->references('id')->on('veiculos')->onDelete('cascade')->nullable();
             $table->timestamps();

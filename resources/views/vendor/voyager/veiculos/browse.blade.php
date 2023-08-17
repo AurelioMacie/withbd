@@ -258,7 +258,7 @@
                                                     @include('voyager::bread.partials.actions', ['action' => $action])
                                                 @endif
                                             @endforeach
-                                            <a href="/gestao/veiculo/viagens/{{$data->id}}" class="btn btn-primary">viagens</a>
+                                            <a href="/gestao/veiculo/viagens/{{$data->id}}" class="btn btn-primary me-2">viagens</a>
                                         </td>
                                     </tr>
                                     @endforeach
