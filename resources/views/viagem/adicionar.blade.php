@@ -8,38 +8,45 @@
         <h1 class="page-title">
             <i class="voyager-thumb-tack"></i> Adicionando estudante à viagem
         </h1>
-        <a href="#" class="btn btn-success">adicionar</a>
     </div>
 @stop
 
 @section('content')
+<form action="/gestao/viagem/adicionarAlunos" method="POST">
+@csrf
     <div class="page-content browse container-fluid">
         @include('voyager::alerts')
         <div class="row">
             <div class="col-md-12">
                 <div class="panel panel-bordered">
                     <div class="panel-body">
-                    <table class="table">
-                        <tr>
-                            <th>Nome do estudante</th>
-                            <th>Paragem</th>
-                            <th>Destino</th>
-                            <th><input type="checkbox" id="select-all"></th>
-                        </tr>
-                        @foreach ($estudantes as $estudante)
-                            <tr>
-                                <td>{{ $estudante->nome }}</td>
-                                <td>{{ $estudante->partida }}</td>
-                                <td>{{ $estudante->destino }}</td>
-                                <td><input type="checkbox" name="selected_items[]" value="{{ $estudante->id }}"></td>
-                            </tr>
-                        @endforeach
-                    </table>
+                        
+                            <input type="hidden" value="{{$viagem->id}}" name="viagem_id">
+
+                            <table class="table">
+                                <tr>
+                                    <th>Nome do estudante</th>
+                                    <th>Paragem</th>
+                                    <th>Destino</th>
+                                    <th><input type="checkbox" id="select-all"></th>
+                                </tr>
+                                @foreach ($estudantes as $estudante)
+                                    <tr>
+                                        <td>{{ $estudante->nome }}</td>
+                                        <td>{{ $estudante->partida }}</td>
+                                        <td>{{ $estudante->destino }}</td>
+                                        <td><input type="checkbox" name="selected_items[]" value="{{ $estudante->id }}"></td>
+                                    </tr>
+                                @endforeach
+                            </table>
+                        
                     </div>
                 </div>
+                <button type="submit" class="btn btn-success">adicionar</button>
             </div>
         </div>
     </div>
+</form>
 @endsection
 
 @push('scripts')

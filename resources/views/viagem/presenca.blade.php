@@ -27,11 +27,12 @@
                             <th>Destino</th>
                             <th>Acções</th>
                         </tr>
-                        @foreach ($estudantes as $estudante)
+                        @foreach ($viagem->estudantes as $estudante)
                             <tr>
                                 <td>{{ $estudante->nome }}</td>
                                 <td>{{ $estudante->partida }}</td>
                                 <td>{{ $estudante->destino }}</td>
+                                <td><a href="" class="btn btn-primary" style="text-decoration: none;">hora de subida</a></td>
                             </tr>
                         @endforeach
                     </table>
