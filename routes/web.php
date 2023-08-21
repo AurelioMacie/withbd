@@ -34,4 +34,6 @@ Route::group(['prefix' => 'gestao'], function () {
     Route::get('/veiculo/viagens/{id}', [VeiculoController::class, 'veiculoViagem'])->middleware(["auth"])->name('veiculo.viagem');
     Route::get('/estudante/pendentes', [EstudanteController::class, 'pendentes'])->middleware(["auth"])->name('estudante.pendente');
     Route::post('/viagem/adicionarAlunos', [ViagemController::class, 'adicionarAlunos'])->middleware(["auth"])->name('adicionar.alunos');
+    Route::post('/viagem/horaSubida', [ViagemController::class, 'horaSubida'])->middleware(["auth"])->name('hora.subida');
+    Route::post('/viagem/horaDescida', [ViagemController::class, 'horaDescida'])->middleware(["auth"])->name('hora.descida');
 });

@@ -6,6 +6,7 @@ use App\Models\Viagem;
 use App\Models\Estudante;
 use App\Models\EstudanteViagem;
 use Illuminate\Http\Request;
+use Illuminate\Support\Carbon;
 
 class ViagemController extends Controller
 {
@@ -17,6 +18,7 @@ class ViagemController extends Controller
 
     public function presenca($id){
         $viagem = Viagem::where('id', $id)->with('estudantes')->first();
+        // return $viagem;
         return view('viagem.presenca', compact('viagem'));
     }
 
@@ -24,13 +26,43 @@ class ViagemController extends Controller
         // return $request->selected_items;
         $array = [];
         for($i=0; $i<count($request->selected_items);$i++){
-            $estudanteViagem = new EstudanteViagem();
-            $estudanteViagem->estudante_id = $request->selected_items[$i];
-            $estudanteViagem->viagem_id = $request->viagem_id;
-            $array[]=$request->selected_items[$i];
-            $estudanteViagem->save();
+            $verificarEstudanteViagem = EstudanteViagem::where('estudante_id', $request->selected_items[$i])
+            ->where('viagem_id', $request->viagem_id)->first();
+            if(!$verificarEstudanteViagem){
+                $estudanteViagem = new EstudanteViagem();
+                $estudanteViagem->estudante_id = $request->selected_items[$i];
+                $estudanteViagem->viagem_id = $request->viagem_id;
+                $array[]=$request->selected_items[$i];
+                $estudanteViagem->save();
+            }
         }
 
-        return $array;
+        return redirect()->route('viagem.presenca', $request->viagem_id);
+    }
+
+    public function horaSubida(Request $request){
+        $estudante = EstudanteViagem::where('estudante_id', $request->estudante_id)->
+        where('viagem_id', $request->viagem_id)->first();
+        if($estudante){
+            $currentDateTime = Carbon::now();
+            $estudante->horaSubida = $currentDateTime->format('H:i:s');
+            $estudante->update();
+            return back()->with(['code' => 200, 'message'=> 'hora de subida adicionada']);
+        }else{
+            return abort(404);
+        }
+    }
+
+    public function horaDescida(Request $request){
+        $estudante = EstudanteViagem::where('estudante_id', $request->estudante_id)->
+        where('viagem_id', $request->viagem_id)->first();
+        if($estudante){
+            $currentDateTime = Carbon::now();
+            $estudante->horaDescida = $currentDateTime->format('H:i:s');
+            $estudante->update();
+            return back()->with(['code' => 200, 'message'=> 'hora de descida adicionada']);
+        }else{
+            return abort(404);
+        }
     }
 }

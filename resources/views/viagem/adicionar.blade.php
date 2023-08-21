@@ -42,7 +42,7 @@
                         
                     </div>
                 </div>
-                <button type="submit" class="btn btn-success">adicionar</button>
+                <button type="submit" class="btn btn-success" style="text-decoration: none;">adicionar</button>
             </div>
         </div>
     </div>

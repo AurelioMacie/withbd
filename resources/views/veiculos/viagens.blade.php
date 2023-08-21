@@ -33,8 +33,8 @@
                                 <td>{{ $viagem->data }}</td>
                                 <!-- <td>{{ $viagem->tipo }}</td> -->
                                 <td class="d-flex">
-                                    <a href="/gestao/viagem/{{$viagem->id}}/estudantes/adicionar" class="btn btn-primary">adiciona</a>
-                                    <a href="/gestao/viagem/{{$viagem->id}}/estudantes/presenca" class="btn btn-primary">presenças</a>
+                                    <a href="/gestao/viagem/{{$viagem->id}}/estudantes/adicionar" class="btn btn-primary" style="text-decoration: none;">adiciona</a>
+                                    <a href="/gestao/viagem/{{$viagem->id}}/estudantes/presenca" class="btn btn-primary" style="text-decoration: none;">presenças</a>
                                 </td>
                             </tr>
                         @endforeach

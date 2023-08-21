@@ -32,7 +32,25 @@
                                 <td>{{ $estudante->nome }}</td>
                                 <td>{{ $estudante->partida }}</td>
                                 <td>{{ $estudante->destino }}</td>
-                                <td><a href="" class="btn btn-primary" style="text-decoration: none;">hora de subida</a></td>
+                                <td>
+                                    @if($estudante->pivot->horaSubida == null)
+                                        <form action="/gestao/viagem/horaSubida" method="POST">
+                                        @csrf
+                                            <input type="hidden" name="viagem_id" value="{{ $viagem->id }}">
+                                            <input type="hidden" name="estudante_id" value="{{ $estudante->id }}">
+                                            <button type="submit" class="btn btn-primary" style="text-decoration: none;">Hora de Subida</button>
+                                        </form>
+                                    @elseif($estudante->pivot->horaDescida == null)
+                                        <form action="/gestao/viagem/horaDescida" method="POST">
+                                        @csrf
+                                            <input type="hidden" name="viagem_id" value="{{ $viagem->id }}">
+                                            <input type="hidden" name="estudante_id" value="{{ $estudante->id }}">
+                                            <button type="submit" class="btn btn-success" style="text-decoration: none;">Hora de Descida</button>
+                                        </form>
+                                        @else
+                                            Terminado
+                                        @endif
+                                </td>
                             </tr>
                         @endforeach
                     </table>

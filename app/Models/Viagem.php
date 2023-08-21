@@ -10,6 +10,6 @@ class Viagem extends Model
     use HasFactory;
 
     public function estudantes(){
-        return $this->belongsToMany(Estudante::class);
+        return $this->belongsToMany(Estudante::class)->withPivot('horaSubida','horaDescida');
     }
 }
