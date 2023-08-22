@@ -22,10 +22,10 @@ class SolicitacaosTableSeeder extends Seeder
             0 => 
             array (
                 'id' => 1,
-                'descricao' => 'Aquilo',
+                'descricao' => 'Manutenção',
                 'motorista_id' => 1,
                 'created_at' => '2023-08-07 18:35:30',
-                'updated_at' => '2023-08-07 18:35:30',
+                'updated_at' => '2023-08-16 17:57:56',
             ),
         ));
         

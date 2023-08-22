@@ -79,6 +79,18 @@ class MotoristasTableSeeder extends Seeder
                 'created_at' => '2023-08-16 11:48:40',
                 'updated_at' => '2023-08-16 11:48:40',
             ),
+            5 => 
+            array (
+                'id' => 6,
+                'nome' => 'Khalifa',
+                'contacto' => '834354654',
+                'documento' => '136809865',
+                'morada' => 'Bairro do Jardim',
+                'nascimento' => '1986-03-04',
+                'user_id' => 12,
+                'created_at' => '2023-08-18 14:50:53',
+                'updated_at' => '2023-08-18 14:50:53',
+            ),
         ));
         
         

@@ -39,15 +39,6 @@ class EncarregadosTableSeeder extends Seeder
             ),
             2 => 
             array (
-                'id' => 4,
-                'parentesco' => 'Mãe',
-                'user_id' => 3,
-                'estudante_id' => 4,
-                'created_at' => '2023-08-16 12:07:56',
-                'updated_at' => '2023-08-16 12:08:37',
-            ),
-            3 => 
-            array (
                 'id' => 5,
                 'parentesco' => 'Irmã',
                 'user_id' => 7,
@@ -55,7 +46,7 @@ class EncarregadosTableSeeder extends Seeder
                 'created_at' => '2023-08-16 12:10:26',
                 'updated_at' => '2023-08-16 12:10:26',
             ),
-            4 => 
+            3 => 
             array (
                 'id' => 6,
                 'parentesco' => 'Irmã',
@@ -63,6 +54,24 @@ class EncarregadosTableSeeder extends Seeder
                 'estudante_id' => 3,
                 'created_at' => '2023-08-16 12:10:27',
                 'updated_at' => '2023-08-16 12:10:27',
+            ),
+            4 => 
+            array (
+                'id' => 7,
+                'parentesco' => NULL,
+                'user_id' => 4,
+                'estudante_id' => 4,
+                'created_at' => NULL,
+                'updated_at' => NULL,
+            ),
+            5 => 
+            array (
+                'id' => 8,
+                'parentesco' => NULL,
+                'user_id' => 5,
+                'estudante_id' => 5,
+                'created_at' => NULL,
+                'updated_at' => NULL,
             ),
         ));
         

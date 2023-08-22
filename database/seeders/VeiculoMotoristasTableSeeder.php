@@ -64,6 +64,24 @@ class VeiculoMotoristasTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
+            5 => 
+            array (
+                'id' => 9,
+                'estado' => NULL,
+                'veiculo_id' => 9,
+                'motorista_id' => 6,
+                'created_at' => NULL,
+                'updated_at' => NULL,
+            ),
+            6 => 
+            array (
+                'id' => 10,
+                'estado' => NULL,
+                'veiculo_id' => 7,
+                'motorista_id' => 3,
+                'created_at' => NULL,
+                'updated_at' => NULL,
+            ),
         ));
         
         

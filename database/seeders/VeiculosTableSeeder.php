@@ -103,6 +103,18 @@ class VeiculosTableSeeder extends Seeder
                 'created_at' => '2023-08-16 11:46:21',
                 'updated_at' => '2023-08-16 11:46:21',
             ),
+            7 => 
+            array (
+                'id' => 9,
+                'modelo' => 'Haudiu',
+                'placa' => 'AAA-888-NPL',
+                'combustivel' => 'Diesel',
+                'capacidade' => 10,
+                'estado' => 'Activo',
+                'rota_id' => 3,
+                'created_at' => '2023-08-18 14:50:17',
+                'updated_at' => '2023-08-18 14:50:17',
+            ),
         ));
         
         
