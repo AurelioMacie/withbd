@@ -173,6 +173,20 @@ class UsersTableSeeder extends Seeder
                 'created_at' => '2023-08-16 11:12:54',
                 'updated_at' => '2023-08-16 11:12:54',
             ),
+            11 => 
+            array (
+                'id' => 12,
+                'role_id' => 3,
+                'name' => 'Khalifa',
+                'email' => 'khalifa@gmail.com',
+                'avatar' => 'users/default.png',
+                'email_verified_at' => NULL,
+                'password' => '$2y$10$goKgUHsphiv03z4K4kqi8.M/QniJbQy2WYw18S82dpJo7a0iCcN.K',
+                'remember_token' => NULL,
+                'settings' => '{"locale":"en"}',
+                'created_at' => '2023-08-18 14:46:35',
+                'updated_at' => '2023-08-18 14:46:35',
+            ),
         ));
         
         

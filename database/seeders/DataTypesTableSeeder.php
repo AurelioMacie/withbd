@@ -141,9 +141,9 @@ class DataTypesTableSeeder extends Seeder
                 'description' => NULL,
                 'generate_permissions' => 1,
                 'server_side' => 0,
-                'details' => '{"order_column":null,"order_display_column":null,"order_direction":"asc","default_search_key":null}',
+                'details' => '{"order_column":null,"order_display_column":null,"order_direction":"asc","default_search_key":null,"scope":null}',
                 'created_at' => '2023-08-04 09:43:51',
-                'updated_at' => '2023-08-04 09:43:51',
+                'updated_at' => '2023-08-16 19:35:15',
             ),
             7 => 
             array (
@@ -251,7 +251,7 @@ class DataTypesTableSeeder extends Seeder
                 'server_side' => 0,
                 'details' => '{"order_column":null,"order_display_column":null,"order_direction":"asc","default_search_key":null,"scope":null}',
                 'created_at' => '2023-08-04 10:20:18',
-                'updated_at' => '2023-08-06 18:43:08',
+                'updated_at' => '2023-08-18 14:52:04',
             ),
             13 => 
             array (
@@ -269,7 +269,7 @@ class DataTypesTableSeeder extends Seeder
                 'server_side' => 0,
                 'details' => '{"order_column":null,"order_display_column":null,"order_direction":"asc","default_search_key":null,"scope":null}',
                 'created_at' => '2023-08-04 10:22:37',
-                'updated_at' => '2023-08-10 14:25:35',
+                'updated_at' => '2023-08-16 20:04:25',
             ),
             14 => 
             array (
@@ -305,7 +305,7 @@ class DataTypesTableSeeder extends Seeder
                 'server_side' => 0,
                 'details' => '{"order_column":null,"order_display_column":null,"order_direction":"asc","default_search_key":null,"scope":null}',
                 'created_at' => '2023-08-10 14:31:09',
-                'updated_at' => '2023-08-10 15:08:41',
+                'updated_at' => '2023-08-17 09:58:21',
             ),
         ));
         
