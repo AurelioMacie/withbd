@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateVeiculoMotoristasTable extends Migration
+class CreateMotoristaVeiculoTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateVeiculoMotoristasTable extends Migration
      */
     public function up()
     {
-        Schema::create('veiculo_motoristas', function (Blueprint $table) {
+        Schema::create('motorista_veiculo', function (Blueprint $table) {
             $table->id();
             $table->boolean('estado')->nullable();
             $table->foreignId('veiculo_id')->references('id')->on('veiculos')->onDelete('cascade')->nullable();
@@ -29,6 +29,6 @@ class CreateVeiculoMotoristasTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('veiculo_motoristas');
+        Schema::dropIfExists('motorista_veiculo');
     }
 }
