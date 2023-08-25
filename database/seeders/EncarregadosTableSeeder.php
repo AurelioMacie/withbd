@@ -73,6 +73,24 @@ class EncarregadosTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
+            6 => 
+            array (
+                'id' => 9,
+                'parentesco' => NULL,
+                'user_id' => 2,
+                'estudante_id' => 6,
+                'created_at' => NULL,
+                'updated_at' => NULL,
+            ),
+            7 => 
+            array (
+                'id' => 10,
+                'parentesco' => NULL,
+                'user_id' => 3,
+                'estudante_id' => 8,
+                'created_at' => NULL,
+                'updated_at' => NULL,
+            ),
         ));
         
         
