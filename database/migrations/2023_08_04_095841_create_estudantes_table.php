@@ -20,6 +20,7 @@ class CreateEstudantesTable extends Migration
             $table->string('destino')->nullable();
             $table->string('descricaoSolicitacao')->nullable();
             $table->string('estado')->nullable();
+            $table->foreignId('user_id')->references('id')->on('users')->onDelete('cascade')->nullable();
             $table->foreignId('rota_id')->references('id')->on('rotas')->onDelete('cascade')->nullable();
             $table->foreignId('veiculo_id')->references('id')->on('veiculos')->onDelete('cascade')->nullable();
             $table->timestamps();
