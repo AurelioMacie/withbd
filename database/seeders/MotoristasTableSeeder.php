@@ -29,7 +29,7 @@ class MotoristasTableSeeder extends Seeder
                 'nascimento' => '1997-09-17',
                 'user_id' => 2,
                 'created_at' => '2023-08-06 18:25:00',
-                'updated_at' => '2023-08-16 11:51:24',
+                'updated_at' => '2023-08-29 08:37:50',
             ),
             1 => 
             array (
@@ -65,7 +65,7 @@ class MotoristasTableSeeder extends Seeder
                 'nascimento' => '2000-02-08',
                 'user_id' => 10,
                 'created_at' => '2023-08-16 11:40:00',
-                'updated_at' => '2023-08-16 11:49:17',
+                'updated_at' => '2023-08-29 08:38:14',
             ),
             4 => 
             array (

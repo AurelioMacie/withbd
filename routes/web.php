@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\EstudanteController;
+use App\Http\Controllers\NotificacaoController;
 use App\Http\Controllers\VeiculoController;
 use App\Http\Controllers\ViagemController;
 
@@ -36,4 +37,5 @@ Route::group(['prefix' => 'gestao'], function () {
     Route::post('/viagem/adicionarAlunos', [ViagemController::class, 'adicionarAlunos'])->middleware(["auth"])->name('adicionar.alunos');
     Route::post('/viagem/horaSubida', [ViagemController::class, 'horaSubida'])->middleware(["auth"])->name('hora.subida');
     Route::post('/viagem/horaDescida', [ViagemController::class, 'horaDescida'])->middleware(["auth"])->name('hora.descida');
+    Route::delete('/eliminar/notificacao/{id}', [NotificacaoController::class, 'destroy'])->middleware(["auth"])->name('notificacao.destroy');
 });
