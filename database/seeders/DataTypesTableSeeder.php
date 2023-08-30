@@ -35,7 +35,7 @@ class DataTypesTableSeeder extends Seeder
                 'server_side' => 0,
                 'details' => '{"order_column":null,"order_display_column":null,"order_direction":"desc","default_search_key":null,"scope":null}',
                 'created_at' => '2023-08-04 09:39:02',
-                'updated_at' => '2023-08-04 10:47:34',
+                'updated_at' => '2023-08-28 09:21:10',
             ),
             1 => 
             array (
@@ -147,24 +147,6 @@ class DataTypesTableSeeder extends Seeder
             ),
             7 => 
             array (
-                'id' => 8,
-                'name' => 'encarregados',
-                'slug' => 'encarregados',
-                'display_name_singular' => 'Encarregado',
-                'display_name_plural' => 'Encarregados',
-                'icon' => NULL,
-                'model_name' => 'App\\Models\\Encarregado',
-                'policy_name' => NULL,
-                'controller' => NULL,
-                'description' => NULL,
-                'generate_permissions' => 1,
-                'server_side' => 0,
-                'details' => '{"order_column":null,"order_display_column":null,"order_direction":"asc","default_search_key":null,"scope":null}',
-                'created_at' => '2023-08-04 10:11:42',
-                'updated_at' => '2023-08-04 10:30:01',
-            ),
-            8 => 
-            array (
                 'id' => 10,
                 'name' => 'estudantes',
                 'slug' => 'estudantes',
@@ -173,15 +155,15 @@ class DataTypesTableSeeder extends Seeder
                 'icon' => NULL,
                 'model_name' => 'App\\Models\\Estudante',
                 'policy_name' => NULL,
-                'controller' => NULL,
+                'controller' => 'App\\Http\\Controllers\\Voyager\\VoyagerEstudanteController',
                 'description' => NULL,
                 'generate_permissions' => 1,
                 'server_side' => 0,
                 'details' => '{"order_column":null,"order_display_column":null,"order_direction":"asc","default_search_key":null,"scope":null}',
                 'created_at' => '2023-08-04 10:13:50',
-                'updated_at' => '2023-08-10 14:25:01',
+                'updated_at' => '2023-08-28 09:19:53',
             ),
-            9 => 
+            8 => 
             array (
                 'id' => 11,
                 'name' => 'motoristas',
@@ -197,9 +179,9 @@ class DataTypesTableSeeder extends Seeder
                 'server_side' => 0,
                 'details' => '{"order_column":null,"order_display_column":null,"order_direction":"asc","default_search_key":null,"scope":null}',
                 'created_at' => '2023-08-04 10:14:56',
-                'updated_at' => '2023-08-04 10:40:55',
+                'updated_at' => '2023-08-24 15:55:48',
             ),
-            10 => 
+            9 => 
             array (
                 'id' => 12,
                 'name' => 'solicitacaos',
@@ -217,25 +199,7 @@ class DataTypesTableSeeder extends Seeder
                 'created_at' => '2023-08-04 10:15:55',
                 'updated_at' => '2023-08-04 10:37:09',
             ),
-            11 => 
-            array (
-                'id' => 13,
-                'name' => 'veiculo_motoristas',
-                'slug' => 'veiculo-motoristas',
-                'display_name_singular' => 'Veiculo Motorista',
-                'display_name_plural' => 'Veiculo Motoristas',
-                'icon' => NULL,
-                'model_name' => 'App\\Models\\VeiculoMotorista',
-                'policy_name' => NULL,
-                'controller' => NULL,
-                'description' => NULL,
-                'generate_permissions' => 1,
-                'server_side' => 0,
-                'details' => '{"order_column":null,"order_display_column":null,"order_direction":"asc","default_search_key":null,"scope":null}',
-                'created_at' => '2023-08-04 10:17:55',
-                'updated_at' => '2023-08-04 10:39:05',
-            ),
-            12 => 
+            10 => 
             array (
                 'id' => 14,
                 'name' => 'veiculos',
@@ -251,9 +215,9 @@ class DataTypesTableSeeder extends Seeder
                 'server_side' => 0,
                 'details' => '{"order_column":null,"order_display_column":null,"order_direction":"asc","default_search_key":null,"scope":null}',
                 'created_at' => '2023-08-04 10:20:18',
-                'updated_at' => '2023-08-18 14:52:04',
+                'updated_at' => '2023-08-24 15:55:16',
             ),
-            13 => 
+            11 => 
             array (
                 'id' => 15,
                 'name' => 'viagems',
@@ -271,7 +235,7 @@ class DataTypesTableSeeder extends Seeder
                 'created_at' => '2023-08-04 10:22:37',
                 'updated_at' => '2023-08-16 20:04:25',
             ),
-            14 => 
+            12 => 
             array (
                 'id' => 16,
                 'name' => 'multas',
@@ -288,24 +252,6 @@ class DataTypesTableSeeder extends Seeder
                 'details' => '{"order_column":null,"order_display_column":null,"order_direction":"asc","default_search_key":null,"scope":null}',
                 'created_at' => '2023-08-04 10:35:17',
                 'updated_at' => '2023-08-06 19:22:13',
-            ),
-            15 => 
-            array (
-                'id' => 17,
-                'name' => 'estudante_viagem',
-                'slug' => 'estudante-viagem',
-                'display_name_singular' => 'Estudante Viagem',
-                'display_name_plural' => 'Estudante Viagem',
-                'icon' => NULL,
-                'model_name' => 'App\\Models\\EstudanteViagem',
-                'policy_name' => NULL,
-                'controller' => NULL,
-                'description' => NULL,
-                'generate_permissions' => 1,
-                'server_side' => 0,
-                'details' => '{"order_column":null,"order_display_column":null,"order_direction":"asc","default_search_key":null,"scope":null}',
-                'created_at' => '2023-08-10 14:31:09',
-                'updated_at' => '2023-08-17 09:58:21',
             ),
         ));
         

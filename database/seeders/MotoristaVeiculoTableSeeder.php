@@ -4,7 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 
-class VeiculoMotoristasTableSeeder extends Seeder
+class MotoristaVeiculoTableSeeder extends Seeder
 {
 
     /**
@@ -16,23 +16,23 @@ class VeiculoMotoristasTableSeeder extends Seeder
     {
         
 
-        \DB::table('veiculo_motoristas')->delete();
+        \DB::table('motorista_veiculo')->delete();
         
-        \DB::table('veiculo_motoristas')->insert(array (
+        \DB::table('motorista_veiculo')->insert(array (
             0 => 
             array (
-                'id' => 1,
-                'estado' => 1,
-                'veiculo_id' => 2,
-                'motorista_id' => 1,
+                'id' => 2,
+                'estado' => NULL,
+                'veiculo_id' => 8,
+                'motorista_id' => 2,
                 'created_at' => NULL,
-                'updated_at' => '2023-08-06 19:26:46',
+                'updated_at' => NULL,
             ),
             1 => 
             array (
-                'id' => 4,
+                'id' => 3,
                 'estado' => NULL,
-                'veiculo_id' => 4,
+                'veiculo_id' => 7,
                 'motorista_id' => 3,
                 'created_at' => NULL,
                 'updated_at' => NULL,
@@ -41,44 +41,35 @@ class VeiculoMotoristasTableSeeder extends Seeder
             array (
                 'id' => 5,
                 'estado' => NULL,
-                'veiculo_id' => 3,
-                'motorista_id' => 2,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            3 => 
-            array (
-                'id' => 7,
-                'estado' => NULL,
                 'veiculo_id' => 5,
                 'motorista_id' => 4,
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
+            3 => 
+            array (
+                'id' => 6,
+                'estado' => NULL,
+                'veiculo_id' => 4,
+                'motorista_id' => 5,
+                'created_at' => NULL,
+                'updated_at' => NULL,
+            ),
             4 => 
             array (
-                'id' => 8,
+                'id' => 7,
                 'estado' => NULL,
-                'veiculo_id' => 8,
-                'motorista_id' => 5,
+                'veiculo_id' => 3,
+                'motorista_id' => 6,
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
             5 => 
             array (
-                'id' => 9,
+                'id' => 8,
                 'estado' => NULL,
-                'veiculo_id' => 9,
-                'motorista_id' => 6,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            6 => 
-            array (
-                'id' => 10,
-                'estado' => NULL,
-                'veiculo_id' => 7,
-                'motorista_id' => 3,
+                'veiculo_id' => 2,
+                'motorista_id' => 1,
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),

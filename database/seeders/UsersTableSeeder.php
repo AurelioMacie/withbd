@@ -28,7 +28,7 @@ class UsersTableSeeder extends Seeder
                 'avatar' => 'users\\August2023\\QI66Xc3MSpCoD7rIHFJn.png',
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$GFCiT1lzfg268NB9tDWrGey6v/hQNfnVG.F5.NSqNg14IFV87LJO6',
-                'remember_token' => 'aNRfxR3nJAjHa6GR9ZG74yRI3JriLALZKEODlqwcgf5X8I5Mh4FQVsHm4u9z',
+                'remember_token' => 'md2UAu6yfOJzDTH7f5ikmQ6OFQdrHiN1e7sb0gxCzo5ksHNKdZyO2YJNGust',
                 'settings' => '{"locale":"en"}',
                 'created_at' => '2023-08-04 09:39:16',
                 'updated_at' => '2023-08-06 20:21:12',
@@ -56,7 +56,7 @@ class UsersTableSeeder extends Seeder
                 'avatar' => 'users\\August2023\\6I1afCyWFH1zKIXoZcdb.png',
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$SWwlPVMYpSN/rx.Fd9J5qu5qyQ6BFJNvw47mvETGNxCATNo8HA2a.',
-                'remember_token' => NULL,
+                'remember_token' => 'DSVYV0PkMYBf4par9BpWEU3BdfZH8i1cwwNebbgUZi9iZbvdfJUYSsjMHXu1',
                 'settings' => '{"locale":"en"}',
                 'created_at' => '2023-08-06 18:27:16',
                 'updated_at' => '2023-08-06 20:20:55',
@@ -186,6 +186,20 @@ class UsersTableSeeder extends Seeder
                 'settings' => '{"locale":"en"}',
                 'created_at' => '2023-08-18 14:46:35',
                 'updated_at' => '2023-08-18 14:46:35',
+            ),
+            12 => 
+            array (
+                'id' => 13,
+                'role_id' => 2,
+                'name' => 'none',
+                'email' => 'none@gmail.com',
+                'avatar' => 'users/default.png',
+                'email_verified_at' => NULL,
+                'password' => '$2y$10$2G5Wrxii6ZtLfwUP8tvsTe.1JTgyiL0ktuEm4AvHj2.O39Z2PzE2a',
+                'remember_token' => NULL,
+                'settings' => NULL,
+                'created_at' => '2023-08-28 08:02:34',
+                'updated_at' => '2023-08-28 08:02:34',
             ),
         ));
         
