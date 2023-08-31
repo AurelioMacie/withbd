@@ -75,7 +75,7 @@
                             </form>
                         @endif
 
-                        @if(auth()->user()->role->name = 'admin')
+                        @if(auth()->user()->role->name != 'motorista')
                         <div class="table-responsive">
                             <table id="dataTable" class="table table-hover">
                                 <thead>
@@ -268,7 +268,21 @@
                             </table>
                         </div>
                         @else
-                                                        
+                        <div>
+                            @php
+                                $user = App\Models\User::where('id', auth()->id())->with('veiculos')->first();
+                            @endphp
+
+                            <table class="table">
+                                <tr>
+                                    <td>Placa</td>
+                                </tr>
+                                @foreach($user->veiculos as $veiculo)
+                                    <tr>
+                                        <td>{{$user->placa}}</td>
+                                    </tr>
+                                @endforeach    
+                        </div>                       
                         @endif
 
                         @if ($isServerSide)
