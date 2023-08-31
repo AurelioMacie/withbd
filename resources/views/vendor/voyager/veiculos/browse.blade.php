@@ -74,6 +74,8 @@
                                 @endif
                             </form>
                         @endif
+
+                        @if(auth()->user()->role->name = 'admin')
                         <div class="table-responsive">
                             <table id="dataTable" class="table table-hover">
                                 <thead>
@@ -265,6 +267,10 @@
                                 </tbody>
                             </table>
                         </div>
+                        @else
+                                                        
+                        @endif
+
                         @if ($isServerSide)
                             <div class="pull-left">
                                 <div role="status" class="show-res" aria-live="polite">{{ trans_choice(

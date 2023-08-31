@@ -21,7 +21,6 @@ $motorista = App\Models\Motorista::where("user_id", auth()->id())->first();
                 <input type="hidden" name="notificacao_id" value="{{$notificacao->id}}">
                 <button type="submit" class="btn" style="color: red; background: #fff">Eliminar</button>
             </form>
-            <!-- <a href="/gestao/eliminar/notificacao{{$notificacao->id}}" >Esta bem</a> -->
         </div>
     </div>
     @endforeach
