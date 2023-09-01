@@ -12,4 +12,8 @@ class Motorista extends Model
     public function veiculos(){
         return $this->belongsToMany(Veiculo::class);
     }
+
+    public function solicitacoes(){
+        return $this->hasMany(Solicitacao::class);
+    }
 }

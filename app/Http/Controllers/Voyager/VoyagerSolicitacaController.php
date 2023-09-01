@@ -2,24 +2,34 @@
 
 namespace App\Http\Controllers\Voyager;
 
+use App\Http\Controllers\Controller;
 use App\Models\Motorista;
-use App\Models\MotoristaVeiculo;
 use Illuminate\Http\Request;
+use Exception;
+use Illuminate\Database\Eloquent\SoftDeletes;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
+use TCG\Voyager\Database\Schema\SchemaManager;
 use TCG\Voyager\Events\BreadDataAdded;
+use TCG\Voyager\Events\BreadDataDeleted;
+use TCG\Voyager\Events\BreadDataRestored;
+use TCG\Voyager\Events\BreadDataUpdated;
+use TCG\Voyager\Events\BreadImagesDeleted;
 use TCG\Voyager\Facades\Voyager;
+use TCG\Voyager\Http\Controllers\Traits\BreadRelationshipParser;
 
-class VoyagerViagemController extends \TCG\Voyager\Http\Controllers\VoyagerBaseController
+class VoyagerSolicitacaController extends \TCG\Voyager\Http\Controllers\VoyagerBaseController
 {
     public function store(Request $request)
     {
+
         $motorista = Motorista::where('user_id', auth()->id())->first();
         if($motorista){
-            $motoristaVeiculo = MotoristaVeiculo::where('motorista_id', $motorista->id)->first();
-            $request['veiculo_id'] = $motoristaVeiculo->veiculo_id;
+            $request['motorista_id'] = $motorista->id;
         }else{
             return back();
         }
-
+        
         $slug = $this->getSlug($request);
 
         $dataType = Voyager::model('DataType')->where('slug', '=', $slug)->first();
