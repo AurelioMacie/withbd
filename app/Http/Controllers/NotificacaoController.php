@@ -11,7 +11,7 @@ class NotificacaoController extends Controller
 
     public function destroy(Request $request, $id)
     {
-        $notificacao = Notificacao::where("id", $id)->first();
+        $notificacao = Notificacao::where("id", $id)->orderBy('id', 'DESC')->first();
         if($notificacao){
             $notificacao->delete();
         }else{

@@ -40,7 +40,6 @@ class VoyagerEstudanteController extends \TCG\Voyager\Http\Controllers\VoyagerBa
                 $request['veiculo_id'] = false;
             }
         }
-        // return $request;
         if($request['veiculo_id'] and $verificarEspaco){
         }else{
             return back()->with([
@@ -49,10 +48,6 @@ class VoyagerEstudanteController extends \TCG\Voyager\Http\Controllers\VoyagerBa
             ]);
         }
         
-        // return $request->veiculo_id;
-
-        
-
         $veiculo = Veiculo::where('id', $request->veiculo_id)->with('motoristas')->first();
         for($i=0; $i<count($veiculo->motoristas); $i++){
             $notificacao = new Notificacao();
