@@ -151,6 +151,72 @@ class EstudanteViagemTableSeeder extends Seeder
                 'created_at' => '2023-08-21 10:03:04',
                 'updated_at' => '2023-08-21 10:03:57',
             ),
+            12 => 
+            array (
+                'id' => 23,
+                'horaSubida' => '10:21:10',
+                'horaDescida' => '10:21:13',
+                'estudante_id' => 1,
+                'viagem_id' => 20,
+                'transferencia_viagem_id' => NULL,
+                'created_at' => '2023-09-01 10:20:57',
+                'updated_at' => '2023-09-01 10:21:13',
+            ),
+            13 => 
+            array (
+                'id' => 24,
+                'horaSubida' => NULL,
+                'horaDescida' => NULL,
+                'estudante_id' => 3,
+                'viagem_id' => 20,
+                'transferencia_viagem_id' => NULL,
+                'created_at' => '2023-09-01 10:20:57',
+                'updated_at' => '2023-09-01 10:20:57',
+            ),
+            14 => 
+            array (
+                'id' => 25,
+                'horaSubida' => NULL,
+                'horaDescida' => NULL,
+                'estudante_id' => 4,
+                'viagem_id' => 20,
+                'transferencia_viagem_id' => NULL,
+                'created_at' => '2023-09-01 10:20:57',
+                'updated_at' => '2023-09-01 10:20:57',
+            ),
+            15 => 
+            array (
+                'id' => 26,
+                'horaSubida' => NULL,
+                'horaDescida' => NULL,
+                'estudante_id' => 5,
+                'viagem_id' => 20,
+                'transferencia_viagem_id' => NULL,
+                'created_at' => '2023-09-01 10:20:57',
+                'updated_at' => '2023-09-01 10:20:57',
+            ),
+            16 => 
+            array (
+                'id' => 27,
+                'horaSubida' => NULL,
+                'horaDescida' => NULL,
+                'estudante_id' => 6,
+                'viagem_id' => 20,
+                'transferencia_viagem_id' => NULL,
+                'created_at' => '2023-09-01 10:20:57',
+                'updated_at' => '2023-09-01 10:20:57',
+            ),
+            17 => 
+            array (
+                'id' => 28,
+                'horaSubida' => NULL,
+                'horaDescida' => NULL,
+                'estudante_id' => 15,
+                'viagem_id' => 9,
+                'transferencia_viagem_id' => NULL,
+                'created_at' => '2023-09-01 21:53:41',
+                'updated_at' => '2023-09-01 21:53:41',
+            ),
         ));
         
         

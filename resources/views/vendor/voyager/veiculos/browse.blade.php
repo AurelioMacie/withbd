@@ -275,11 +275,22 @@
 
                             <table class="table">
                                 <tr>
+                                    <td>Modelo</td>
                                     <td>Placa</td>
+                                    <td>Estado</td>
+                                    <td>Capacidade</td>
+                                    <td>Rota</td>
+                                    <td>Acções</td>
                                 </tr>
                                 @foreach($motorista->veiculos as $veiculo)
                                     <tr>
+                                        <td>{{$veiculo->modelo}}</td>
                                         <td>{{$veiculo->placa}}</td>
+                                        <td>{{$veiculo->estado}}</td>
+                                        <td>{{$veiculo->capacidade}}</td>
+                                        <td>{{$veiculo->rota->partida}}
+                                            <=> {{$veiculo->rota->destino}}
+                                             : {{$veiculo->rota->descricao}} </td>
                                         <td> 
                                             <a href="/gestao/veiculos/{{$veiculo->id}}/estudantes" class="btn btn-primary" style="text-decoration: none">estudantes</a>
                                             <a href="/gestao/veiculo/viagens/{{$veiculo->id}}" class="btn btn-primary me-2" style="text-decoration: none">viagens</a>

@@ -11,7 +11,7 @@ use Illuminate\Support\Carbon;
 class ViagemController extends Controller
 {
     public function adicionar($id){
-        $viagem = Viagem::where('id', $id)->first();
+        $viagem = Viagem::where('id', $id)->orderBy('id', 'DESC')->first();
         $estudantes = Estudante::where('veiculo_id', $viagem->veiculo_id)->get();
         return view('viagem.adicionar', compact('estudantes', 'viagem'));
     }

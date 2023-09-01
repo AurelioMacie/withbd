@@ -88,8 +88,20 @@ class MotoristasTableSeeder extends Seeder
                 'morada' => 'Bairro do Jardim',
                 'nascimento' => '1986-03-04',
                 'user_id' => 12,
-                'created_at' => '2023-08-18 14:50:53',
-                'updated_at' => '2023-08-18 14:50:53',
+                'created_at' => '2023-08-18 14:50:00',
+                'updated_at' => '2023-09-01 07:34:06',
+            ),
+            6 => 
+            array (
+                'id' => 7,
+                'nome' => 'Wanted Carlos',
+                'contacto' => '34265756756',
+                'documento' => '231535',
+                'morada' => 'Zimpeto',
+                'nascimento' => '2023-09-02',
+                'user_id' => 14,
+                'created_at' => '2023-09-01 20:58:54',
+                'updated_at' => '2023-09-01 20:58:54',
             ),
         ));
         

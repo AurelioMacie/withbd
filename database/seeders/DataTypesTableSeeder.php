@@ -35,7 +35,7 @@ class DataTypesTableSeeder extends Seeder
                 'server_side' => 0,
                 'details' => '{"order_column":null,"order_display_column":null,"order_direction":"desc","default_search_key":null,"scope":null}',
                 'created_at' => '2023-08-04 09:39:02',
-                'updated_at' => '2023-08-28 09:21:10',
+                'updated_at' => '2023-08-31 16:23:15',
             ),
             1 => 
             array (
@@ -161,7 +161,7 @@ class DataTypesTableSeeder extends Seeder
                 'server_side' => 0,
                 'details' => '{"order_column":null,"order_display_column":null,"order_direction":"asc","default_search_key":null,"scope":null}',
                 'created_at' => '2023-08-04 10:13:50',
-                'updated_at' => '2023-08-28 09:19:53',
+                'updated_at' => '2023-09-01 20:49:10',
             ),
             8 => 
             array (
@@ -179,7 +179,7 @@ class DataTypesTableSeeder extends Seeder
                 'server_side' => 0,
                 'details' => '{"order_column":null,"order_display_column":null,"order_direction":"asc","default_search_key":null,"scope":null}',
                 'created_at' => '2023-08-04 10:14:56',
-                'updated_at' => '2023-08-24 15:55:48',
+                'updated_at' => '2023-08-31 16:41:18',
             ),
             9 => 
             array (
@@ -191,13 +191,13 @@ class DataTypesTableSeeder extends Seeder
                 'icon' => NULL,
                 'model_name' => 'App\\Models\\Solicitacao',
                 'policy_name' => NULL,
-                'controller' => NULL,
+                'controller' => 'App\\Http\\Controllers\\Voyager\\VoyagerSolicitacaController',
                 'description' => NULL,
                 'generate_permissions' => 1,
                 'server_side' => 0,
                 'details' => '{"order_column":null,"order_display_column":null,"order_direction":"asc","default_search_key":null,"scope":null}',
                 'created_at' => '2023-08-04 10:15:55',
-                'updated_at' => '2023-08-04 10:37:09',
+                'updated_at' => '2023-09-01 21:50:18',
             ),
             10 => 
             array (
@@ -215,7 +215,7 @@ class DataTypesTableSeeder extends Seeder
                 'server_side' => 0,
                 'details' => '{"order_column":null,"order_display_column":null,"order_direction":"asc","default_search_key":null,"scope":null}',
                 'created_at' => '2023-08-04 10:20:18',
-                'updated_at' => '2023-08-24 15:55:16',
+                'updated_at' => '2023-09-01 21:42:40',
             ),
             11 => 
             array (
@@ -227,31 +227,13 @@ class DataTypesTableSeeder extends Seeder
                 'icon' => NULL,
                 'model_name' => 'App\\Models\\Viagem',
                 'policy_name' => NULL,
-                'controller' => NULL,
+                'controller' => 'App\\Http\\Controllers\\Voyager\\VoyagerViagemController',
                 'description' => NULL,
                 'generate_permissions' => 1,
                 'server_side' => 0,
                 'details' => '{"order_column":null,"order_display_column":null,"order_direction":"asc","default_search_key":null,"scope":null}',
                 'created_at' => '2023-08-04 10:22:37',
-                'updated_at' => '2023-08-16 20:04:25',
-            ),
-            12 => 
-            array (
-                'id' => 16,
-                'name' => 'multas',
-                'slug' => 'multas',
-                'display_name_singular' => 'Multa',
-                'display_name_plural' => 'Multas',
-                'icon' => NULL,
-                'model_name' => 'App\\Models\\Multa',
-                'policy_name' => NULL,
-                'controller' => NULL,
-                'description' => NULL,
-                'generate_permissions' => 1,
-                'server_side' => 0,
-                'details' => '{"order_column":null,"order_display_column":null,"order_direction":"asc","default_search_key":null,"scope":null}',
-                'created_at' => '2023-08-04 10:35:17',
-                'updated_at' => '2023-08-06 19:22:13',
+                'updated_at' => '2023-09-01 10:17:19',
             ),
         ));
         

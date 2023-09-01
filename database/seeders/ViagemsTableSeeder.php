@@ -118,6 +118,87 @@ class ViagemsTableSeeder extends Seeder
                 'created_at' => '2023-08-21 09:55:48',
                 'updated_at' => '2023-08-21 09:55:48',
             ),
+            11 => 
+            array (
+                'id' => 12,
+                'data' => '2023-09-01 11:37:00',
+                'tipo' => 'volta',
+                'veiculo_id' => NULL,
+                'created_at' => '2023-09-01 09:38:07',
+                'updated_at' => '2023-09-01 09:38:07',
+            ),
+            12 => 
+            array (
+                'id' => 13,
+                'data' => NULL,
+                'tipo' => 'ida',
+                'veiculo_id' => NULL,
+                'created_at' => '2023-09-01 09:39:23',
+                'updated_at' => '2023-09-01 09:39:23',
+            ),
+            13 => 
+            array (
+                'id' => 14,
+                'data' => '2023-09-01 11:41:00',
+                'tipo' => 'ida',
+                'veiculo_id' => NULL,
+                'created_at' => '2023-09-01 09:41:17',
+                'updated_at' => '2023-09-01 09:41:17',
+            ),
+            14 => 
+            array (
+                'id' => 15,
+                'data' => '2023-09-01 11:55:00',
+                'tipo' => 'ida',
+                'veiculo_id' => 2,
+                'created_at' => '2023-09-01 10:01:24',
+                'updated_at' => '2023-09-01 10:01:24',
+            ),
+            15 => 
+            array (
+                'id' => 16,
+                'data' => '2023-09-01 12:13:00',
+                'tipo' => 'volta',
+                'veiculo_id' => 2,
+                'created_at' => '2023-09-01 10:13:47',
+                'updated_at' => '2023-09-01 10:13:47',
+            ),
+            16 => 
+            array (
+                'id' => 17,
+                'data' => '2023-09-01 12:13:00',
+                'tipo' => 'volta',
+                'veiculo_id' => 2,
+                'created_at' => '2023-09-01 10:13:50',
+                'updated_at' => '2023-09-01 10:13:50',
+            ),
+            17 => 
+            array (
+                'id' => 18,
+                'data' => '2023-09-01 12:13:00',
+                'tipo' => 'volta',
+                'veiculo_id' => 2,
+                'created_at' => '2023-09-01 10:13:51',
+                'updated_at' => '2023-09-01 10:13:51',
+            ),
+            18 => 
+            array (
+                'id' => 19,
+                'data' => '2023-09-01 12:16:00',
+                'tipo' => 'ida',
+                'veiculo_id' => 2,
+                'created_at' => '2023-09-01 10:16:14',
+                'updated_at' => '2023-09-01 10:16:14',
+            ),
+            19 => 
+            array (
+                'id' => 20,
+                'data' => '2023-09-01 12:18:00',
+                'tipo' => 'ida',
+                'veiculo_id' => 2,
+                'created_at' => '2023-09-01 10:18:57',
+                'updated_at' => '2023-09-01 10:18:57',
+            ),
         ));
         
         

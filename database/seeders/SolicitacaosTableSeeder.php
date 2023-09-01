@@ -21,11 +21,35 @@ class SolicitacaosTableSeeder extends Seeder
         \DB::table('solicitacaos')->insert(array (
             0 => 
             array (
-                'id' => 1,
-                'descricao' => 'Manutenção',
-                'motorista_id' => 1,
-                'created_at' => '2023-08-07 18:35:30',
-                'updated_at' => '2023-08-16 17:57:56',
+                'id' => 8,
+                'descricao' => 'manutenção',
+                'motorista_id' => 2,
+                'created_at' => '2023-09-01 21:46:54',
+                'updated_at' => '2023-09-01 21:46:54',
+            ),
+            1 => 
+            array (
+                'id' => 9,
+                'descricao' => 'manutenção',
+                'motorista_id' => NULL,
+                'created_at' => '2023-09-01 21:49:41',
+                'updated_at' => '2023-09-01 21:49:41',
+            ),
+            2 => 
+            array (
+                'id' => 10,
+                'descricao' => 'manutenção',
+                'motorista_id' => NULL,
+                'created_at' => '2023-09-01 21:49:54',
+                'updated_at' => '2023-09-01 21:49:54',
+            ),
+            3 => 
+            array (
+                'id' => 11,
+                'descricao' => 'manutenção',
+                'motorista_id' => 2,
+                'created_at' => '2023-09-01 21:50:39',
+                'updated_at' => '2023-09-01 21:50:39',
             ),
         ));
         

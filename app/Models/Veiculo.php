@@ -16,4 +16,8 @@ class Veiculo extends Model
     public function estudantes(){
         return $this->hasMany(Estudante::class);
     }
+
+    public function Rota(){
+        return $this->belongsTo(Rota::class);
+    }
 }

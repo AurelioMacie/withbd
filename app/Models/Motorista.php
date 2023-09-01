@@ -10,7 +10,7 @@ class Motorista extends Model
     use HasFactory;
 
     public function veiculos(){
-        return $this->belongsToMany(Veiculo::class);
+        return $this->belongsToMany(Veiculo::class)->with('rota');
     }
 
     public function solicitacoes(){

@@ -93,9 +93,9 @@ class MenuItemsTableSeeder extends Seeder
                 'icon_class' => 'voyager-tools',
                 'color' => NULL,
                 'parent_id' => NULL,
-                'order' => 8,
+                'order' => 9,
                 'created_at' => '2023-08-04 09:39:05',
-                'updated_at' => '2023-08-30 07:10:14',
+                'updated_at' => '2023-08-31 08:16:30',
                 'route' => NULL,
                 'parameters' => NULL,
             ),
@@ -173,9 +173,9 @@ class MenuItemsTableSeeder extends Seeder
                 'icon_class' => 'voyager-settings',
                 'color' => NULL,
                 'parent_id' => NULL,
-                'order' => 9,
+                'order' => 10,
                 'created_at' => '2023-08-04 09:39:06',
-                'updated_at' => '2023-08-30 07:10:14',
+                'updated_at' => '2023-08-31 08:16:30',
                 'route' => 'voyager.settings.index',
                 'parameters' => NULL,
             ),
@@ -277,22 +277,6 @@ class MenuItemsTableSeeder extends Seeder
             ),
             16 => 
             array (
-                'id' => 23,
-                'menu_id' => 1,
-                'title' => 'Multas',
-                'url' => '',
-                'target' => '_self',
-                'icon_class' => NULL,
-                'color' => NULL,
-                'parent_id' => 24,
-                'order' => 4,
-                'created_at' => '2023-08-04 10:35:18',
-                'updated_at' => '2023-08-06 17:54:41',
-                'route' => 'voyager.multas.index',
-                'parameters' => NULL,
-            ),
-            17 => 
-            array (
                 'id' => 24,
                 'menu_id' => 1,
                 'title' => 'Cadastros',
@@ -307,7 +291,7 @@ class MenuItemsTableSeeder extends Seeder
                 'route' => NULL,
                 'parameters' => '',
             ),
-            18 => 
+            17 => 
             array (
                 'id' => 25,
                 'menu_id' => 1,
@@ -317,13 +301,13 @@ class MenuItemsTableSeeder extends Seeder
                 'icon_class' => 'voyager-people',
                 'color' => '#000000',
                 'parent_id' => NULL,
-                'order' => 6,
+                'order' => 7,
                 'created_at' => '2023-08-06 17:49:22',
-                'updated_at' => '2023-08-30 07:10:29',
+                'updated_at' => '2023-08-31 08:16:36',
                 'route' => NULL,
                 'parameters' => '',
             ),
-            19 => 
+            18 => 
             array (
                 'id' => 26,
                 'menu_id' => 1,
@@ -333,29 +317,13 @@ class MenuItemsTableSeeder extends Seeder
                 'icon_class' => 'voyager-company',
                 'color' => '#000000',
                 'parent_id' => NULL,
-                'order' => 7,
+                'order' => 8,
                 'created_at' => '2023-08-06 17:50:12',
-                'updated_at' => '2023-08-30 07:10:29',
+                'updated_at' => '2023-08-31 08:16:36',
                 'route' => NULL,
                 'parameters' => '',
             ),
-            20 => 
-            array (
-                'id' => 27,
-                'menu_id' => 1,
-                'title' => 'Estudante Viagem',
-                'url' => 'gestao/estudante-viagem',
-                'target' => '_self',
-                'icon_class' => NULL,
-                'color' => '#000000',
-                'parent_id' => 26,
-                'order' => 3,
-                'created_at' => '2023-08-10 14:47:18',
-                'updated_at' => '2023-08-24 18:12:00',
-                'route' => NULL,
-                'parameters' => '',
-            ),
-            21 => 
+            19 => 
             array (
                 'id' => 28,
                 'menu_id' => 1,

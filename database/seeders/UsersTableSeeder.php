@@ -28,7 +28,7 @@ class UsersTableSeeder extends Seeder
                 'avatar' => 'users\\August2023\\QI66Xc3MSpCoD7rIHFJn.png',
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$GFCiT1lzfg268NB9tDWrGey6v/hQNfnVG.F5.NSqNg14IFV87LJO6',
-                'remember_token' => 'md2UAu6yfOJzDTH7f5ikmQ6OFQdrHiN1e7sb0gxCzo5ksHNKdZyO2YJNGust',
+                'remember_token' => 'IO8VubTOq9kIbNp4JcVJDQA2dICd6iPjGKut1TpOMEefWZ4FWUrbCNksAYsn',
                 'settings' => '{"locale":"en"}',
                 'created_at' => '2023-08-04 09:39:16',
                 'updated_at' => '2023-08-06 20:21:12',
@@ -56,7 +56,7 @@ class UsersTableSeeder extends Seeder
                 'avatar' => 'users\\August2023\\6I1afCyWFH1zKIXoZcdb.png',
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$SWwlPVMYpSN/rx.Fd9J5qu5qyQ6BFJNvw47mvETGNxCATNo8HA2a.',
-                'remember_token' => 'DSVYV0PkMYBf4par9BpWEU3BdfZH8i1cwwNebbgUZi9iZbvdfJUYSsjMHXu1',
+                'remember_token' => 'aSW6XTmglOqhHF5aHjWbrrR6CpwQmPlmrTyhUcJJbnH85428UryooeSFOQqf',
                 'settings' => '{"locale":"en"}',
                 'created_at' => '2023-08-06 18:27:16',
                 'updated_at' => '2023-08-06 20:20:55',
@@ -200,6 +200,20 @@ class UsersTableSeeder extends Seeder
                 'settings' => NULL,
                 'created_at' => '2023-08-28 08:02:34',
                 'updated_at' => '2023-08-28 08:02:34',
+            ),
+            13 => 
+            array (
+                'id' => 14,
+                'role_id' => 3,
+                'name' => 'Wanted',
+                'email' => 'wanted@gmail.com',
+                'avatar' => 'users/default.png',
+                'email_verified_at' => NULL,
+                'password' => '$2y$10$PRQqKOEsrxxMUWTKyp9ml.fXOZYKjU2wV6gx76nWW7A.ApFoUNL4.',
+                'remember_token' => NULL,
+                'settings' => '{"locale":"pt"}',
+                'created_at' => '2023-09-01 20:55:50',
+                'updated_at' => '2023-09-01 20:55:50',
             ),
         ));
         

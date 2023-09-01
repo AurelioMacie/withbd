@@ -46,7 +46,4 @@ class User extends \TCG\Voyager\Models\User
         return $this->hasMany(Estudante::class);
     }
 
-    // public function veiculos(){
-    //     return $this->belongsToMany(Veiculo::class);
-    // }
 }

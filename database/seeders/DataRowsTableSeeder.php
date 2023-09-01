@@ -1320,7 +1320,7 @@ class DataRowsTableSeeder extends Seeder
                 'id' => 95,
                 'data_type_id' => 12,
                 'field' => 'descricao',
-                'type' => 'text_area',
+                'type' => 'select_dropdown',
                 'display_name' => 'Descricao',
                 'required' => 0,
                 'browse' => 1,
@@ -1328,7 +1328,7 @@ class DataRowsTableSeeder extends Seeder
                 'edit' => 1,
                 'add' => 1,
                 'delete' => 1,
-                'details' => '{}',
+                'details' => '{"options":{"manuten\\u00e7\\u00e3o":"Manuten\\u00e7\\u00e3o"}}',
                 'order' => 2,
             ),
             82 => 
@@ -1338,7 +1338,7 @@ class DataRowsTableSeeder extends Seeder
                 'field' => 'motorista_id',
                 'type' => 'text',
                 'display_name' => 'Motorista Id',
-                'required' => 1,
+                'required' => 0,
                 'browse' => 1,
                 'read' => 1,
                 'edit' => 1,
@@ -1432,7 +1432,7 @@ class DataRowsTableSeeder extends Seeder
                 'id' => 108,
                 'data_type_id' => 14,
                 'field' => 'combustivel',
-                'type' => 'text',
+                'type' => 'select_dropdown',
                 'display_name' => 'Combustivel',
                 'required' => 0,
                 'browse' => 1,
@@ -1440,7 +1440,7 @@ class DataRowsTableSeeder extends Seeder
                 'edit' => 1,
                 'add' => 1,
                 'delete' => 1,
-                'details' => '{}',
+                'details' => '{"default":"gasolina","options":{"gasolina":"Gasolina","diesel":"Diesel"}}',
                 'order' => 4,
             ),
             89 => 
@@ -1448,7 +1448,7 @@ class DataRowsTableSeeder extends Seeder
                 'id' => 109,
                 'data_type_id' => 14,
                 'field' => 'capacidade',
-                'type' => 'text',
+                'type' => 'number',
                 'display_name' => 'Capacidade',
                 'required' => 0,
                 'browse' => 1,
@@ -1472,7 +1472,7 @@ class DataRowsTableSeeder extends Seeder
                 'edit' => 1,
                 'add' => 1,
                 'delete' => 1,
-                'details' => '{}',
+                'details' => '{"default":"activo","options":{"activo":"Activo","manuten\\u00e7\\u00e3o":"Manuten\\u00e7\\u00e3o"}}',
                 'order' => 5,
             ),
             91 => 
@@ -1568,7 +1568,7 @@ class DataRowsTableSeeder extends Seeder
                 'edit' => 1,
                 'add' => 1,
                 'delete' => 1,
-                'details' => '{"options":{"ida":"Viagem de volta","volta":"Viagem de ida"}}',
+                'details' => '{"options":{"ida":"Viagem de ida","volta":"Viagem de volta"}}',
                 'order' => 3,
             ),
             97 => 
@@ -1685,118 +1685,6 @@ class DataRowsTableSeeder extends Seeder
             ),
             104 => 
             array (
-                'id' => 128,
-                'data_type_id' => 16,
-                'field' => 'id',
-                'type' => 'text',
-                'display_name' => 'Id',
-                'required' => 1,
-                'browse' => 0,
-                'read' => 0,
-                'edit' => 0,
-                'add' => 0,
-                'delete' => 0,
-                'details' => '{}',
-                'order' => 1,
-            ),
-            105 => 
-            array (
-                'id' => 129,
-                'data_type_id' => 16,
-                'field' => 'referencia',
-                'type' => 'text',
-                'display_name' => 'Referência',
-                'required' => 0,
-                'browse' => 1,
-                'read' => 1,
-                'edit' => 1,
-                'add' => 1,
-                'delete' => 1,
-                'details' => '{}',
-                'order' => 3,
-            ),
-            106 => 
-            array (
-                'id' => 130,
-                'data_type_id' => 16,
-                'field' => 'valor',
-                'type' => 'text',
-                'display_name' => 'Valor',
-                'required' => 0,
-                'browse' => 1,
-                'read' => 1,
-                'edit' => 1,
-                'add' => 1,
-                'delete' => 1,
-                'details' => '{}',
-                'order' => 4,
-            ),
-            107 => 
-            array (
-                'id' => 131,
-                'data_type_id' => 16,
-                'field' => 'motorista_id',
-                'type' => 'text',
-                'display_name' => 'Motorista Id',
-                'required' => 0,
-                'browse' => 1,
-                'read' => 1,
-                'edit' => 1,
-                'add' => 1,
-                'delete' => 1,
-                'details' => '{}',
-                'order' => 2,
-            ),
-            108 => 
-            array (
-                'id' => 132,
-                'data_type_id' => 16,
-                'field' => 'created_at',
-                'type' => 'timestamp',
-                'display_name' => 'Created At',
-                'required' => 0,
-                'browse' => 0,
-                'read' => 0,
-                'edit' => 0,
-                'add' => 0,
-                'delete' => 0,
-                'details' => '{}',
-                'order' => 5,
-            ),
-            109 => 
-            array (
-                'id' => 133,
-                'data_type_id' => 16,
-                'field' => 'updated_at',
-                'type' => 'timestamp',
-                'display_name' => 'Updated At',
-                'required' => 0,
-                'browse' => 0,
-                'read' => 0,
-                'edit' => 0,
-                'add' => 0,
-                'delete' => 0,
-                'details' => '{}',
-                'order' => 6,
-            ),
-            110 => 
-            array (
-                'id' => 134,
-                'data_type_id' => 16,
-                'field' => 'multa_belongsto_motorista_relationship',
-                'type' => 'relationship',
-                'display_name' => 'Motorista',
-                'required' => 0,
-                'browse' => 1,
-                'read' => 1,
-                'edit' => 1,
-                'add' => 1,
-                'delete' => 1,
-                'details' => '{"model":"App\\\\Models\\\\Motorista","table":"motoristas","type":"belongsTo","column":"motorista_id","key":"id","label":"nome","pivot_table":"categories","pivot":"0","taggable":"0"}',
-                'order' => 7,
-            ),
-            111 => 
-            array (
                 'id' => 135,
                 'data_type_id' => 12,
                 'field' => 'solicitacao_belongsto_motorista_relationship',
@@ -1811,7 +1699,7 @@ class DataRowsTableSeeder extends Seeder
                 'details' => '{"model":"App\\\\Models\\\\Motorista","table":"motoristas","type":"belongsTo","column":"motorista_id","key":"id","label":"nome","pivot_table":"categories","pivot":"0","taggable":"0"}',
                 'order' => 6,
             ),
-            112 => 
+            105 => 
             array (
                 'id' => 138,
                 'data_type_id' => 14,
@@ -1827,7 +1715,7 @@ class DataRowsTableSeeder extends Seeder
                 'details' => '{"model":"App\\\\Models\\\\Motorista","table":"motoristas","type":"belongsToMany","column":"id","key":"id","label":"nome","pivot_table":"motorista_veiculo","pivot":"1","taggable":"0"}',
                 'order' => 11,
             ),
-            113 => 
+            106 => 
             array (
                 'id' => 139,
                 'data_type_id' => 11,
@@ -1843,7 +1731,7 @@ class DataRowsTableSeeder extends Seeder
                 'details' => '{"model":"App\\\\Models\\\\Veiculo","table":"veiculos","type":"belongsToMany","column":"id","key":"id","label":"placa","pivot_table":"motorista_veiculo","pivot":"1","taggable":"0"}',
                 'order' => 11,
             ),
-            114 => 
+            107 => 
             array (
                 'id' => 142,
                 'data_type_id' => 1,
@@ -1859,7 +1747,7 @@ class DataRowsTableSeeder extends Seeder
                 'details' => '{}',
                 'order' => 6,
             ),
-            115 => 
+            108 => 
             array (
                 'id' => 143,
                 'data_type_id' => 10,
@@ -1875,7 +1763,7 @@ class DataRowsTableSeeder extends Seeder
                 'details' => '{"model":"App\\\\Models\\\\Rota","table":"rotas","type":"belongsTo","column":"rota_id","key":"id","label":"descricao","pivot_table":"categories","pivot":"0","taggable":"0"}',
                 'order' => 13,
             ),
-            116 => 
+            109 => 
             array (
                 'id' => 144,
                 'data_type_id' => 15,
@@ -1891,7 +1779,7 @@ class DataRowsTableSeeder extends Seeder
                 'details' => '{"model":"App\\\\Models\\\\Veiculo","table":"veiculos","type":"belongsTo","column":"veiculo_id","key":"id","label":"placa","pivot_table":"categories","pivot":"0","taggable":"0"}',
                 'order' => 8,
             ),
-            117 => 
+            110 => 
             array (
                 'id' => 145,
                 'data_type_id' => 10,
@@ -1907,7 +1795,7 @@ class DataRowsTableSeeder extends Seeder
                 'details' => '{"model":"App\\\\Models\\\\Veiculo","table":"veiculos","type":"belongsTo","column":"veiculo_id","key":"id","label":"placa","pivot_table":"categories","pivot":"0","taggable":"0"}',
                 'order' => 14,
             ),
-            118 => 
+            111 => 
             array (
                 'id' => 161,
                 'data_type_id' => 10,
@@ -1915,13 +1803,29 @@ class DataRowsTableSeeder extends Seeder
                 'type' => 'text',
                 'display_name' => 'User Id',
                 'required' => 0,
+                'browse' => 0,
+                'read' => 0,
+                'edit' => 0,
+                'add' => 0,
+                'delete' => 0,
+                'details' => '{}',
+                'order' => 9,
+            ),
+            112 => 
+            array (
+                'id' => 164,
+                'data_type_id' => 1,
+                'field' => 'user_belongstomany_veiculo_relationship',
+                'type' => 'relationship',
+                'display_name' => 'veiculos',
+                'required' => 0,
                 'browse' => 1,
                 'read' => 1,
                 'edit' => 1,
                 'add' => 1,
                 'delete' => 1,
-                'details' => '{}',
-                'order' => 9,
+                'details' => '{"model":"App\\\\Models\\\\Veiculo","table":"veiculos","type":"belongsToMany","column":"id","key":"id","label":"placa","pivot_table":"user_veiculo","pivot":"1","taggable":"0"}',
+                'order' => 13,
             ),
         ));
         

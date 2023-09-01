@@ -275,10 +275,12 @@
                             <table class="table">
                                 <tr>
                                     <th>Solicitação feita</th>
+                                    <th>Data da solicitação</th>
                                 </tr>
                                 @foreach($motorista->solicitacoes as $solicitacao)
                                     <tr>
                                         <td>{{$solicitacao->descricao}}</td>
+                                        <td>{{$solicitacao->created_at}}</td>
                                     </tr>
                                 @endforeach   
                             </table> 

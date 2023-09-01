@@ -579,46 +579,6 @@ class PermissionsTableSeeder extends Seeder
                 'created_at' => '2023-08-04 10:22:37',
                 'updated_at' => '2023-08-04 10:22:37',
             ),
-            70 => 
-            array (
-                'id' => 86,
-                'key' => 'browse_multas',
-                'table_name' => 'multas',
-                'created_at' => '2023-08-04 10:35:18',
-                'updated_at' => '2023-08-04 10:35:18',
-            ),
-            71 => 
-            array (
-                'id' => 87,
-                'key' => 'read_multas',
-                'table_name' => 'multas',
-                'created_at' => '2023-08-04 10:35:18',
-                'updated_at' => '2023-08-04 10:35:18',
-            ),
-            72 => 
-            array (
-                'id' => 88,
-                'key' => 'edit_multas',
-                'table_name' => 'multas',
-                'created_at' => '2023-08-04 10:35:18',
-                'updated_at' => '2023-08-04 10:35:18',
-            ),
-            73 => 
-            array (
-                'id' => 89,
-                'key' => 'add_multas',
-                'table_name' => 'multas',
-                'created_at' => '2023-08-04 10:35:18',
-                'updated_at' => '2023-08-04 10:35:18',
-            ),
-            74 => 
-            array (
-                'id' => 90,
-                'key' => 'delete_multas',
-                'table_name' => 'multas',
-                'created_at' => '2023-08-04 10:35:18',
-                'updated_at' => '2023-08-04 10:35:18',
-            ),
         ));
         
         

@@ -23,7 +23,6 @@ class DatabaseSeeder extends Seeder
         $this->call(SettingsTableSeeder::class);
         $this->call(RotasTableSeeder::class);
         $this->call(MotoristasTableSeeder::class);
-        $this->call(MultasTableSeeder::class);
         $this->call(SolicitacaosTableSeeder::class);
         $this->call(VeiculosTableSeeder::class);
         $this->call(ViagemsTableSeeder::class);
@@ -32,5 +31,6 @@ class DatabaseSeeder extends Seeder
         $this->call(MotoristaVeiculoTableSeeder::class);
         $this->call(NotificacaosTableSeeder::class);
         $this->call(EstudanteUserTableSeeder::class);
+        $this->call(RolesTableSeeder::class);
     }
 }
