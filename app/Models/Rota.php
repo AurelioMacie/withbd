@@ -8,4 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class Rota extends Model
 {
     use HasFactory;
+
+    public function veiculos(){
+        return $this->hasMany(Veiculo::class)->withCount('estudantes');
+    }
 }

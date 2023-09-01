@@ -12,4 +12,8 @@ class Veiculo extends Model
     public function motoristas(){
         return $this->belongsToMany(Motorista::class);
     }
+
+    public function estudantes(){
+        return $this->hasMany(Estudante::class);
+    }
 }

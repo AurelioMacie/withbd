@@ -75,7 +75,7 @@
                             </form>
                         @endif
 
-                        @if(auth()->user()->role->name != 'motorista')
+                        @if(auth()->user()->role->name == 'admin')
                         <div class="table-responsive">
                             <table id="dataTable" class="table table-hover">
                                 <thead>
@@ -270,16 +270,20 @@
                         @else
                         <div>
                             @php
-                                $user = App\Models\User::where('id', auth()->id())->with('veiculos')->first();
+                                $motorista = App\Models\Motorista::where('user_id', auth()->id())->with('veiculos')->first();
                             @endphp
 
                             <table class="table">
                                 <tr>
                                     <td>Placa</td>
                                 </tr>
-                                @foreach($user->veiculos as $veiculo)
+                                @foreach($motorista->veiculos as $veiculo)
                                     <tr>
-                                        <td>{{$user->placa}}</td>
+                                        <td>{{$veiculo->placa}}</td>
+                                        <td> 
+                                            <a href="/gestao/veiculos/{{$veiculo->id}}/estudantes" class="btn btn-primary" style="text-decoration: none">estudantes</a>
+                                            <a href="/gestao/veiculo/viagens/{{$veiculo->id}}" class="btn btn-primary me-2" style="text-decoration: none">viagens</a>
+                                        </td>
                                     </tr>
                                 @endforeach    
                         </div>                       

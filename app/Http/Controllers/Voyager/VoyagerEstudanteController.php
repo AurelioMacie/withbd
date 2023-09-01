@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Estudante;
 use App\Models\Notificacao;
+use App\Models\Rota;
 use App\Models\Veiculo;
 use App\Models\VeiculoMotorista;
 use Exception;
@@ -26,6 +27,32 @@ class VoyagerEstudanteController extends \TCG\Voyager\Http\Controllers\VoyagerBa
     use BreadRelationshipParser;
 
     public function update(Request $request, $id){
+
+        $rota = Rota::where('id', $request->rota_id)->with('veiculos')->first();
+        // return $rota;
+        $verificarEspaco = false;
+
+        foreach ($rota->veiculos as $veiculo) {
+            if($veiculo->capacidade - $veiculo->estudantes_count > 0){
+                $request['veiculo_id'] = $veiculo->id;
+                $verificarEspaco=true;
+            }else{
+                $request['veiculo_id'] = false;
+            }
+        }
+        // return $request;
+        if($request['veiculo_id'] and $verificarEspaco){
+        }else{
+            return back()->with([
+                'message'    => 'Sem veículos disponiveis nesta rota',
+                'alert-type' => 'error',
+            ]);
+        }
+        
+        // return $request->veiculo_id;
+
+        
+
         $veiculo = Veiculo::where('id', $request->veiculo_id)->with('motoristas')->first();
         for($i=0; $i<count($veiculo->motoristas); $i++){
             $notificacao = new Notificacao();

@@ -18,12 +18,10 @@ class ViagemController extends Controller
 
     public function presenca($id){
         $viagem = Viagem::where('id', $id)->with('estudantes')->first();
-        // return $viagem;
         return view('viagem.presenca', compact('viagem'));
     }
 
     public function adicionarAlunos(Request $request){
-        // return $request->selected_items;
         $array = [];
         for($i=0; $i<count($request->selected_items);$i++){
             $verificarEstudanteViagem = EstudanteViagem::where('estudante_id', $request->selected_items[$i])

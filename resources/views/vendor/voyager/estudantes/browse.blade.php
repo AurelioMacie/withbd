@@ -312,7 +312,7 @@
                         <td>{{$estudante->destino}}</td>
                         <td>{{$estudante->descricaoSolicitacao}}</td>
                         <td>{{$estudante->estado}}</td>
-                        <td>{{$estudante->veiculo_id}}</td>
+                        <td>{{$estudante->veiculo->placa}}</td>
                     </tr>
                 @endforeach
                 @foreach($user->meus_estudantes as $estudante)
@@ -321,8 +321,8 @@
                         <td>{{$estudante->partida}}</td>
                         <td>{{$estudante->destino}}</td>
                         <td>{{$estudante->descricaoSolicitacao}}</td>
-                        <td>{{$estudante->estado}}</td>
-                        <td>{{$estudante->veiculo_id}}</td>
+                        <td>{{$estudante->estado??'pendente'}}</td>
+                        <td>{{$estudante->veiculo->placa??'Não alocado a algum veiculo'}}</td>
                     </tr>
                 @endforeach
             </table>
