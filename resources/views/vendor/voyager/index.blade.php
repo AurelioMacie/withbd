@@ -4,7 +4,7 @@
 
 @php
 $motorista = App\Models\Motorista::where("user_id", auth()->id())->first();
-    $notificacoes = App\Models\Notificacao::where("motorista_id", $motorista->id??0)->get();
+    $notificacoes = App\Models\Notificacao::where("motorista_id", $motorista->id??0)->orderBy('id', 'DESC')->get();
 @endphp
 
 <div class="page-content">
@@ -25,10 +25,13 @@ $motorista = App\Models\Motorista::where("user_id", auth()->id())->first();
     </div>
     @endforeach
 
+
+    <!-- <div class=""><a href="/gestao/estudante/pendentes" class="btn btn-primary">pendentes</a></div> -->
     @include('voyager::alerts')
     @include('voyager::dimmers')
 
 
+    
     <div class="Dashboard Dashboard--full" id="analytics-dashboard">
         <header class="Dashboard-header">
             <ul class="FlexGrid">
