@@ -5,6 +5,7 @@ use App\Http\Controllers\EstudanteController;
 use App\Http\Controllers\NotificacaoController;
 use App\Http\Controllers\VeiculoController;
 use App\Http\Controllers\ViagemController;
+use App\Http\Controllers\Auth\RegisteredUserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,6 +31,8 @@ require __DIR__.'/auth.php';
 
 Route::group(['prefix' => 'gestao'], function () {
     Voyager::routes();
+    Route::get('register', [RegisteredUserController::class, 'create'])->name('register');
+    Route::post('register', [RegisteredUserController::class, 'store']);
     Route::get('/viagem/{id}/estudantes/adicionar', [ViagemController::class, 'adicionar'])->middleware(["auth"])->name('viagem.adicionar');
     Route::get('/viagem/{id}/estudantes/presenca', [ViagemController::class, 'presenca'])->middleware(["auth"])->name('viagem.presenca');
     Route::get('/veiculo/viagens/{id}', [VeiculoController::class, 'veiculoViagem'])->middleware(["auth"])->name('veiculo.viagem');
