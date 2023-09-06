@@ -29,29 +29,13 @@ class SolicitacaosTableSeeder extends Seeder
             ),
             1 => 
             array (
-                'id' => 9,
-                'descricao' => 'manutenção',
-                'motorista_id' => NULL,
-                'created_at' => '2023-09-01 21:49:41',
-                'updated_at' => '2023-09-01 21:49:41',
-            ),
-            2 => 
-            array (
-                'id' => 10,
-                'descricao' => 'manutenção',
-                'motorista_id' => NULL,
-                'created_at' => '2023-09-01 21:49:54',
-                'updated_at' => '2023-09-01 21:49:54',
-            ),
-            3 => 
-            array (
                 'id' => 11,
                 'descricao' => 'manutenção',
                 'motorista_id' => 2,
                 'created_at' => '2023-09-01 21:50:39',
                 'updated_at' => '2023-09-01 21:50:39',
             ),
-            4 => 
+            2 => 
             array (
                 'id' => 12,
                 'descricao' => 'manutenção',
@@ -59,13 +43,29 @@ class SolicitacaosTableSeeder extends Seeder
                 'created_at' => '2023-09-05 17:17:06',
                 'updated_at' => '2023-09-05 17:17:06',
             ),
-            5 => 
+            3 => 
             array (
                 'id' => 13,
                 'descricao' => 'manutenção',
                 'motorista_id' => 2,
                 'created_at' => '2023-09-06 13:20:29',
                 'updated_at' => '2023-09-06 13:20:29',
+            ),
+            4 => 
+            array (
+                'id' => 14,
+                'descricao' => 'manutenção',
+                'motorista_id' => 4,
+                'created_at' => '2023-09-06 19:29:01',
+                'updated_at' => '2023-09-06 19:29:01',
+            ),
+            5 => 
+            array (
+                'id' => 15,
+                'descricao' => 'manutenção',
+                'motorista_id' => 4,
+                'created_at' => '2023-09-06 19:29:41',
+                'updated_at' => '2023-09-06 19:29:41',
             ),
         ));
         
