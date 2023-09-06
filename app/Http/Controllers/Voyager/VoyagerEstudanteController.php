@@ -29,21 +29,24 @@ class VoyagerEstudanteController extends \TCG\Voyager\Http\Controllers\VoyagerBa
     public function update(Request $request, $id){
 
         $rota = Rota::where('id', $request->rota_id)->with('veiculos')->first();
-        // return $rota;
-        $verificarEspaco = false;
+        // return $rota; 
+        // antes da alteração abaixo
+        // só adicionava em um dos veículos
+        // não em ambos veículos da rota
+        $veiculos_disponiveis = [];
 
         foreach ($rota->veiculos as $veiculo) {
-            if($veiculo->capacidade - $veiculo->estudantes_count > 0){
-                $request['veiculo_id'] = $veiculo->id;
-                $verificarEspaco=true;
-            }else{
-                $request['veiculo_id'] = false;
+            if ($veiculo->capacidade - $veiculo->estudantes_count > 0) {
+                $veiculos_disponiveis[] = $veiculo->id;
             }
         }
-        if($request['veiculo_id'] and $verificarEspaco){
-        }else{
+
+        if (count($veiculos_disponiveis) > 0) {
+            $veiculo_id = $veiculos_disponiveis[0];
+            $request['veiculo_id'] = $veiculo_id;
+        } else {
             return back()->with([
-                'message'    => 'Sem veículos disponiveis nesta rota',
+                'message'    => 'Sem veículos disponíveis nesta rota',
                 'alert-type' => 'error',
             ]);
         }

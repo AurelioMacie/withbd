@@ -85,45 +85,13 @@ class NotificacaosTableSeeder extends Seeder
             ),
             8 => 
             array (
-                'id' => 12,
-                'mensagem' => 'foi adicionado o aluno Arthur ao seu veículo',
-                'motorista_id' => 4,
-                'created_at' => '2023-08-31 16:37:44',
-                'updated_at' => '2023-08-31 16:37:44',
-            ),
-            9 => 
-            array (
-                'id' => 13,
-                'mensagem' => 'foi adicionado o aluno Benildo ao seu veículo',
-                'motorista_id' => 2,
-                'created_at' => '2023-08-31 16:45:07',
-                'updated_at' => '2023-08-31 16:45:07',
-            ),
-            10 => 
-            array (
-                'id' => 14,
-                'mensagem' => 'foi adicionado o aluno Baedier ao seu veículo',
-                'motorista_id' => 2,
-                'created_at' => '2023-08-31 16:45:37',
-                'updated_at' => '2023-08-31 16:45:37',
-            ),
-            11 => 
-            array (
                 'id' => 15,
                 'mensagem' => 'foi adicionado o aluno Benildo ao seu veículo',
                 'motorista_id' => 6,
                 'created_at' => '2023-09-01 08:49:08',
                 'updated_at' => '2023-09-01 08:49:08',
             ),
-            12 => 
-            array (
-                'id' => 16,
-                'mensagem' => 'foi adicionado o aluno Arthur ao seu veículo',
-                'motorista_id' => 2,
-                'created_at' => '2023-09-01 09:02:17',
-                'updated_at' => '2023-09-01 09:02:17',
-            ),
-            13 => 
+            9 => 
             array (
                 'id' => 17,
                 'mensagem' => 'foi adicionado o aluno Benildo ao seu veículo',
@@ -131,7 +99,7 @@ class NotificacaosTableSeeder extends Seeder
                 'created_at' => '2023-09-01 09:04:30',
                 'updated_at' => '2023-09-01 09:04:30',
             ),
-            14 => 
+            10 => 
             array (
                 'id' => 18,
                 'mensagem' => 'foi adicionado o aluno Benildo ao seu veículo',
@@ -139,7 +107,7 @@ class NotificacaosTableSeeder extends Seeder
                 'created_at' => '2023-09-01 09:05:48',
                 'updated_at' => '2023-09-01 09:05:48',
             ),
-            15 => 
+            11 => 
             array (
                 'id' => 19,
                 'mensagem' => 'foi adicionado o aluno Carlos ao seu veículo',
@@ -147,13 +115,69 @@ class NotificacaosTableSeeder extends Seeder
                 'created_at' => '2023-09-01 20:50:14',
                 'updated_at' => '2023-09-01 20:50:14',
             ),
+            12 => 
+            array (
+                'id' => 21,
+                'mensagem' => 'foi adicionado o aluno Dayse Macamo ao seu veículo',
+                'motorista_id' => 3,
+                'created_at' => '2023-09-05 16:45:36',
+                'updated_at' => '2023-09-05 16:45:36',
+            ),
+            13 => 
+            array (
+                'id' => 22,
+                'mensagem' => 'foi adicionado o aluno Kennedy Ussene ao seu veículo',
+                'motorista_id' => 3,
+                'created_at' => '2023-09-05 16:46:58',
+                'updated_at' => '2023-09-05 16:46:58',
+            ),
+            14 => 
+            array (
+                'id' => 23,
+                'mensagem' => 'foi adicionado o aluno Bila ao seu veículo',
+                'motorista_id' => 3,
+                'created_at' => '2023-09-05 16:47:16',
+                'updated_at' => '2023-09-05 16:47:16',
+            ),
+            15 => 
+            array (
+                'id' => 24,
+                'mensagem' => 'foi adicionado o aluno Rafael Dambuza ao seu veículo',
+                'motorista_id' => 3,
+                'created_at' => '2023-09-05 16:50:37',
+                'updated_at' => '2023-09-05 16:50:37',
+            ),
             16 => 
             array (
-                'id' => 20,
-                'mensagem' => 'foi adicionado o aluno Arthur ao seu veículo',
+                'id' => 32,
+                'mensagem' => 'foi adicionado o aluno Ganama Ioque ao seu veículo',
+                'motorista_id' => 4,
+                'created_at' => '2023-09-06 18:17:09',
+                'updated_at' => '2023-09-06 18:17:09',
+            ),
+            17 => 
+            array (
+                'id' => 33,
+                'mensagem' => 'foi adicionado o aluno Rafael Dambuza ao seu veículo',
+                'motorista_id' => 4,
+                'created_at' => '2023-09-06 18:17:47',
+                'updated_at' => '2023-09-06 18:17:47',
+            ),
+            18 => 
+            array (
+                'id' => 34,
+                'mensagem' => 'foi adicionado o aluno Benildo ao seu veículo',
                 'motorista_id' => 2,
-                'created_at' => '2023-09-01 21:03:54',
-                'updated_at' => '2023-09-01 21:03:54',
+                'created_at' => '2023-09-06 18:38:43',
+                'updated_at' => '2023-09-06 18:38:43',
+            ),
+            19 => 
+            array (
+                'id' => 35,
+                'mensagem' => 'foi adicionado o aluno Lionardo Capaldi ao seu veículo',
+                'motorista_id' => 2,
+                'created_at' => '2023-09-06 18:39:46',
+                'updated_at' => '2023-09-06 18:39:46',
             ),
         ));
         

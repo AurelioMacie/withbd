@@ -32,8 +32,6 @@ class ViagemController extends Controller
                 $estudanteViagem->viagem_id = $request->viagem_id;
                 $array[]=$request->selected_items[$i];
                 $estudanteViagem->save();
-            }else{
-                return back()->with(['code' => 403, 'message'=> 'o estudante já foi adicionado a viagem']);
             }
         }
 

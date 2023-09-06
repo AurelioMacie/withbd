@@ -68,7 +68,7 @@ class SettingsTableSeeder extends Seeder
                 'id' => 5,
                 'key' => 'admin.bg_image',
                 'display_name' => 'Admin Background Image',
-                'value' => '',
+                'value' => 'settings\\September2023\\N7CwYOJnYy4STOKgpZCk.jpg',
                 'details' => '',
                 'type' => 'image',
                 'order' => 5,

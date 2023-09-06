@@ -30,15 +30,6 @@ class MotoristaVeiculoTableSeeder extends Seeder
             ),
             1 => 
             array (
-                'id' => 5,
-                'estado' => NULL,
-                'veiculo_id' => 5,
-                'motorista_id' => 4,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            2 => 
-            array (
                 'id' => 6,
                 'estado' => NULL,
                 'veiculo_id' => 4,
@@ -46,7 +37,7 @@ class MotoristaVeiculoTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            3 => 
+            2 => 
             array (
                 'id' => 7,
                 'estado' => NULL,
@@ -55,16 +46,7 @@ class MotoristaVeiculoTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            4 => 
-            array (
-                'id' => 10,
-                'estado' => NULL,
-                'veiculo_id' => 9,
-                'motorista_id' => 2,
-                'created_at' => NULL,
-                'updated_at' => NULL,
-            ),
-            5 => 
+            3 => 
             array (
                 'id' => 11,
                 'estado' => NULL,
@@ -73,12 +55,30 @@ class MotoristaVeiculoTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            6 => 
+            4 => 
             array (
                 'id' => 12,
                 'estado' => NULL,
                 'veiculo_id' => 10,
                 'motorista_id' => 1,
+                'created_at' => NULL,
+                'updated_at' => NULL,
+            ),
+            5 => 
+            array (
+                'id' => 13,
+                'estado' => NULL,
+                'veiculo_id' => 11,
+                'motorista_id' => 2,
+                'created_at' => NULL,
+                'updated_at' => NULL,
+            ),
+            6 => 
+            array (
+                'id' => 14,
+                'estado' => NULL,
+                'veiculo_id' => 12,
+                'motorista_id' => 4,
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),

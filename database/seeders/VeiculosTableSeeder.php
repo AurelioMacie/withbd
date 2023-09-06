@@ -57,18 +57,6 @@ class VeiculosTableSeeder extends Seeder
             ),
             3 => 
             array (
-                'id' => 5,
-                'modelo' => 'Mini Bus',
-                'placa' => 'AXX-123-MP',
-                'combustivel' => 'Diesel',
-                'capacidade' => 5,
-                'estado' => 'Activo',
-                'rota_id' => 3,
-                'created_at' => '2023-08-16 11:21:14',
-                'updated_at' => '2023-09-01 20:53:32',
-            ),
-            4 => 
-            array (
                 'id' => 7,
                 'modelo' => 'VVCCD',
                 'placa' => 'DDA-234-MP',
@@ -79,19 +67,7 @@ class VeiculosTableSeeder extends Seeder
                 'created_at' => '2023-08-16 11:44:44',
                 'updated_at' => '2023-09-01 20:53:44',
             ),
-            5 => 
-            array (
-                'id' => 9,
-                'modelo' => 'Haudiu',
-                'placa' => 'AAA-888-NPL',
-                'combustivel' => 'Diesel',
-                'capacidade' => 5,
-                'estado' => 'Activo',
-                'rota_id' => 3,
-                'created_at' => '2023-08-18 14:50:17',
-                'updated_at' => '2023-09-01 20:53:14',
-            ),
-            6 => 
+            4 => 
             array (
                 'id' => 10,
                 'modelo' => 'Coaster',
@@ -102,6 +78,30 @@ class VeiculosTableSeeder extends Seeder
                 'rota_id' => 4,
                 'created_at' => '2023-09-01 21:01:01',
                 'updated_at' => '2023-09-01 21:01:01',
+            ),
+            5 => 
+            array (
+                'id' => 11,
+                'modelo' => 'Youzing',
+                'placa' => 'AXR-990-MP',
+                'combustivel' => 'diesel',
+                'capacidade' => 2,
+                'estado' => 'activo',
+                'rota_id' => 3,
+                'created_at' => '2023-09-06 18:12:25',
+                'updated_at' => '2023-09-06 18:12:25',
+            ),
+            6 => 
+            array (
+                'id' => 12,
+                'modelo' => 'Suitun',
+                'placa' => 'SSA-990-MP',
+                'combustivel' => 'diesel',
+                'capacidade' => 2,
+                'estado' => 'activo',
+                'rota_id' => 3,
+                'created_at' => '2023-09-06 18:15:42',
+                'updated_at' => '2023-09-06 18:15:42',
             ),
         ));
         

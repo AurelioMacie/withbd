@@ -28,7 +28,7 @@ class UsersTableSeeder extends Seeder
                 'avatar' => 'users\\August2023\\QI66Xc3MSpCoD7rIHFJn.png',
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$GFCiT1lzfg268NB9tDWrGey6v/hQNfnVG.F5.NSqNg14IFV87LJO6',
-                'remember_token' => 'IO8VubTOq9kIbNp4JcVJDQA2dICd6iPjGKut1TpOMEefWZ4FWUrbCNksAYsn',
+                'remember_token' => 'FerMEDBBKsOIRFdSb9Ut5LI75jNJls1swLv73KiDjlYyGv1HyhrRXBgRumN4',
                 'settings' => '{"locale":"en"}',
                 'created_at' => '2023-08-04 09:39:16',
                 'updated_at' => '2023-08-06 20:21:12',
@@ -214,6 +214,20 @@ class UsersTableSeeder extends Seeder
                 'settings' => '{"locale":"pt"}',
                 'created_at' => '2023-09-01 20:55:50',
                 'updated_at' => '2023-09-01 20:55:50',
+            ),
+            14 => 
+            array (
+                'id' => 15,
+                'role_id' => 2,
+                'name' => 'Joha',
+                'email' => 'joha@gmail.com',
+                'avatar' => 'users/default.png',
+                'email_verified_at' => NULL,
+                'password' => '$2y$10$FAOyX0OO5KyUvZCcAROF/OAX6hNBaSfBDpGsoi2nafoFEOa0UrKxG',
+                'remember_token' => NULL,
+                'settings' => NULL,
+                'created_at' => '2023-09-05 10:49:39',
+                'updated_at' => '2023-09-05 10:49:40',
             ),
         ));
         

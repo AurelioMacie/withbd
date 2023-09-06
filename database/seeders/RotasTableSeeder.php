@@ -24,9 +24,9 @@ class RotasTableSeeder extends Seeder
                 'id' => 1,
                 'partida' => 'Malhazine',
                 'destino' => 'Baixa',
-                'descricao' => 'Avenida de mocambique',
-                'created_at' => '2023-08-04 10:25:48',
-                'updated_at' => '2023-08-04 10:25:48',
+                'descricao' => 'Avenida de Moçambique',
+                'created_at' => '2023-08-04 10:25:00',
+                'updated_at' => '2023-09-06 17:25:43',
             ),
             1 => 
             array (
@@ -58,11 +58,11 @@ class RotasTableSeeder extends Seeder
             4 => 
             array (
                 'id' => 5,
-                'partida' => 'Junta',
-                'destino' => 'Magoanine',
-                'descricao' => 'Via FPLP',
-                'created_at' => '2023-08-16 10:52:26',
-                'updated_at' => '2023-08-16 10:52:26',
+                'partida' => 'Zimpeto',
+                'destino' => 'Baixa',
+                'descricao' => 'Avenida de Moçambique passando pela Brigada',
+                'created_at' => '2023-08-16 10:52:00',
+                'updated_at' => '2023-09-06 17:24:20',
             ),
             5 => 
             array (
