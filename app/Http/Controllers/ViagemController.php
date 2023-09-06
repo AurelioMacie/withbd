@@ -17,7 +17,7 @@ class ViagemController extends Controller
     }
 
     public function presenca($id){
-        $viagem = Viagem::where('id', $id)->with('estudantes')->first();
+        $viagem = Viagem::where('id', $id)->with('estudantes')->orderBy('id', 'DESC')->first();
         return view('viagem.presenca', compact('viagem'));
     }
 
@@ -32,6 +32,8 @@ class ViagemController extends Controller
                 $estudanteViagem->viagem_id = $request->viagem_id;
                 $array[]=$request->selected_items[$i];
                 $estudanteViagem->save();
+            }else{
+                return back()->with(['code' => 403, 'message'=> 'o estudante já foi adicionado a viagem']);
             }
         }
 

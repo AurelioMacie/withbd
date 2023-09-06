@@ -27,6 +27,7 @@
                             <th>Destino</th>
                             <th>Descrição de solicitação</th>
                         </tr>
+                        <?php $i = 0; ?>
                         @foreach ($veiculo->estudantes as $aluno)
                             <tr>
                                 <td>{{ $aluno->nome }}</td>
@@ -34,10 +35,16 @@
                                 <td>{{ $aluno->destino }}</td>
                                 <td>{{ $aluno->descricaoSolicitacao }}</td>
                             </tr>
+                            
+                            <?php $i++; ?>
                         @endforeach
                     </table>
+                    
                     </div>
+                    
                 </div>
+
+                <h4>Qtd de estudantes no veículo : {{$i}}</h4>
             </div>
         </div>
     </div>

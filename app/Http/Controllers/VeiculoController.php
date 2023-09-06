@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 class VeiculoController extends Controller
 {
     public function veiculoViagem($id){
-        $viagens = Viagem::where('veiculo_id', $id)->get();
+        $viagens = Viagem::where('veiculo_id', $id)->orderBy('id', 'DESC')->get();
         return view('veiculos.viagens', compact('viagens'));
     }
 
