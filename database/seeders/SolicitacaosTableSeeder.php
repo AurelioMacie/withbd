@@ -67,6 +67,14 @@ class SolicitacaosTableSeeder extends Seeder
                 'created_at' => '2023-09-06 19:29:41',
                 'updated_at' => '2023-09-06 19:29:41',
             ),
+            6 => 
+            array (
+                'id' => 16,
+                'descricao' => 'manutenção',
+                'motorista_id' => 3,
+                'created_at' => '2023-09-11 06:59:53',
+                'updated_at' => '2023-09-11 06:59:53',
+            ),
         ));
         
         

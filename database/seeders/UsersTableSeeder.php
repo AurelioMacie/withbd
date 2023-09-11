@@ -28,7 +28,7 @@ class UsersTableSeeder extends Seeder
                 'avatar' => 'users\\August2023\\QI66Xc3MSpCoD7rIHFJn.png',
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$GFCiT1lzfg268NB9tDWrGey6v/hQNfnVG.F5.NSqNg14IFV87LJO6',
-                'remember_token' => 'FerMEDBBKsOIRFdSb9Ut5LI75jNJls1swLv73KiDjlYyGv1HyhrRXBgRumN4',
+                'remember_token' => 'LYpTSJnxdNNZR8RhFqGPVhbYhwWuRzjT00eSKuCf1L4MUQQEewFhES12Cj2t',
                 'settings' => '{"locale":"en"}',
                 'created_at' => '2023-08-04 09:39:16',
                 'updated_at' => '2023-08-06 20:21:12',
@@ -228,6 +228,20 @@ class UsersTableSeeder extends Seeder
                 'settings' => NULL,
                 'created_at' => '2023-09-05 10:49:39',
                 'updated_at' => '2023-09-05 10:49:40',
+            ),
+            15 => 
+            array (
+                'id' => 16,
+                'role_id' => 3,
+                'name' => 'Claudio Simba',
+                'email' => 'claudio@gmail.com',
+                'avatar' => 'users/default.png',
+                'email_verified_at' => NULL,
+                'password' => '$2y$10$abSNtIN/VhXoeNdAsHv7L.CtV3EuuG89WgjPI3HThvmlBSVGN7NtS',
+                'remember_token' => NULL,
+                'settings' => '{"locale":"en"}',
+                'created_at' => '2023-09-11 06:26:54',
+                'updated_at' => '2023-09-11 06:26:54',
             ),
         ));
         

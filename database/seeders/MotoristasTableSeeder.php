@@ -103,6 +103,18 @@ class MotoristasTableSeeder extends Seeder
                 'created_at' => '2023-09-01 20:58:54',
                 'updated_at' => '2023-09-01 20:58:54',
             ),
+            7 => 
+            array (
+                'id' => 8,
+                'nome' => 'Claudio Simba',
+                'contacto' => '876565678',
+                'documento' => '76889007866',
+                'morada' => 'Malhazine',
+                'nascimento' => '1998-02-10',
+                'user_id' => 16,
+                'created_at' => '2023-09-11 06:26:00',
+                'updated_at' => '2023-09-11 06:27:18',
+            ),
         ));
         
         

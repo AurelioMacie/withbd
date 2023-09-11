@@ -269,7 +269,7 @@
                         @else
                         <div>
                             @php
-                                $motorista = App\Models\Motorista::where('user_id', auth()->id())->with('solicitacoes')->first();
+                                $motorista = App\Models\Motorista::where('user_id', auth()->id())->with('solicitacoes')->orderBy('id', 'desc')->first();
                             @endphp
 
                             <table class="table">

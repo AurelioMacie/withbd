@@ -60,12 +60,12 @@ class VeiculosTableSeeder extends Seeder
                 'id' => 7,
                 'modelo' => 'VVCCD',
                 'placa' => 'DDA-234-MP',
-                'combustivel' => 'Diesel',
-                'capacidade' => 5,
+                'combustivel' => 'gasolina',
+                'capacidade' => 2,
                 'estado' => 'Activo',
                 'rota_id' => 5,
                 'created_at' => '2023-08-16 11:44:44',
-                'updated_at' => '2023-09-01 20:53:44',
+                'updated_at' => '2023-09-11 06:22:06',
             ),
             4 => 
             array (
@@ -102,6 +102,18 @@ class VeiculosTableSeeder extends Seeder
                 'rota_id' => 3,
                 'created_at' => '2023-09-06 18:15:42',
                 'updated_at' => '2023-09-06 18:15:42',
+            ),
+            7 => 
+            array (
+                'id' => 13,
+                'modelo' => 'Huhink',
+                'placa' => 'ACB-777-MC',
+                'combustivel' => 'gasolina',
+                'capacidade' => 2,
+                'estado' => 'activo',
+                'rota_id' => 5,
+                'created_at' => '2023-09-11 06:24:01',
+                'updated_at' => '2023-09-11 06:24:01',
             ),
         ));
         
