@@ -42,4 +42,5 @@ Route::group(['prefix' => 'gestao'], function () {
     Route::post('/viagem/horaDescida', [ViagemController::class, 'horaDescida'])->middleware(["auth"])->name('hora.descida');
     Route::delete('/eliminar/notificacao/{id}', [NotificacaoController::class, 'destroy'])->middleware(["auth"])->name('notificacao.destroy');
     Route::get('/veiculos/{id}/estudantes', [VeiculoController::class, 'estudante'])->middleware(["auth"])->name('veiculo.estudante');
+    Route::get('/estudante/{id}/viagens', [EstudanteController::class, 'viagens'])->middleware(["auth"])->name('estudante.viagens');
 });

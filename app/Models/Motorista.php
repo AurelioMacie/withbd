@@ -13,6 +13,10 @@ class Motorista extends Model
         return $this->belongsToMany(Veiculo::class)->with('rota');
     }
 
+    public function viagens(){
+        return $this->hasMany(Viagem::class)->with('veiculo');
+    }
+
     public function solicitacoes(){
         return $this->hasMany(Solicitacao::class);
     }

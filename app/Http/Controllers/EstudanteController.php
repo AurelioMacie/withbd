@@ -11,4 +11,10 @@ class EstudanteController extends Controller
         $alunos = Estudante::where('estado', 'pendente')->orderBy('id', 'DESC')->orWhere('estado', null)->get();
         return view('estudante.pendentes', compact('alunos'));
     }
+
+    public function viagens($id){
+        $estudante = Estudante::where('id', $id)->with('viagens')->first();
+        // return $estudante;
+        return view('estudante.viagens', compact('estudante'));
+    }
 }

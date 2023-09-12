@@ -12,4 +12,12 @@ class Estudante extends Model
     public function veiculo(){
         return $this->belongsTo(Veiculo::class);
     }
+
+    public function viagem(){
+        return $this->belongsToMany(Viagem::class)->withPivot("horaSubida","horaDescida");
+    }
+
+    public function viagens(){
+        return $this->belongsToMany(Viagem::class)->withPivot("horaSubida","horaDescida");
+    }
 }

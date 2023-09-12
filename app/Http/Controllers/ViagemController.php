@@ -11,9 +11,22 @@ use Illuminate\Support\Carbon;
 class ViagemController extends Controller
 {
     public function adicionar($id){
-        $viagem = Viagem::where('id', $id)->orderBy('id', 'DESC')->first();
-        $estudantes = Estudante::where('veiculo_id', $viagem->veiculo_id)->get();
-        return view('viagem.adicionar', compact('estudantes', 'viagem'));
+        $viagem = Viagem::with('veiculo')->where('id', $id)->orderBy('id', 'DESC')->first();
+        $estudantes = Estudante::where('veiculo_id', $viagem->veiculo_id)
+        ->whereDoesntHave('viagem', function ($query) use($viagem) {
+            $query->where('viagems.id', $viagem->id);
+        })->get();
+        $estudantes_rota = Estudante::with('veiculo')
+        ->where('rota_id', $viagem->veiculo->rota_id)
+        ->whereNotIn('id', $estudantes->pluck("id"))
+        ->with('viagem')
+        ->whereDoesntHave('viagem', function ($query) {
+            $query->where('estudante_viagem.horaSubida', null)
+                 ->where('estudante_viagem.horaDescida', null);
+        })
+        ->get();
+        // return $estudantes_rota;
+        return view('viagem.adicionar', compact('estudantes',"estudantes_rota", 'viagem'));
     }
 
     public function presenca($id){

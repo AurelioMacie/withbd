@@ -31,12 +31,22 @@
                                     <th><input type="checkbox" id="select-all"></th>
                                 </tr>
                                 @foreach ($estudantes as $estudante)
-                                    <tr>
+                                    <tr style="color: green; font-weight: bold">
                                         <td>{{ $estudante->nome }}</td>
                                         <td>{{ $estudante->partida }}</td>
                                         <td>{{ $estudante->destino }}</td>
                                         <td><input type="checkbox" name="selected_items[]" value="{{ $estudante->id }}"></td>
                                     </tr>
+                                @endforeach
+                                @foreach ($estudantes_rota as $estudante)
+                                   @if($estudante->veiculo->estado != "activo")
+                                        <tr>
+                                            <td>{{ $estudante->nome }}</td>
+                                            <td>{{ $estudante->partida }}</td>
+                                            <td>{{ $estudante->destino }}</td>
+                                            <td><input type="checkbox" name="selected_items[]" value="{{ $estudante->id }}"></td>
+                                        </tr>
+                                    @endif
                                 @endforeach
                             </table>
                         

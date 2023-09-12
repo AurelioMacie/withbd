@@ -39,7 +39,7 @@
 @section('content')
     <div class="page-content browse container-fluid">
         @include('voyager::alerts')
-        @if(auth()->user()->role->name != 'user')
+        @if(auth()->user()->role->name == 'admin')
         <div class="row">
             <div class="col-md-12">
                 <div class="panel panel-bordered">
@@ -293,37 +293,18 @@
         @else
         <div>
             @php
-                $user = App\Models\User::where("id", auth()->id())->with("estudantes","meus_estudantes")->first();
+                $motorista = App\Models\Motorista::where("user_id", auth()->id())->with("viagens")->first();
             @endphp
 
             <table class="table">
                 <tr>
-                    <td>Nome</td>
-                    <td>Partida</td>
-                    <td>Destino</td>
-                    <td>Descrição</td>
-                    <td>Estado</td>
-                    <td>Veículo</td>
+                    <td>Tipo de viagem</td>
+                    <td>Data da viagem</td>
                 </tr>
-                @foreach($user->estudantes as $estudante)
+                @foreach($motorista->viagens as $viagem)
                     <tr>
-                        <td>{{$estudante->nome}}</td>
-                        <td>{{$estudante->partida}}</td>
-                        <td>{{$estudante->destino}}</td>
-                        <td>{{$estudante->descricaoSolicitacao}}</td>
-                        <td>{{$estudante->estado}}</td>
-                        <td>{{$estudante->veiculo->placa}}</td>
-                    </tr>
-                @endforeach
-                @foreach($user->meus_estudantes as $estudante)
-                    <tr>
-                        <td>{{$estudante->nome}}</td>
-                        <td>{{$estudante->partida}}</td>
-                        <td>{{$estudante->destino}}</td>
-                        <td>{{$estudante->descricaoSolicitacao}}</td>
-                        <td>{{$estudante->estado??'pendente'}}</td>
-                        <td>{{$estudante->veiculo->placa??'Não alocado a algum veiculo'}}</td>
-                        <td><a href="/gestao/estudante/{{$estudante->id}}/viagens" class="btn btn-primary" style="text-decoration: none">viagens</a></td>
+                        <td>{{$viagem->tipo}}</td>
+                        <td>{{$viagem->created_at}}</td>
                     </tr>
                 @endforeach
             </table>
