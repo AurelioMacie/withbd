@@ -26,7 +26,7 @@ class VeiculosTableSeeder extends Seeder
                 'placa' => 'AAV-915-MC',
                 'combustivel' => 'Diesel',
                 'capacidade' => 5,
-                'estado' => 'Activo',
+                'estado' => 'activo',
                 'rota_id' => 1,
                 'created_at' => '2023-08-04 10:26:51',
                 'updated_at' => '2023-09-01 20:54:07',
@@ -38,7 +38,7 @@ class VeiculosTableSeeder extends Seeder
                 'placa' => 'AVS-231-MC',
                 'combustivel' => 'Gasolina',
                 'capacidade' => 5,
-                'estado' => 'Activo',
+                'estado' => 'activo',
                 'rota_id' => 1,
                 'created_at' => '2023-08-16 10:47:30',
                 'updated_at' => '2023-09-01 20:53:56',
@@ -50,7 +50,7 @@ class VeiculosTableSeeder extends Seeder
                 'placa' => 'ADD-455-MP',
                 'combustivel' => 'Diesel',
                 'capacidade' => 5,
-                'estado' => 'Activo',
+                'estado' => 'activo',
                 'rota_id' => 2,
                 'created_at' => '2023-08-16 11:05:57',
                 'updated_at' => '2023-09-01 20:52:48',
@@ -62,10 +62,10 @@ class VeiculosTableSeeder extends Seeder
                 'placa' => 'DDA-234-MP',
                 'combustivel' => 'gasolina',
                 'capacidade' => 2,
-                'estado' => 'Activo',
+                'estado' => 'manutenção',
                 'rota_id' => 5,
                 'created_at' => '2023-08-16 11:44:44',
-                'updated_at' => '2023-09-11 06:22:06',
+                'updated_at' => '2023-09-12 10:31:15',
             ),
             4 => 
             array (
@@ -113,7 +113,7 @@ class VeiculosTableSeeder extends Seeder
                 'estado' => 'activo',
                 'rota_id' => 5,
                 'created_at' => '2023-09-11 06:24:01',
-                'updated_at' => '2023-09-11 06:24:01',
+                'updated_at' => '2023-09-12 10:37:23',
             ),
         ));
         

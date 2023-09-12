@@ -7,7 +7,7 @@ use Illuminate\Support\Str;
 use TCG\Voyager\Facades\Voyager;
 use TCG\Voyager\Widgets\BaseDimmer;
 
-class PostDimmer extends BaseDimmer
+class PendenteDimmer extends BaseDimmer
 {
     /**
      * The configuration array.
@@ -22,18 +22,20 @@ class PostDimmer extends BaseDimmer
      */
     public function run()
     {
-        $count = Voyager::model('Post')->count();
-        $string = trans_choice('voyager::dimmer.post', $count);
+
+        $count = \DB::table('estudantes')->where('estado', 'pendente')->count();
+
+        $string = 'students pending';
 
         return view('voyager::dimmer', array_merge($this->config, [
-            'icon'   => 'voyager-news',
+            'icon'   => 'voyager-person',
             'title'  => "{$count} {$string}",
-            'text'   => __('voyager::dimmer.post_text', ['count' => $count, 'string' => Str::lower($string)]),
+            'text'   => "You have {$count} {$string} in your database. Click on button below to view all students",
             'button' => [
-                'text' => __('voyager::dimmer.post_link_text'),
-                'link' => route('voyager.posts.index'),
+                'text' => 'Pendentes',
+                'link' => route('estudante.pendente'),
             ],
-            'image' => voyager_asset('images/widget-backgrounds/02.jpg'),
+            'image' => '/pendentes.jpg',
         ]));
     }
 

@@ -133,17 +133,17 @@ class EstudantesTableSeeder extends Seeder
             ),
             8 => 
             array (
-                'id' => 32,
-                'nome' => 'Menezes Macuacua',
-                'partida' => 'Choupal',
-                'destino' => 'Es',
-                'descricaoSolicitacao' => NULL,
-                'estado' => NULL,
-                'user_id' => 3,
+                'id' => 34,
+                'nome' => 'Kambal Muzimba',
+                'partida' => 'Inhagoio',
+                'destino' => 'Escola secundaria de malhazine',
+                'descricaoSolicitacao' => 'Sem descrição',
+                'estado' => 'pendente',
+                'user_id' => 1,
                 'rota_id' => NULL,
                 'veiculo_id' => NULL,
-                'created_at' => '2023-09-11 06:44:14',
-                'updated_at' => '2023-09-11 06:44:14',
+                'created_at' => '2023-09-12 11:15:56',
+                'updated_at' => '2023-09-12 11:15:56',
             ),
         ));
         

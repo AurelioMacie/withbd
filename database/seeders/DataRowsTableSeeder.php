@@ -1464,7 +1464,7 @@ class DataRowsTableSeeder extends Seeder
                 'id' => 110,
                 'data_type_id' => 14,
                 'field' => 'estado',
-                'type' => 'text',
+                'type' => 'select_dropdown',
                 'display_name' => 'Estado',
                 'required' => 0,
                 'browse' => 1,
