@@ -25,7 +25,6 @@ class ViagemController extends Controller
                  ->where('estudante_viagem.horaDescida', null);
         })
         ->get();
-        // return $estudantes_rota;
         return view('viagem.adicionar', compact('estudantes',"estudantes_rota", 'viagem'));
     }
 
@@ -35,6 +34,14 @@ class ViagemController extends Controller
     }
 
     public function adicionarAlunos(Request $request){
+        $viagem = Viagem::find($request->viagem_id);
+        $capacidadeVeiculo = $viagem->veiculo->capacidade;
+        $numeroPresencas = EstudanteViagem::where('viagem_id', $request->viagem_id)->count();
+        $numeroPresencasParaAdicionar = count($request->selected_items);
+        if (($numeroPresencas + $numeroPresencasParaAdicionar) > $capacidadeVeiculo) {
+            return  back()->with(['code' => 404, 'message'=> 'A capacidade máxima do veículo foi atingida. Não é possível adicionar mais estudantes a esta viagem.']);
+        }
+
         $array = [];
         for($i=0; $i<count($request->selected_items);$i++){
             $verificarEstudanteViagem = EstudanteViagem::where('estudante_id', $request->selected_items[$i])

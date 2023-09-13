@@ -2,6 +2,23 @@
 
 @section('page_title', 'Adicionar à viagem')
 
+@push('javascript')
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function() {
+    $('.estudante-checkbox').on('change', function() {
+        var capacidadeVeiculo = <?php echo $viagem->veiculo->capacidade; ?>;
+        var checkboxesSelecionadas = $('.estudante-checkbox:checked').length;
+
+        if (checkboxesSelecionadas > capacidadeVeiculo) {
+            // Desmarcar a checkbox que excedeu a capacidade
+            $(this).prop('checked', false);
+            alert('A capacidade máxima do veículo foi atingida. Não é possível adicionar mais estudantes a esta viagem.');
+        }
+    });
+});
+</script>
+@endpush
 
 @section('page_header')
     <div class="container-fluid">
@@ -31,12 +48,14 @@
                                     <th><input type="checkbox" id="select-all"></th>
                                 </tr>
                                 @foreach ($estudantes as $estudante)
-                                    <tr style="color: green; font-weight: bold">
-                                        <td>{{ $estudante->nome }}</td>
-                                        <td>{{ $estudante->partida }}</td>
-                                        <td>{{ $estudante->destino }}</td>
-                                        <td><input type="checkbox" name="selected_items[]" value="{{ $estudante->id }}"></td>
-                                    </tr>
+                                    @if($estudante->veiculo->estado == "activo")
+                                        <tr style="color: green; font-weight: bold">
+                                            <td>{{ $estudante->nome }}</td>
+                                            <td>{{ $estudante->partida }}</td>
+                                            <td>{{ $estudante->destino }}</td>
+                                            <td><input type="checkbox" class="estudante-checkbox" name="selected_items[]" value="{{ $estudante->id }}"></td>
+                                        </tr>
+                                    @endif
                                 @endforeach
                                 @foreach ($estudantes_rota as $estudante)
                                    @if($estudante->veiculo->estado != "activo")
@@ -44,7 +63,7 @@
                                             <td>{{ $estudante->nome }}</td>
                                             <td>{{ $estudante->partida }}</td>
                                             <td>{{ $estudante->destino }}</td>
-                                            <td><input type="checkbox" name="selected_items[]" value="{{ $estudante->id }}"></td>
+                                            <td><input type="checkbox" class="estudante-checkbox" name="selected_items[]" value="{{ $estudante->id }}"></td>
                                         </tr>
                                     @endif
                                 @endforeach
@@ -58,20 +77,3 @@
     </div>
 </form>
 @endsection
-
-@push('scripts')
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('#select-all').change(function () {
-                $('.checkbox').prop('checked', this.checked);
-            });
-
-            $('.checkbox').change(function () {
-                if (!this.checked) {
-                    $('#select-all').prop('checked', false);
-                }
-            });
-        });
-    </script>
-@endpush
