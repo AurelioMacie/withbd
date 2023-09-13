@@ -46,14 +46,14 @@ class MotoristasTableSeeder extends Seeder
             2 => 
             array (
                 'id' => 3,
-                'nome' => 'Maicha',
+                'nome' => 'Manica',
                 'contacto' => '876565657',
                 'documento' => '124214454534',
                 'morada' => 'Zona Verde',
                 'nascimento' => '2000-07-06',
                 'user_id' => 11,
                 'created_at' => '2023-08-16 11:18:00',
-                'updated_at' => '2023-08-16 11:49:57',
+                'updated_at' => '2023-09-13 09:06:59',
             ),
             3 => 
             array (
@@ -114,6 +114,42 @@ class MotoristasTableSeeder extends Seeder
                 'user_id' => 16,
                 'created_at' => '2023-09-11 06:26:00',
                 'updated_at' => '2023-09-11 06:27:18',
+            ),
+            8 => 
+            array (
+                'id' => 9,
+                'nome' => 'Eucilio Moane',
+                'contacto' => '878987654',
+                'documento' => '2323545',
+                'morada' => 'Bairro George Dimitrov',
+                'nascimento' => '2000-02-03',
+                'user_id' => 17,
+                'created_at' => '2023-09-13 09:36:00',
+                'updated_at' => '2023-09-13 09:36:00',
+            ),
+            9 => 
+            array (
+                'id' => 10,
+                'nome' => 'Alita Miole',
+                'contacto' => '866789000',
+                'documento' => '123236634',
+                'morada' => 'Malhazine',
+                'nascimento' => '2001-01-01',
+                'user_id' => 18,
+                'created_at' => '2023-09-13 09:41:32',
+                'updated_at' => '2023-09-13 09:41:32',
+            ),
+            10 => 
+            array (
+                'id' => 11,
+                'nome' => 'Bonaho',
+                'contacto' => '836878090',
+                'documento' => '2356867876',
+                'morada' => 'Avenida do Trabalho',
+                'nascimento' => '1996-11-14',
+                'user_id' => 19,
+                'created_at' => '2023-09-13 10:26:49',
+                'updated_at' => '2023-09-13 10:26:49',
             ),
         ));
         

@@ -1710,7 +1710,7 @@ class DataRowsTableSeeder extends Seeder
                 'browse' => 1,
                 'read' => 1,
                 'edit' => 1,
-                'add' => 1,
+                'add' => 0,
                 'delete' => 1,
                 'details' => '{"model":"App\\\\Models\\\\Motorista","table":"motoristas","type":"belongsToMany","column":"id","key":"id","label":"nome","pivot_table":"motorista_veiculo","pivot":"1","taggable":"0"}',
                 'order' => 11,

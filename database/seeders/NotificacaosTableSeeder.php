@@ -171,6 +171,38 @@ class NotificacaosTableSeeder extends Seeder
                 'created_at' => '2023-09-11 06:42:26',
                 'updated_at' => '2023-09-11 06:42:26',
             ),
+            19 => 
+            array (
+                'id' => 40,
+                'mensagem' => 'foi adicionado o aluno Judite Give ao seu veículo',
+                'motorista_id' => 9,
+                'created_at' => '2023-09-13 09:47:08',
+                'updated_at' => '2023-09-13 09:47:08',
+            ),
+            20 => 
+            array (
+                'id' => 41,
+                'mensagem' => 'foi adicionado o aluno Kambal Muzimba ao seu veículo',
+                'motorista_id' => 9,
+                'created_at' => '2023-09-13 09:47:39',
+                'updated_at' => '2023-09-13 09:47:39',
+            ),
+            21 => 
+            array (
+                'id' => 42,
+                'mensagem' => 'foi adicionado o aluno Clayton Davidisson ao seu veículo',
+                'motorista_id' => 11,
+                'created_at' => '2023-09-13 10:29:55',
+                'updated_at' => '2023-09-13 10:29:55',
+            ),
+            22 => 
+            array (
+                'id' => 43,
+                'mensagem' => 'foi adicionado o aluno Amrildo Changai ao seu veículo',
+                'motorista_id' => 11,
+                'created_at' => '2023-09-13 10:31:48',
+                'updated_at' => '2023-09-13 10:31:48',
+            ),
         ));
         
         

@@ -93,24 +93,6 @@ class ViagemsTableSeeder extends Seeder
             ),
             8 => 
             array (
-                'id' => 10,
-                'data' => '2023-08-21 10:03:00',
-                'tipo' => 'volta',
-                'veiculo_id' => 7,
-                'created_at' => '2023-08-21 08:05:11',
-                'updated_at' => '2023-08-21 08:05:11',
-            ),
-            9 => 
-            array (
-                'id' => 11,
-                'data' => '2023-08-21 11:55:00',
-                'tipo' => 'ida',
-                'veiculo_id' => 7,
-                'created_at' => '2023-08-21 09:55:48',
-                'updated_at' => '2023-08-21 09:55:48',
-            ),
-            10 => 
-            array (
                 'id' => 15,
                 'data' => '2023-09-01 11:55:00',
                 'tipo' => 'ida',
@@ -118,7 +100,7 @@ class ViagemsTableSeeder extends Seeder
                 'created_at' => '2023-09-01 10:01:24',
                 'updated_at' => '2023-09-01 10:01:24',
             ),
-            11 => 
+            9 => 
             array (
                 'id' => 16,
                 'data' => '2023-09-01 12:13:00',
@@ -127,7 +109,7 @@ class ViagemsTableSeeder extends Seeder
                 'created_at' => '2023-09-01 10:13:47',
                 'updated_at' => '2023-09-01 10:13:47',
             ),
-            12 => 
+            10 => 
             array (
                 'id' => 17,
                 'data' => '2023-09-01 12:13:00',
@@ -136,7 +118,7 @@ class ViagemsTableSeeder extends Seeder
                 'created_at' => '2023-09-01 10:13:50',
                 'updated_at' => '2023-09-01 10:13:50',
             ),
-            13 => 
+            11 => 
             array (
                 'id' => 18,
                 'data' => '2023-09-01 12:13:00',
@@ -145,7 +127,7 @@ class ViagemsTableSeeder extends Seeder
                 'created_at' => '2023-09-01 10:13:51',
                 'updated_at' => '2023-09-01 10:13:51',
             ),
-            14 => 
+            12 => 
             array (
                 'id' => 19,
                 'data' => '2023-09-01 12:16:00',
@@ -154,7 +136,7 @@ class ViagemsTableSeeder extends Seeder
                 'created_at' => '2023-09-01 10:16:14',
                 'updated_at' => '2023-09-01 10:16:14',
             ),
-            15 => 
+            13 => 
             array (
                 'id' => 20,
                 'data' => '2023-09-01 12:18:00',
@@ -163,23 +145,32 @@ class ViagemsTableSeeder extends Seeder
                 'created_at' => '2023-09-01 10:18:57',
                 'updated_at' => '2023-09-01 10:18:57',
             ),
+            14 => 
+            array (
+                'id' => 28,
+                'data' => '2023-09-13 11:05:00',
+                'tipo' => 'ida',
+                'veiculo_id' => 13,
+                'created_at' => '2023-09-13 09:05:47',
+                'updated_at' => '2023-09-13 09:05:47',
+            ),
+            15 => 
+            array (
+                'id' => 29,
+                'data' => '2023-09-13 11:47:00',
+                'tipo' => 'ida',
+                'veiculo_id' => 14,
+                'created_at' => '2023-09-13 09:47:59',
+                'updated_at' => '2023-09-13 09:47:59',
+            ),
             16 => 
             array (
-                'id' => 21,
-                'data' => '2023-09-05 20:41:00',
+                'id' => 30,
+                'data' => '2023-09-13 12:34:00',
                 'tipo' => 'ida',
-                'veiculo_id' => 7,
-                'created_at' => '2023-09-05 18:41:20',
-                'updated_at' => '2023-09-05 18:41:20',
-            ),
-            17 => 
-            array (
-                'id' => 23,
-                'data' => '2023-09-11 08:49:00',
-                'tipo' => 'ida',
-                'veiculo_id' => 7,
-                'created_at' => '2023-09-11 06:49:38',
-                'updated_at' => '2023-09-11 06:49:38',
+                'veiculo_id' => 16,
+                'created_at' => '2023-09-13 10:34:08',
+                'updated_at' => '2023-09-13 10:34:08',
             ),
         ));
         

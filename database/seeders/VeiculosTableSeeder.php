@@ -57,18 +57,6 @@ class VeiculosTableSeeder extends Seeder
             ),
             3 => 
             array (
-                'id' => 7,
-                'modelo' => 'VVCCD',
-                'placa' => 'DDA-234-MP',
-                'combustivel' => 'gasolina',
-                'capacidade' => 2,
-                'estado' => 'manutenção',
-                'rota_id' => 5,
-                'created_at' => '2023-08-16 11:44:44',
-                'updated_at' => '2023-09-12 10:31:15',
-            ),
-            4 => 
-            array (
                 'id' => 10,
                 'modelo' => 'Coaster',
                 'placa' => 'KKM-987-MP',
@@ -79,7 +67,7 @@ class VeiculosTableSeeder extends Seeder
                 'created_at' => '2023-09-01 21:01:01',
                 'updated_at' => '2023-09-01 21:01:01',
             ),
-            5 => 
+            4 => 
             array (
                 'id' => 11,
                 'modelo' => 'Youzing',
@@ -91,7 +79,7 @@ class VeiculosTableSeeder extends Seeder
                 'created_at' => '2023-09-06 18:12:25',
                 'updated_at' => '2023-09-06 18:12:25',
             ),
-            6 => 
+            5 => 
             array (
                 'id' => 12,
                 'modelo' => 'Suitun',
@@ -103,7 +91,7 @@ class VeiculosTableSeeder extends Seeder
                 'created_at' => '2023-09-06 18:15:42',
                 'updated_at' => '2023-09-06 18:15:42',
             ),
-            7 => 
+            6 => 
             array (
                 'id' => 13,
                 'modelo' => 'Huhink',
@@ -113,7 +101,43 @@ class VeiculosTableSeeder extends Seeder
                 'estado' => 'activo',
                 'rota_id' => 5,
                 'created_at' => '2023-09-11 06:24:01',
-                'updated_at' => '2023-09-12 10:37:23',
+                'updated_at' => '2023-09-13 10:23:03',
+            ),
+            7 => 
+            array (
+                'id' => 14,
+                'modelo' => 'Xdfrryyuyu',
+                'placa' => 'ASD-343-MP',
+                'combustivel' => 'diesel',
+                'capacidade' => 3,
+                'estado' => 'activo',
+                'rota_id' => 5,
+                'created_at' => '2023-09-13 09:36:51',
+                'updated_at' => '2023-09-13 10:40:19',
+            ),
+            8 => 
+            array (
+                'id' => 15,
+                'modelo' => 'Vuitbf',
+                'placa' => 'AVC-223-MC',
+                'combustivel' => 'gasolina',
+                'capacidade' => 2,
+                'estado' => 'activo',
+                'rota_id' => 2,
+                'created_at' => '2023-09-13 09:38:51',
+                'updated_at' => '2023-09-13 09:38:51',
+            ),
+            9 => 
+            array (
+                'id' => 16,
+                'modelo' => 'Bonaho',
+                'placa' => 'SSD-256-GB',
+                'combustivel' => 'diesel',
+                'capacidade' => 2,
+                'estado' => 'manutenção',
+                'rota_id' => 5,
+                'created_at' => '2023-09-13 09:59:48',
+                'updated_at' => '2023-09-13 10:35:02',
             ),
         ));
         

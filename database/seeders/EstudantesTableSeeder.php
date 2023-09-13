@@ -77,20 +77,6 @@ class EstudantesTableSeeder extends Seeder
             ),
             4 => 
             array (
-                'id' => 28,
-                'nome' => 'Moinho',
-                'partida' => 'Sao ROque',
-                'destino' => 'Escola Secundaria de Lhanguene',
-                'descricaoSolicitacao' => 'Sem descrição',
-                'estado' => 'aceite',
-                'user_id' => 1,
-                'rota_id' => 5,
-                'veiculo_id' => 7,
-                'created_at' => '2023-09-06 18:40:08',
-                'updated_at' => '2023-09-11 06:32:17',
-            ),
-            5 => 
-            array (
                 'id' => 29,
                 'nome' => 'Jossay Guedes',
                 'partida' => 'Benfica',
@@ -103,21 +89,7 @@ class EstudantesTableSeeder extends Seeder
                 'created_at' => '2023-09-11 06:36:19',
                 'updated_at' => '2023-09-11 06:39:50',
             ),
-            6 => 
-            array (
-                'id' => 30,
-                'nome' => 'Razia Fandila',
-                'partida' => 'Malhazine',
-                'destino' => 'Universidade Pedagogica',
-                'descricaoSolicitacao' => 'Sem descrição',
-                'estado' => 'aceite',
-                'user_id' => 3,
-                'rota_id' => 5,
-                'veiculo_id' => 7,
-                'created_at' => '2023-09-11 06:38:01',
-                'updated_at' => '2023-09-11 06:39:18',
-            ),
-            7 => 
+            5 => 
             array (
                 'id' => 31,
                 'nome' => 'Fazila Moira',
@@ -131,19 +103,89 @@ class EstudantesTableSeeder extends Seeder
                 'created_at' => '2023-09-11 06:41:16',
                 'updated_at' => '2023-09-11 06:42:26',
             ),
-            8 => 
+            6 => 
             array (
                 'id' => 34,
                 'nome' => 'Kambal Muzimba',
                 'partida' => 'Inhagoio',
-                'destino' => 'Escola secundaria de malhazine',
+                'destino' => 'Escola Secundaria de Lhanguene',
+                'descricaoSolicitacao' => 'Sem descrição',
+                'estado' => 'aceite',
+                'user_id' => 1,
+                'rota_id' => 5,
+                'veiculo_id' => 14,
+                'created_at' => '2023-09-12 11:15:56',
+                'updated_at' => '2023-09-13 09:47:39',
+            ),
+            7 => 
+            array (
+                'id' => 35,
+                'nome' => 'Judite Give',
+                'partida' => 'Ponte de Lhanguene',
+                'destino' => 'Escola Secundária Josina Machel',
+                'descricaoSolicitacao' => 'Sem descrição',
+                'estado' => 'aceite',
+                'user_id' => 1,
+                'rota_id' => 5,
+                'veiculo_id' => 14,
+                'created_at' => '2023-09-13 09:46:15',
+                'updated_at' => '2023-09-13 09:47:08',
+            ),
+            8 => 
+            array (
+                'id' => 36,
+                'nome' => 'Clayton Davidisson',
+                'partida' => 'Malhazine',
+                'destino' => 'Baixa',
+                'descricaoSolicitacao' => 'Sem descrição',
+                'estado' => 'aceite',
+                'user_id' => 1,
+                'rota_id' => 5,
+                'veiculo_id' => 16,
+                'created_at' => '2023-09-13 10:29:38',
+                'updated_at' => '2023-09-13 10:29:55',
+            ),
+            9 => 
+            array (
+                'id' => 37,
+                'nome' => 'Amrildo Changai',
+                'partida' => 'Payol',
+                'destino' => 'Escola Secundaria do infulene',
+                'descricaoSolicitacao' => 'Sem descrição',
+                'estado' => 'aceite',
+                'user_id' => 1,
+                'rota_id' => 5,
+                'veiculo_id' => 16,
+                'created_at' => '2023-09-13 10:30:43',
+                'updated_at' => '2023-09-13 10:31:48',
+            ),
+            10 => 
+            array (
+                'id' => 38,
+                'nome' => 'Manila Sitoe',
+                'partida' => 'Lhanguene',
+                'destino' => 'Escola Secundaria da Manhanga',
                 'descricaoSolicitacao' => 'Sem descrição',
                 'estado' => 'pendente',
                 'user_id' => 1,
                 'rota_id' => NULL,
                 'veiculo_id' => NULL,
-                'created_at' => '2023-09-12 11:15:56',
-                'updated_at' => '2023-09-12 11:15:56',
+                'created_at' => '2023-09-13 10:32:31',
+                'updated_at' => '2023-09-13 10:32:31',
+            ),
+            11 => 
+            array (
+                'id' => 39,
+                'nome' => 'Khalid Macie',
+                'partida' => 'Posto 19',
+                'destino' => 'Escola Secundaria de Lhanguene',
+                'descricaoSolicitacao' => 'Sem descrição',
+                'estado' => 'pendente',
+                'user_id' => 1,
+                'rota_id' => NULL,
+                'veiculo_id' => NULL,
+                'created_at' => '2023-09-13 10:33:16',
+                'updated_at' => '2023-09-13 10:33:16',
             ),
         ));
         
