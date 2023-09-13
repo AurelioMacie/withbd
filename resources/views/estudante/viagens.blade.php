@@ -21,7 +21,7 @@
                 <div class="panel panel-bordered">
                     <div class="panel-body">
                     <table class="table">
-                        <tr>
+                        <tr style="color: black; font-weight: bold">
                             <th>Tipo de viagem</th>
                             <th>Hora de subida</th>
                             <th>Hora de descida</th>

@@ -24,7 +24,7 @@
                             <input type="hidden" value="{{$viagem->id}}" name="viagem_id">
 
                             <table class="table">
-                                <tr>
+                                <tr style="color: black; font-weight: bold">
                                     <th>Nome do estudante</th>
                                     <th>Paragem</th>
                                     <th>Destino</th>

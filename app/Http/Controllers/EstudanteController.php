@@ -14,7 +14,6 @@ class EstudanteController extends Controller
 
     public function viagens($id){
         $estudante = Estudante::where('id', $id)->with('viagens')->first();
-        // return $estudante;
         return view('estudante.viagens', compact('estudante'));
     }
 }

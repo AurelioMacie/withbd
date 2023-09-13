@@ -273,7 +273,7 @@
                             @endphp
 
                             <table class="table">
-                                <tr>
+                                <tr style="color: black; font-weight: bold">
                                     <th>Solicitação feita</th>
                                     <th>Data da solicitação</th>
                                 </tr>

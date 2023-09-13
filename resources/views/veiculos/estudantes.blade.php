@@ -21,7 +21,7 @@
                 <div class="panel panel-bordered">
                     <div class="panel-body">
                     <table class="table">
-                        <tr>
+                        <tr style="color: black; font-weight: bold">
                             <th>Nome</th>
                             <th>Partida</th>
                             <th>Destino</th>

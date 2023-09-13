@@ -297,16 +297,17 @@
             @endphp
 
             <table class="table">
-                <tr>
+                <tr style="color: black; font-weight: bold">
                     <td>Nome</td>
                     <td>Partida</td>
                     <td>Destino</td>
                     <td>Descrição</td>
                     <td>Estado</td>
                     <td>Veículo</td>
+		    <td>Acções</td>
                 </tr>
                 @foreach($user->estudantes as $estudante)
-                    <tr>
+                    <tr style="color: black; font-weight: bold">
                         <td>{{$estudante->nome}}</td>
                         <td>{{$estudante->partida}}</td>
                         <td>{{$estudante->destino}}</td>
@@ -322,7 +323,7 @@
                         <td>{{$estudante->destino}}</td>
                         <td>{{$estudante->descricaoSolicitacao}}</td>
                         <td>{{$estudante->estado??'pendente'}}</td>
-                        <td>{{$estudante->veiculo->placa??'Não alocado a algum veiculo'}}</td>
+                        <td>{{$estudante->veiculo->placa??'Não alocado a algum veículo'}}</td>
                         <td><a href="/gestao/estudante/{{$estudante->id}}/viagens" class="btn btn-primary" style="text-decoration: none">viagens</a></td>
                     </tr>
                 @endforeach

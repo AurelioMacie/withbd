@@ -274,7 +274,7 @@
                             @endphp
 
                             <table class="table">
-                                <tr>
+                                <tr style="color: black; font-weight: bold">
                                     <td>Modelo</td>
                                     <td>Placa</td>
                                     <td>Estado</td>
@@ -293,7 +293,7 @@
                                              : {{$veiculo->rota->descricao}} </td>
                                         <td> 
                                             <a href="/gestao/veiculos/{{$veiculo->id}}/estudantes" class="btn btn-primary" style="text-decoration: none">estudantes</a>
-                                            <a href="/gestao/veiculo/viagens/{{$veiculo->id}}" class="btn btn-primary me-2" style="text-decoration: none">viagens</a>
+                                            <a href="/gestao/veiculo/viagens/{{$veiculo->id}}" class="btn btn-success me-2" style="text-decoration: none">viagens</a>
                                         </td>
                                     </tr>
                                 @endforeach    
