@@ -579,6 +579,46 @@ class PermissionsTableSeeder extends Seeder
                 'created_at' => '2023-08-04 10:22:37',
                 'updated_at' => '2023-08-04 10:22:37',
             ),
+            70 => 
+            array (
+                'id' => 101,
+                'key' => 'browse_estudante_viagem',
+                'table_name' => 'estudante_viagem',
+                'created_at' => '2023-09-15 07:02:58',
+                'updated_at' => '2023-09-15 07:02:58',
+            ),
+            71 => 
+            array (
+                'id' => 102,
+                'key' => 'read_estudante_viagem',
+                'table_name' => 'estudante_viagem',
+                'created_at' => '2023-09-15 07:02:58',
+                'updated_at' => '2023-09-15 07:02:58',
+            ),
+            72 => 
+            array (
+                'id' => 103,
+                'key' => 'edit_estudante_viagem',
+                'table_name' => 'estudante_viagem',
+                'created_at' => '2023-09-15 07:02:58',
+                'updated_at' => '2023-09-15 07:02:58',
+            ),
+            73 => 
+            array (
+                'id' => 104,
+                'key' => 'add_estudante_viagem',
+                'table_name' => 'estudante_viagem',
+                'created_at' => '2023-09-15 07:02:58',
+                'updated_at' => '2023-09-15 07:02:58',
+            ),
+            74 => 
+            array (
+                'id' => 105,
+                'key' => 'delete_estudante_viagem',
+                'table_name' => 'estudante_viagem',
+                'created_at' => '2023-09-15 07:02:58',
+                'updated_at' => '2023-09-15 07:02:58',
+            ),
         ));
         
         

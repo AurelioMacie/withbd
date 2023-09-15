@@ -161,7 +161,7 @@ class DataTypesTableSeeder extends Seeder
                 'server_side' => 0,
                 'details' => '{"order_column":null,"order_display_column":null,"order_direction":"asc","default_search_key":null,"scope":null}',
                 'created_at' => '2023-08-04 10:13:50',
-                'updated_at' => '2023-09-01 20:49:10',
+                'updated_at' => '2023-09-15 10:26:27',
             ),
             8 => 
             array (
@@ -197,7 +197,7 @@ class DataTypesTableSeeder extends Seeder
                 'server_side' => 0,
                 'details' => '{"order_column":null,"order_display_column":null,"order_direction":"asc","default_search_key":null,"scope":null}',
                 'created_at' => '2023-08-04 10:15:55',
-                'updated_at' => '2023-09-01 21:50:18',
+                'updated_at' => '2023-09-15 10:35:34',
             ),
             10 => 
             array (
@@ -233,7 +233,25 @@ class DataTypesTableSeeder extends Seeder
                 'server_side' => 0,
                 'details' => '{"order_column":null,"order_display_column":null,"order_direction":"asc","default_search_key":null,"scope":null}',
                 'created_at' => '2023-08-04 10:22:37',
-                'updated_at' => '2023-09-01 10:17:19',
+                'updated_at' => '2023-09-15 10:48:31',
+            ),
+            12 => 
+            array (
+                'id' => 23,
+                'name' => 'estudante_viagem',
+                'slug' => 'estudante-viagem',
+                'display_name_singular' => 'Estudante Viagem',
+                'display_name_plural' => 'Estudante Viagems',
+                'icon' => NULL,
+                'model_name' => 'App\\Models\\EstudanteViagem',
+                'policy_name' => NULL,
+                'controller' => NULL,
+                'description' => NULL,
+                'generate_permissions' => 1,
+                'server_side' => 0,
+                'details' => '{"order_column":null,"order_display_column":null,"order_direction":"asc","default_search_key":null}',
+                'created_at' => '2023-09-15 07:02:57',
+                'updated_at' => '2023-09-15 07:02:57',
             ),
         ));
         

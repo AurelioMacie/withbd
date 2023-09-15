@@ -71,7 +71,7 @@ class SettingsTableSeeder extends Seeder
                 'value' => 'SGFTE',
                 'details' => '',
                 'type' => 'text',
-                'order' => 1,
+                'order' => 2,
                 'group' => 'Admin',
             ),
             5 => 
@@ -82,7 +82,7 @@ class SettingsTableSeeder extends Seeder
                 'value' => 'Seja bem-vindo ao SGFTE',
                 'details' => '',
                 'type' => 'text',
-                'order' => 2,
+                'order' => 1,
                 'group' => 'Admin',
             ),
             6 => 

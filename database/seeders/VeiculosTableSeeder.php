@@ -97,11 +97,11 @@ class VeiculosTableSeeder extends Seeder
                 'modelo' => 'Huhink',
                 'placa' => 'ACB-777-MC',
                 'combustivel' => 'gasolina',
-                'capacidade' => 2,
-                'estado' => 'activo',
+                'capacidade' => 3,
+                'estado' => 'manutenção',
                 'rota_id' => 5,
                 'created_at' => '2023-09-11 06:24:01',
-                'updated_at' => '2023-09-13 10:23:03',
+                'updated_at' => '2023-09-14 08:54:44',
             ),
             7 => 
             array (
@@ -110,10 +110,10 @@ class VeiculosTableSeeder extends Seeder
                 'placa' => 'ASD-343-MP',
                 'combustivel' => 'diesel',
                 'capacidade' => 3,
-                'estado' => 'activo',
+                'estado' => 'manutenção',
                 'rota_id' => 5,
                 'created_at' => '2023-09-13 09:36:51',
-                'updated_at' => '2023-09-13 10:40:19',
+                'updated_at' => '2023-09-14 08:54:31',
             ),
             8 => 
             array (
@@ -134,10 +134,22 @@ class VeiculosTableSeeder extends Seeder
                 'placa' => 'SSD-256-GB',
                 'combustivel' => 'diesel',
                 'capacidade' => 2,
-                'estado' => 'manutenção',
+                'estado' => 'activo',
                 'rota_id' => 5,
                 'created_at' => '2023-09-13 09:59:48',
-                'updated_at' => '2023-09-13 10:35:02',
+                'updated_at' => '2023-09-14 09:05:29',
+            ),
+            10 => 
+            array (
+                'id' => 17,
+                'modelo' => 'reserva',
+                'placa' => 'AEI-990-MP',
+                'combustivel' => 'diesel',
+                'capacidade' => 30,
+                'estado' => 'activo',
+                'rota_id' => NULL,
+                'created_at' => '2023-09-14 08:56:44',
+                'updated_at' => '2023-09-14 09:03:56',
             ),
         ));
         

@@ -12,13 +12,13 @@ class VoyagerViagemController extends \TCG\Voyager\Http\Controllers\VoyagerBaseC
 {
     public function store(Request $request)
     {
-        $motorista = Motorista::where('user_id', auth()->id())->first();
-        if($motorista){
-            $motoristaVeiculo = MotoristaVeiculo::where('motorista_id', $motorista->id)->first();
-            $request['veiculo_id'] = $motoristaVeiculo->veiculo_id;
-        }else{
-            return back();
-        }
+        $motorista = Motorista::where('user_id', auth()->id())->with('veiculos')->first();
+        // if($motorista){
+        //     $motoristaVeiculo = MotoristaVeiculo::where('motorista_id', $motorista->id)->first();
+        //     $request['veiculo_id'] = $motoristaVeiculo->veiculo_id;
+        // }else{
+        //     return back();
+        // }
 
         $slug = $this->getSlug($request);
 
@@ -30,6 +30,10 @@ class VoyagerViagemController extends \TCG\Voyager\Http\Controllers\VoyagerBaseC
         // Validate fields with ajax
         $val = $this->validateBread($request->all(), $dataType->addRows)->validate();
         $data = $this->insertUpdateData($request, $slug, $dataType->addRows, new $dataType->model_name());
+
+        $data->veiculo_id = $motorista->veiculos[0]->id;
+        $data->update();
+
 
         event(new BreadDataAdded($dataType, $data));
 

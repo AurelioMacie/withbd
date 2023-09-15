@@ -73,6 +73,15 @@ class RotasTableSeeder extends Seeder
                 'created_at' => '2023-08-16 10:53:00',
                 'updated_at' => '2023-08-16 10:53:16',
             ),
+            6 => 
+            array (
+                'id' => 7,
+                'partida' => 'Zimpeto',
+                'destino' => 'Praça dos combatentes',
+                'descricao' => 'Avenida de moçambique junto com avenida lurdes mutola e julius nyerere',
+                'created_at' => '2023-09-15 07:22:05',
+                'updated_at' => '2023-09-15 07:22:05',
+            ),
         ));
         
         

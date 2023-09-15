@@ -105,34 +105,6 @@ class EstudantesTableSeeder extends Seeder
             ),
             6 => 
             array (
-                'id' => 34,
-                'nome' => 'Kambal Muzimba',
-                'partida' => 'Inhagoio',
-                'destino' => 'Escola Secundaria de Lhanguene',
-                'descricaoSolicitacao' => 'Sem descrição',
-                'estado' => 'aceite',
-                'user_id' => 1,
-                'rota_id' => 5,
-                'veiculo_id' => 14,
-                'created_at' => '2023-09-12 11:15:56',
-                'updated_at' => '2023-09-13 09:47:39',
-            ),
-            7 => 
-            array (
-                'id' => 35,
-                'nome' => 'Judite Give',
-                'partida' => 'Ponte de Lhanguene',
-                'destino' => 'Escola Secundária Josina Machel',
-                'descricaoSolicitacao' => 'Sem descrição',
-                'estado' => 'aceite',
-                'user_id' => 1,
-                'rota_id' => 5,
-                'veiculo_id' => 14,
-                'created_at' => '2023-09-13 09:46:15',
-                'updated_at' => '2023-09-13 09:47:08',
-            ),
-            8 => 
-            array (
                 'id' => 36,
                 'nome' => 'Clayton Davidisson',
                 'partida' => 'Malhazine',
@@ -141,11 +113,11 @@ class EstudantesTableSeeder extends Seeder
                 'estado' => 'aceite',
                 'user_id' => 1,
                 'rota_id' => 5,
-                'veiculo_id' => 16,
+                'veiculo_id' => 14,
                 'created_at' => '2023-09-13 10:29:38',
-                'updated_at' => '2023-09-13 10:29:55',
+                'updated_at' => '2023-09-15 10:26:50',
             ),
-            9 => 
+            7 => 
             array (
                 'id' => 37,
                 'nome' => 'Amrildo Changai',
@@ -159,33 +131,61 @@ class EstudantesTableSeeder extends Seeder
                 'created_at' => '2023-09-13 10:30:43',
                 'updated_at' => '2023-09-13 10:31:48',
             ),
-            10 => 
+            8 => 
             array (
                 'id' => 38,
                 'nome' => 'Manila Sitoe',
                 'partida' => 'Lhanguene',
                 'destino' => 'Escola Secundaria da Manhanga',
                 'descricaoSolicitacao' => 'Sem descrição',
-                'estado' => 'pendente',
+                'estado' => 'aceite',
                 'user_id' => 1,
-                'rota_id' => NULL,
-                'veiculo_id' => NULL,
+                'rota_id' => 1,
+                'veiculo_id' => 2,
                 'created_at' => '2023-09-13 10:32:31',
-                'updated_at' => '2023-09-13 10:32:31',
+                'updated_at' => '2023-09-15 10:00:41',
             ),
-            11 => 
+            9 => 
             array (
                 'id' => 39,
                 'nome' => 'Khalid Macie',
                 'partida' => 'Posto 19',
                 'destino' => 'Escola Secundaria de Lhanguene',
                 'descricaoSolicitacao' => 'Sem descrição',
-                'estado' => 'pendente',
+                'estado' => 'aceite',
                 'user_id' => 1,
-                'rota_id' => NULL,
-                'veiculo_id' => NULL,
+                'rota_id' => 5,
+                'veiculo_id' => 14,
                 'created_at' => '2023-09-13 10:33:16',
-                'updated_at' => '2023-09-13 10:33:16',
+                'updated_at' => '2023-09-14 08:35:33',
+            ),
+            10 => 
+            array (
+                'id' => 40,
+                'nome' => 'Judite Give',
+                'partida' => 'Choupal',
+                'destino' => 'Escola Secundaria de Lhanguene',
+                'descricaoSolicitacao' => 'Sem descrição',
+                'estado' => 'aceite',
+                'user_id' => 3,
+                'rota_id' => 5,
+                'veiculo_id' => 14,
+                'created_at' => '2023-09-14 08:11:43',
+                'updated_at' => '2023-09-14 08:36:58',
+            ),
+            11 => 
+            array (
+                'id' => 41,
+                'nome' => 'sadsadsd',
+                'partida' => 'sdfdsfdsf',
+                'destino' => 'dsfdsfdsfds',
+                'descricaoSolicitacao' => 'Sem descrição',
+                'estado' => 'aceite',
+                'user_id' => 1,
+                'rota_id' => 5,
+                'veiculo_id' => 16,
+                'created_at' => '2023-09-15 10:27:10',
+                'updated_at' => '2023-09-15 10:28:13',
             ),
         ));
         

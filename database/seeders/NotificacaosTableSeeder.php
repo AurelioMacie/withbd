@@ -203,6 +203,62 @@ class NotificacaosTableSeeder extends Seeder
                 'created_at' => '2023-09-13 10:31:48',
                 'updated_at' => '2023-09-13 10:31:48',
             ),
+            23 => 
+            array (
+                'id' => 44,
+                'mensagem' => 'foi adicionado o aluno Khalid Macie ao seu veículo',
+                'motorista_id' => 9,
+                'created_at' => '2023-09-14 08:35:32',
+                'updated_at' => '2023-09-14 08:35:32',
+            ),
+            24 => 
+            array (
+                'id' => 45,
+                'mensagem' => 'foi adicionado o aluno Judite Give ao seu veículo',
+                'motorista_id' => 9,
+                'created_at' => '2023-09-14 08:36:57',
+                'updated_at' => '2023-09-14 08:36:57',
+            ),
+            25 => 
+            array (
+                'id' => 46,
+                'mensagem' => 'foi adicionado o aluno Manila Sitoe ao seu veículo',
+                'motorista_id' => 7,
+                'created_at' => '2023-09-15 10:00:41',
+                'updated_at' => '2023-09-15 10:00:41',
+            ),
+            26 => 
+            array (
+                'id' => 47,
+                'mensagem' => 'foi adicionado o aluno Clayton Davidisson ao seu veículo',
+                'motorista_id' => 8,
+                'created_at' => '2023-09-15 10:24:59',
+                'updated_at' => '2023-09-15 10:24:59',
+            ),
+            27 => 
+            array (
+                'id' => 48,
+                'mensagem' => 'foi adicionado o aluno Clayton Davidisson ao seu veículo',
+                'motorista_id' => 9,
+                'created_at' => '2023-09-15 10:26:50',
+                'updated_at' => '2023-09-15 10:26:50',
+            ),
+            28 => 
+            array (
+                'id' => 49,
+                'mensagem' => 'foi adicionado o aluno sadsadsd ao seu veículo',
+                'motorista_id' => 8,
+                'created_at' => '2023-09-15 10:27:50',
+                'updated_at' => '2023-09-15 10:27:50',
+            ),
+            29 => 
+            array (
+                'id' => 50,
+                'mensagem' => 'foi adicionado o aluno sadsadsd ao seu veículo',
+                'motorista_id' => 11,
+                'created_at' => '2023-09-15 10:28:13',
+                'updated_at' => '2023-09-15 10:28:13',
+            ),
         ));
         
         

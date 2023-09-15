@@ -28,36 +28,41 @@ class VoyagerEstudanteController extends \TCG\Voyager\Http\Controllers\VoyagerBa
 
     public function update(Request $request, $id){
 
-        $rota = Rota::where('id', $request->rota_id)->with('veiculos')->first();
-        // return $rota; 
-        // antes da alteração abaixo
-        // só adicionava em um dos veículos
-        // não em ambos veículos da rota
-        $veiculos_disponiveis = [];
+        $veiculo_id = null;
 
-        foreach ($rota->veiculos as $veiculo) {
-            if ($veiculo->capacidade - $veiculo->estudantes_count > 0) {
-                $veiculos_disponiveis[] = $veiculo->id;
+        if($request->estado == 'aceite'){
+
+            $rota = Rota::where('id', $request->rota_id)->with('veiculos')->first();
+            // return $rota; 
+            // antes da alteração abaixo
+            // só adicionava em um dos veículos
+            // não em ambos veículos da rota
+            $veiculos_disponiveis = [];
+
+            foreach ($rota->veiculos as $veiculo) {
+                if ($veiculo->capacidade - $veiculo->estudantes_count > 0) {
+                    $veiculos_disponiveis[] = $veiculo->id;
+                }
             }
-        }
 
-        if (count($veiculos_disponiveis) > 0) {
-            $veiculo_id = $veiculos_disponiveis[0];
-            $request['veiculo_id'] = $veiculo_id;
-        } else {
-            return back()->with([
-                'message'    => 'Sem veículos disponíveis nesta rota',
-                'alert-type' => 'error',
-            ]);
+            if (count($veiculos_disponiveis) > 0) {
+                $veiculo_id = $veiculos_disponiveis[0];
+                $request['veiculo_id'] = $veiculo_id;
+            } else {
+                return back()->with([
+                    'message'    => 'Sem veículos disponíveis nesta rota',
+                    'alert-type' => 'error',
+                ]);
+            }
+            
+            $veiculo = Veiculo::where('id', $request->veiculo_id)->with('motoristas')->first();
+            for($i=0; $i<count($veiculo->motoristas); $i++){
+                $notificacao = new Notificacao();
+                $notificacao->motorista_id = $veiculo->motoristas[$i]->id;
+                $notificacao->mensagem = 'foi adicionado o aluno '.$request->nome.' ao seu veículo';
+                $notificacao->save();
+            };
         }
-        
-        $veiculo = Veiculo::where('id', $request->veiculo_id)->with('motoristas')->first();
-        for($i=0; $i<count($veiculo->motoristas); $i++){
-            $notificacao = new Notificacao();
-            $notificacao->motorista_id = $veiculo->motoristas[$i]->id;
-            $notificacao->mensagem = 'foi adicionado o aluno '.$request->nome.' ao seu veículo';
-            $notificacao->save();
-        };
         $slug = $this->getSlug($request);
 
         $dataType = Voyager::model('DataType')->where('slug', '=', $slug)->first();
@@ -91,6 +96,11 @@ class VoyagerEstudanteController extends \TCG\Voyager\Http\Controllers\VoyagerBa
 
         $this->insertUpdateData($request, $slug, $dataType->editRows, $data);
 
+        if($request->estado == 'aceite'){
+            $data->veiculo_id = $veiculo_id;
+            $data->update();
+        }
+
         // Delete Images
         $this->deleteBreadImages($original_data, $to_remove);
 
@@ -107,6 +117,7 @@ class VoyagerEstudanteController extends \TCG\Voyager\Http\Controllers\VoyagerBa
             'message'    => __('voyager::generic.successfully_updated')." {$dataType->getTranslatedAttribute('display_name_singular')}",
             'alert-type' => 'success',
         ]);
+    
 
     }
 
@@ -311,7 +322,7 @@ class VoyagerEstudanteController extends \TCG\Voyager\Http\Controllers\VoyagerBa
         $val = $this->validateBread($request->all(), $dataType->addRows)->validate();
         $data = $this->insertUpdateData($request, $slug, $dataType->addRows, new $dataType->model_name());
 
-        $data->user_id =  auth()->id();
+        $data->user_id = auth()->id();
         $data->update();
 
         event(new BreadDataAdded($dataType, $data));

@@ -24,11 +24,11 @@ class VoyagerSolicitacaController extends \TCG\Voyager\Http\Controllers\VoyagerB
     {
 
         $motorista = Motorista::where('user_id', auth()->id())->first();
-        if($motorista){
-            $request['motorista_id'] = $motorista->id;
-        }else{
-            return back();
-        }
+        // if($motorista){
+        //     $request['motorista_id'] = $motorista->id;
+        // }else{
+        //     return back();
+        // }
         
         $slug = $this->getSlug($request);
 
@@ -40,6 +40,10 @@ class VoyagerSolicitacaController extends \TCG\Voyager\Http\Controllers\VoyagerB
         // Validate fields with ajax
         $val = $this->validateBread($request->all(), $dataType->addRows)->validate();
         $data = $this->insertUpdateData($request, $slug, $dataType->addRows, new $dataType->model_name());
+
+
+        $data->motorista_id = $motorista->id;
+        $data->update();
 
         event(new BreadDataAdded($dataType, $data));
 

@@ -21,36 +21,25 @@ class EstudanteViagemTableSeeder extends Seeder
         \DB::table('estudante_viagem')->insert(array (
             0 => 
             array (
-                'id' => 54,
-                'horaSubida' => NULL,
-                'horaDescida' => NULL,
-                'estudante_id' => 34,
-                'viagem_id' => 29,
-                'transferencia_viagem_id' => NULL,
-                'created_at' => '2023-09-13 10:40:44',
-                'updated_at' => '2023-09-13 10:40:44',
-            ),
-            1 => 
-            array (
-                'id' => 55,
-                'horaSubida' => NULL,
-                'horaDescida' => NULL,
-                'estudante_id' => 35,
-                'viagem_id' => 29,
-                'transferencia_viagem_id' => NULL,
-                'created_at' => '2023-09-13 10:40:44',
-                'updated_at' => '2023-09-13 10:40:44',
-            ),
-            2 => 
-            array (
                 'id' => 56,
-                'horaSubida' => NULL,
-                'horaDescida' => NULL,
+                'horaSubida' => '08:25:44',
+                'horaDescida' => '08:25:47',
                 'estudante_id' => 36,
                 'viagem_id' => 29,
                 'transferencia_viagem_id' => NULL,
                 'created_at' => '2023-09-13 10:40:45',
-                'updated_at' => '2023-09-13 10:40:45',
+                'updated_at' => '2023-09-14 08:25:47',
+            ),
+            1 => 
+            array (
+                'id' => 57,
+                'horaSubida' => '08:51:10',
+                'horaDescida' => '08:51:13',
+                'estudante_id' => 36,
+                'viagem_id' => 28,
+                'transferencia_viagem_id' => NULL,
+                'created_at' => '2023-09-14 08:49:33',
+                'updated_at' => '2023-09-14 08:51:13',
             ),
         ));
         
