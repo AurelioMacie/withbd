@@ -309,6 +309,13 @@ class VoyagerEstudanteController extends \TCG\Voyager\Http\Controllers\VoyagerBa
 
     public function store(Request $request)
     {
+        $request->validate([
+            'nome' => 'required|string|max:255',
+            'partida' => 'required|string|max:255',
+            'destino' => 'required|string|max:255',
+            'descricaoSolicitacao' => 'required|string|max:255',
+        ]);
+
         // return $request;
         $slug = $this->getSlug($request);
         

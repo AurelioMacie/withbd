@@ -2,43 +2,65 @@
 
 namespace App\Http\Controllers\Voyager;
 
-use App\Models\Motorista;
-use App\Models\MotoristaVeiculo;
 use Illuminate\Http\Request;
+use Carbon\Carbon;
 use TCG\Voyager\Events\BreadDataAdded;
 use TCG\Voyager\Facades\Voyager;
+use TCG\Voyager\Http\Controllers\Traits\BreadRelationshipParser;
 
-class VoyagerViagemController extends \TCG\Voyager\Http\Controllers\VoyagerBaseController
+class VoyagerMotoristaController extends \TCG\Voyager\Http\Controllers\VoyagerBaseController
 {
+    use BreadRelationshipParser;
+
+
+      //***************************************
+    //               ____
+    //              |  _ \
+    //              | |_) |
+    //              |  _ <
+    //              | |_) |
+    //              |____/
+    //
+    //      Browse our Data Type (B)READ
+    //
+    //****************************************
+
     public function store(Request $request)
     {
 
         $request->validate([
-            'data' => 'required|string|max:255',
+            'nome' => 'required|string|max:255',
+            'contacto' => 'required|string|max:255',
+            'morada' => 'required|string|max:255',
+            'documento' => 'required|string|max:255',
+            'nascimento' => 'required|date',
         ]);
-
-        $motorista = Motorista::where('user_id', auth()->id())->with('veiculos')->first();
-        // if($motorista){
-        //     $motoristaVeiculo = MotoristaVeiculo::where('motorista_id', $motorista->id)->first();
-        //     $request['veiculo_id'] = $motoristaVeiculo->veiculo_id;
-        // }else{
-        //     return back();
-        // }
-
+    
+        $nascimento = Carbon::parse($request->input('nascimento'));
+        $idade = $nascimento->age;
+    
+        if ($idade < 18 || $idade > 50) {
+            return back()->with([
+                'message'    => 'A idade do motorista está fora dos padrões de contratação',
+                'alert-type' => 'error',
+            ]);
+        }
+        
+        // return $request;
         $slug = $this->getSlug($request);
-
+        
         $dataType = Voyager::model('DataType')->where('slug', '=', $slug)->first();
-
+        // return $dataType->addRows;
+        
         // Check permission
         $this->authorize('add', app($dataType->model_name));
-
+        
         // Validate fields with ajax
         $val = $this->validateBread($request->all(), $dataType->addRows)->validate();
         $data = $this->insertUpdateData($request, $slug, $dataType->addRows, new $dataType->model_name());
 
-        $data->veiculo_id = $motorista->veiculos[0]->id;
+        $data->user_id = auth()->id();
         $data->update();
-
 
         event(new BreadDataAdded($dataType, $data));
 
@@ -57,4 +79,6 @@ class VoyagerViagemController extends \TCG\Voyager\Http\Controllers\VoyagerBaseC
             return response()->json(['success' => true, 'data' => $data]);
         }
     }
+
 }
+
