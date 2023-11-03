@@ -181,6 +181,15 @@ class ViagemsTableSeeder extends Seeder
                 'created_at' => '2023-09-15 11:09:53',
                 'updated_at' => '2023-09-15 11:09:53',
             ),
+            18 => 
+            array (
+                'id' => 42,
+                'data' => '2023-09-15 19:08:00',
+                'tipo' => 'ida',
+                'veiculo_id' => 14,
+                'created_at' => '2023-09-15 17:08:07',
+                'updated_at' => '2023-09-15 17:08:07',
+            ),
         ));
         
         

@@ -151,6 +151,18 @@ class MotoristasTableSeeder extends Seeder
                 'created_at' => '2023-09-13 10:26:49',
                 'updated_at' => '2023-09-13 10:26:49',
             ),
+            11 => 
+            array (
+                'id' => 12,
+                'nome' => 'Roberto Macuacua',
+                'contacto' => '876568778',
+                'documento' => '123245645',
+                'morada' => 'Benfica',
+                'nascimento' => '1990-07-15',
+                'user_id' => 20,
+                'created_at' => '2023-09-15 16:56:17',
+                'updated_at' => '2023-09-15 16:59:22',
+            ),
         ));
         
         

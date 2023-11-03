@@ -187,6 +187,20 @@ class EstudantesTableSeeder extends Seeder
                 'created_at' => '2023-09-15 10:27:10',
                 'updated_at' => '2023-09-15 10:28:13',
             ),
+            12 => 
+            array (
+                'id' => 42,
+                'nome' => 'Jasmin Nica',
+                'partida' => 'Ponto final',
+                'destino' => 'IPET',
+                'descricaoSolicitacao' => 'Sem descrição',
+                'estado' => 'recusado',
+                'user_id' => 3,
+                'rota_id' => NULL,
+                'veiculo_id' => NULL,
+                'created_at' => '2023-09-15 17:04:33',
+                'updated_at' => '2023-09-15 17:05:53',
+            ),
         ));
         
         

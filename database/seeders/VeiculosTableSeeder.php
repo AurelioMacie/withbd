@@ -98,10 +98,10 @@ class VeiculosTableSeeder extends Seeder
                 'placa' => 'ACB-777-MC',
                 'combustivel' => 'gasolina',
                 'capacidade' => 3,
-                'estado' => 'manutenção',
+                'estado' => 'activo',
                 'rota_id' => 5,
                 'created_at' => '2023-09-11 06:24:01',
-                'updated_at' => '2023-09-14 08:54:44',
+                'updated_at' => '2023-09-15 17:10:30',
             ),
             7 => 
             array (
@@ -110,10 +110,10 @@ class VeiculosTableSeeder extends Seeder
                 'placa' => 'ASD-343-MP',
                 'combustivel' => 'diesel',
                 'capacidade' => 3,
-                'estado' => 'manutenção',
+                'estado' => 'activo',
                 'rota_id' => 5,
                 'created_at' => '2023-09-13 09:36:51',
-                'updated_at' => '2023-09-14 08:54:31',
+                'updated_at' => '2023-09-15 17:10:18',
             ),
             8 => 
             array (
@@ -150,6 +150,18 @@ class VeiculosTableSeeder extends Seeder
                 'rota_id' => NULL,
                 'created_at' => '2023-09-14 08:56:44',
                 'updated_at' => '2023-09-14 09:03:56',
+            ),
+            11 => 
+            array (
+                'id' => 18,
+                'modelo' => 'Youzing',
+                'placa' => 'SSA-997-MP',
+                'combustivel' => 'diesel',
+                'capacidade' => 3,
+                'estado' => 'activo',
+                'rota_id' => 7,
+                'created_at' => '2023-09-15 16:58:40',
+                'updated_at' => '2023-09-15 16:58:40',
             ),
         ));
         

@@ -56,7 +56,7 @@ class UsersTableSeeder extends Seeder
                 'avatar' => 'users\\August2023\\6I1afCyWFH1zKIXoZcdb.png',
                 'email_verified_at' => NULL,
                 'password' => '$2y$10$SWwlPVMYpSN/rx.Fd9J5qu5qyQ6BFJNvw47mvETGNxCATNo8HA2a.',
-                'remember_token' => 'CSgKtBJPJNvYhXNdDms1OsdpMFiUPF2AY9lYXSAG2pjuv6n1QETIPzv4e6al',
+                'remember_token' => 'rPThegiS8CZdn9mAbmPdb6G8R0Os1buruL8GywjW0L6iZ8jWzeQmYojJsO7A',
                 'settings' => '{"locale":"en"}',
                 'created_at' => '2023-08-06 18:27:16',
                 'updated_at' => '2023-08-06 20:20:55',
@@ -284,6 +284,20 @@ class UsersTableSeeder extends Seeder
                 'settings' => '{"locale":"en"}',
                 'created_at' => '2023-09-13 10:24:32',
                 'updated_at' => '2023-09-13 10:24:32',
+            ),
+            19 => 
+            array (
+                'id' => 20,
+                'role_id' => 3,
+                'name' => 'Roberto',
+                'email' => 'roberto@gmail.com',
+                'avatar' => 'users/default.png',
+                'email_verified_at' => NULL,
+                'password' => '$2y$10$TLUs4w8Jtq9XR.czeBZj9OoabvaCX6.6F/Q78FjhVN94OXVSdlX0y',
+                'remember_token' => NULL,
+                'settings' => '{"locale":"en"}',
+                'created_at' => '2023-09-15 16:53:10',
+                'updated_at' => '2023-09-15 16:53:10',
             ),
         ));
         

@@ -41,6 +41,39 @@ class EstudanteViagemTableSeeder extends Seeder
                 'created_at' => '2023-09-14 08:49:33',
                 'updated_at' => '2023-09-14 08:51:13',
             ),
+            2 => 
+            array (
+                'id' => 58,
+                'horaSubida' => '17:11:17',
+                'horaDescida' => '17:11:24',
+                'estudante_id' => 36,
+                'viagem_id' => 42,
+                'transferencia_viagem_id' => NULL,
+                'created_at' => '2023-09-15 17:11:13',
+                'updated_at' => '2023-09-15 17:11:24',
+            ),
+            3 => 
+            array (
+                'id' => 59,
+                'horaSubida' => '17:11:20',
+                'horaDescida' => '17:11:27',
+                'estudante_id' => 39,
+                'viagem_id' => 42,
+                'transferencia_viagem_id' => NULL,
+                'created_at' => '2023-09-15 17:11:13',
+                'updated_at' => '2023-09-15 17:11:27',
+            ),
+            4 => 
+            array (
+                'id' => 60,
+                'horaSubida' => '17:11:21',
+                'horaDescida' => '17:11:28',
+                'estudante_id' => 40,
+                'viagem_id' => 42,
+                'transferencia_viagem_id' => NULL,
+                'created_at' => '2023-09-15 17:11:13',
+                'updated_at' => '2023-09-15 17:11:28',
+            ),
         ));
         
         

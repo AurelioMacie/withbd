@@ -1813,22 +1813,6 @@ class DataRowsTableSeeder extends Seeder
             ),
             112 => 
             array (
-                'id' => 164,
-                'data_type_id' => 1,
-                'field' => 'user_belongstomany_veiculo_relationship',
-                'type' => 'relationship',
-                'display_name' => 'veiculos',
-                'required' => 0,
-                'browse' => 1,
-                'read' => 1,
-                'edit' => 1,
-                'add' => 1,
-                'delete' => 1,
-                'details' => '{"model":"App\\\\Models\\\\Veiculo","table":"veiculos","type":"belongsToMany","column":"id","key":"id","label":"placa","pivot_table":"user_veiculo","pivot":"1","taggable":"0"}',
-                'order' => 13,
-            ),
-            113 => 
-            array (
                 'id' => 165,
                 'data_type_id' => 23,
                 'field' => 'id',
@@ -1843,7 +1827,7 @@ class DataRowsTableSeeder extends Seeder
                 'details' => '{}',
                 'order' => 1,
             ),
-            114 => 
+            113 => 
             array (
                 'id' => 166,
                 'data_type_id' => 23,
@@ -1859,7 +1843,7 @@ class DataRowsTableSeeder extends Seeder
                 'details' => '{}',
                 'order' => 4,
             ),
-            115 => 
+            114 => 
             array (
                 'id' => 167,
                 'data_type_id' => 23,
@@ -1875,7 +1859,7 @@ class DataRowsTableSeeder extends Seeder
                 'details' => '{}',
                 'order' => 5,
             ),
-            116 => 
+            115 => 
             array (
                 'id' => 168,
                 'data_type_id' => 23,
@@ -1891,7 +1875,7 @@ class DataRowsTableSeeder extends Seeder
                 'details' => '{}',
                 'order' => 2,
             ),
-            117 => 
+            116 => 
             array (
                 'id' => 169,
                 'data_type_id' => 23,
@@ -1907,7 +1891,7 @@ class DataRowsTableSeeder extends Seeder
                 'details' => '{}',
                 'order' => 3,
             ),
-            118 => 
+            117 => 
             array (
                 'id' => 170,
                 'data_type_id' => 23,
@@ -1923,7 +1907,7 @@ class DataRowsTableSeeder extends Seeder
                 'details' => '{}',
                 'order' => 6,
             ),
-            119 => 
+            118 => 
             array (
                 'id' => 171,
                 'data_type_id' => 23,
@@ -1939,7 +1923,7 @@ class DataRowsTableSeeder extends Seeder
                 'details' => '{}',
                 'order' => 7,
             ),
-            120 => 
+            119 => 
             array (
                 'id' => 172,
                 'data_type_id' => 23,
